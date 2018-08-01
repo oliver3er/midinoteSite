@@ -8,23 +8,42 @@
     <script src="js/jquery.min.js"></script>
     <script type="text/javascript">
         $(function () {
-            var pScrollTop = 560;
 
-            $('.home-page').bind('scroll', function (event) {
-                var scrollTop = $('.home-page').scrollTop();
+            $(document).bind('scroll', function (event) {
+                var v1 = document.body.scrollTop;
+                var v2 = document.documentElement.scrollTop;
+                var scrollTop = Math.max(v1, v2);
 
-                if (pScrollTop < scrollTop && scrollTop < 1340) {
+                if(scrollTop >60){
+                    if($(".home-header").hasClass("__site-is-below")){
+
+                    }else {
+                        $(".home-header").addClass("__site-is-below");
+                    }
+                }else if(scrollTop < 100) {
+                    $(".home-header").removeClass("__site-is-below");
+                }
+
+                if (700 < scrollTop && scrollTop < 940) {
                     $(".rectangle2").removeClass("__show").addClass("__show");
-                    pScrollTop = scrollTop;
-                } else if (pScrollTop < scrollTop && scrollTop < 1900) {
+                }else {
+                    $(".rectangle2").removeClass("__show");
+                }
+
+                if (1300 < scrollTop && scrollTop < 1500) {
                     $(".circle4").removeClass("__show").addClass("__show");
-                    pScrollTop = scrollTop;
-                } else if (pScrollTop < scrollTop && scrollTop < 2500) {
+                } else {
+                    $(".circle4").removeClass("__show");
+                }
+                if (1800 < scrollTop && scrollTop < 2000) {
                     $(".square2").removeClass("__show").addClass("__show");
-                    pScrollTop = scrollTop;
-                } else if (pScrollTop < scrollTop && scrollTop < 3400) {
+                } else {
+                    $(".square2").removeClass("__show");
+                }
+                if (2350 < scrollTop && scrollTop < 2550) {
                     $(".triangle2").removeClass("__show").addClass("__show");
-                    pScrollTop = scrollTop;
+                } else {
+                    $(".triangle2").removeClass("__show");
                 }
 
             });
@@ -32,28 +51,26 @@
         });
     </script>
 </head>
-<body>
+<body class="home-body">
 <div class="home-page">
-
     <div class="home-wrapper">
+        <header class="home-header">
+            <div class="home-header-wrapper">
+                <div class="home-logo">
+                    <!--#include file='images/logo.svg' -->
+                    <!--#include file='images/logo-word.svg' -->
+                </div>
+                <nav class="home-nav">
+                    <ul>
+                        <li class="__selected">About</li>
+                        <li>Contact</li>
+                        <li>Sign in</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
         <div class="home-1 position-relative">
-            <header class="home-header">
-                <div class="home-header-wrapper">
-                    <div class="home-logo">
-                        <!--#include file='images/logo.svg' -->
-                        <!--#include file='images/logo-word.svg' -->
-                    </div>
-                    <nav class="home-nav">
-                        <ul>
-                            <li>About</li>
-                            <li>Contact</li>
-                            <li>Sign in</li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-
             <main class="home-1-main">
                 <div class="home-1-main-wrapper position-relative">
                     <div class="home-1-main-bd"></div>
