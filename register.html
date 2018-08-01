@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<script src='./js/jquery.min.js'></script>
+	</head>
+	<body>
+		<h1>CREATE YOUR MIDINOTE ACCOUNT</h1>
+		<input 
+			class='email' 
+			type='text' 
+			name='email' 
+			value='' 
+			placeholder='emial address'
+			/>
+		<input 
+			class='password' 
+			name='email' 
+			type='password'
+			placeholder='password'
+			value='' />
+		<div class='message'>
+		</div>
+		<button
+			class='button'
+		>
+			Create
+		</button>
+	</body>
+	<script type='text/javascript' >
+		const HOST_API		= '13.57.29.123'
+		const HOST_APP		= '13.57.29.123'
+		const PORT_API		= '3002'
+		const PORT_APP		= '20080'
+		const MESSAGE	= {
+			USER_REGISTER_EMAIL_REQUIRED	: 'Please input your email address',
+			USER_REGISTER_EMAIL_FORMAT	: 'The email format is bad',
+			USER_REGISTER_PASSWORD_REQUIRED	: 'Please input your password',
+			USER_REGISTER_PASSWORD_FORMAT	: 'The password format is bad',
+			USER_REGISTER_EMAIL_EXISTS	: 'The email already exists',
+		}
+		$('.button').click(function(){
+			$('.message').html('')
+			const email		= $('.email').val()
+			const password	= $('.password').val()
+			console.debug('begin register with: %s:%s',email,password)
+			$.ajax({
+				url		: `http://${HOST_API}:${PORT_API}/api/user/register`,
+				data	: JSON.stringify({
+					email,
+					password,
+				}),
+				method	: 'POST',
+				contentType	: 'application/json;charset=utf-8',
+				dataType	: 'json',
+			})
+			.done(function(result){
+				console.log(result)
+			})
+			.fail(function(error){
+				console.warn('fail:',error)
+				const response	= error.responseText
+				console.log('response:',response)
+				const data	= JSON.parse(response)
+				console.log('response json:',data)
+			})
+			.always(function(data){
+				console.log('done',data)
+				if(data.code === 'OK'){
+					console.log('register success!')
+					const user	= data.data.user
+					console.log('user:',user)
+					const userCode	= data.data.userCode
+					console.log('userCode:',userCode)
+					//jump to app
+					const url	= `http://${HOST_APP}:${PORT_APP}/login?k=${userCode._id}`
+					console.log('will jump to :',url)
+					document.location = url
+				}else{
+					console.log('fail,code:%s',data.code)
+					const message	= MESSAGE[data.code]
+					if(message){
+						$('.message').html(message)
+					}else{
+						$('.message').html('Something wrong!')
+					}
+				}
+			})
+
+		})
+
+	</script>
+</html>
