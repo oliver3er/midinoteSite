@@ -1,1 +1,53 @@
-test
+<html>
+	<head>
+		<script src="js/jquery.min.js"></script>
+	<style>
+		.container	{
+			display		: flex;
+		}
+
+		@keyframes caret {
+			50% { background-color: transparent; }
+		}
+
+		.the_cursor {
+			bottom: 1px;
+			content: '';
+			width: 14px;
+			height: 4px;
+			background-color: #498cf3;
+			animation	: caret .5s steps(1) infinite;
+		}
+
+		@keyframes letter-show {
+			0% {
+				visibility: hidden;
+
+				transform: scale(1.3);
+			}
+			100% { visibility: visible; opacity: 1; transform: scale(1);}
+		}
+
+		.char	{
+			font-size	: 20px;
+			animation	: letter-show .5s;
+		}
+	</style>
+	</head>
+	<body>
+		<div class='container'>
+			<div class='the_cursor' ></div>
+		</div>
+	</body>
+	<script type='text/javascript' >
+		var chars	= 'MIDINOTE'.split('').reverse()
+		setInterval(() => {
+			console.log('a beat')
+			const char	= chars.pop()
+			if(char){
+				$(`<div class="char" >${char}</div>`).insertBefore('.the_cursor')
+			}
+		},500)
+		
+	</script>
+</html>
