@@ -51,9 +51,27 @@
         });
     </script>
 </head>
-<body class="home-body">
+<body class="home-body __on-load">  <!-- __on-load-->
 <div class="home-page">
+
+    <div class="load-page">
+        <div class="our-name position-relative">
+            <div class="our-name-words">
+                <span>M</span>
+                <span>I</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>O</span>
+                <span>T</span>
+                <span>E</span>
+            </div>
+            <div class="our-name-cursor"></div>
+        </div>
+    </div>
+
     <div class="home-wrapper">
+
         <header class="home-header">
             <div class="home-header-wrapper">
                 <div class="home-logo">
