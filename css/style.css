@@ -672,11 +672,12 @@ th {
     flex-direction: row;
     flex-wrap: wrap;
     width: 340px;
-    height: 40px;
+    height: 80px;
 }
 
 .main-title-typing-name {
     width: 200px;
+    height: 40px;
 }
 
 .the_cursor, .the_cursor2 {
