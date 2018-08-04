@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Midinote</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            var chars	= 'MIDINOTE,'.split('').reverse();
+            var timer   = setInterval(() => {
+                console.log('a beat');
+                const char	= chars.pop();
+                if(char){
+                    $(`<div class="char" >${char}</div>`).insertBefore('.the_cursor');
+                }else{
+                    clearInterval(timer);
+                    var timerB  = setTimeout(() =>{
+
+                        var chars2	= 'ANOTHER WAY TO NOTE'.split('').reverse();
+                        var timerB  = setInterval(() => {
+                            console.log('p2-beat');
+                            const char2	= chars2.pop();
+                            if(char2){
+                                if(" " == char2){
+                                    $(`<div class="char2" >&nbsp;</div>`).insertBefore('.the_cursor2');
+                                } else {
+                                    $(`<div class="char2" >${char2}</div>`).insertBefore('.the_cursor2');
+                                }
+                            }else{
+                                clearInterval(timerB);
+                            }
+                        },80)
+
+                    },800)
+                }
+            },160);
+
+
+
+
+            $(document).bind('scroll', function (event) {
+                var v1 = document.body.scrollTop;
+                var v2 = document.documentElement.scrollTop;
+                var scrollTop = Math.max(v1, v2);
+
+                if(scrollTop >60){
+                    if($(".home-header").hasClass("__site-is-below")){
+
+                    }else {
+                        $(".home-header").addClass("__site-is-below");
+                    }
+                }else if(scrollTop < 100) {
+                    $(".home-header").removeClass("__site-is-below");
+                }
+
+                if (700 < scrollTop && scrollTop < 940) {
+                    $(".rectangle2").removeClass("__show").addClass("__show");
+                }else {
+                    $(".rectangle2").removeClass("__show");
+                }
+
+                if (1300 < scrollTop && scrollTop < 1500) {
+                    $(".circle4").removeClass("__show").addClass("__show");
+                } else {
+                    $(".circle4").removeClass("__show");
+                }
+                if (1800 < scrollTop && scrollTop < 2000) {
+                    $(".square2").removeClass("__show").addClass("__show");
+                } else {
+                    $(".square2").removeClass("__show");
+                }
+                if (2350 < scrollTop && scrollTop < 2550) {
+                    $(".triangle2").removeClass("__show").addClass("__show");
+                } else {
+                    $(".triangle2").removeClass("__show");
+                }
+
+            });
+
+        });
+    </script>
+</head>
+<body class="home-body">
+<div class="home-page">
+
+    <!--<div class="load-page">
+        <div class="our-name position-relative">
+            <div class="our-name-words">
+                <span>M</span>
+                <span>I</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>O</span>
+                <span>T</span>
+                <span>E</span>
+            </div>
+            <div class="our-name-cursor"></div>
+        </div>
+    </div>-->
+
+    <div class="home-wrapper">
+
+        <header class="home-header">
+            <div class="home-header-wrapper">
+                <div class="home-logo">
+                    <!--#include file='images/logo.svg' -->
+                    <!--#include file='images/logo-word.svg' -->
+                </div>
+                <nav class="home-nav">
+                    <ul>
+                        <li class="__selected">About</li>
+                        <li>Contact</li>
+                        <li>Sign in</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="home-1 position-relative">
+            <main class="home-1-main">
+                <div class="home-1-main-wrapper position-relative">
+                    <div class="home-1-main-bd"></div>
+                    <div class="main-left">
+                        <div class="big-blue-word">
+                            <!--#include file='images/hash-blue.svg' -->
+                        </div>
+                        <h1 class="main-title">
+                            <div class="main-title-typing-name">
+                                <div class='the_cursor' ></div>
+                            </div>
+                            <div class="main-title-typing-words">
+                                <div class='the_cursor2' ></div>
+                            </div>
+                        </h1>
+
+                        <h2 class="main-sub-title">
+                            We are different from Evernote, we ditched tired old notebook to make something more awsome.
+                        </h2>
+
+                        <div class="main-decoration-tag position-relative">
+                            <div class="main-blue-tag">
+                                <div class="main-tag-description">
+                                    <!--#include file='images/arrow1.svg' -->
+                                    <div>SCROLL DOWN</div>
+                                </div>
+
+                                <div class="tag-top"></div>
+                                <div class="tag-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-right"></div>
+                </div>
+            </main>
+
+            <div class="b1-left"></div>
+
+            <div class="b1-right"></div>
+        </div>
+
+        <div class="home-content">
+            <div class="content-b content-b1 position-relative">
+                <div >
+                    <div class="shape-decoration rectangle1"></div>
+                    <div class="shape-decoration rectangle2"></div>
+                    <div class="shape-decoration rectangle3"></div>
+                    <div class="shape-decoration rectangle4"></div>
+                    <div class="shape-decoration rectangle5"></div>
+                </div>
+
+                <div class="content-left">
+                    <div class="explanation">
+                        <h3>Your True Second Brain</h3>
+                        <p>
+                            We use tags and mindmaps to organize notes.
+                            Its a totally new way to take notes faster, freer and brain-like.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <div class="illustration">
+                        <div class="illustration-wrapper">
+                            <img src="../images/p1.png" alt="" ／>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-b content-b2 position-relative">
+                <div class="shape-decoration circle1"></div>
+                <div class="shape-decoration circle2"></div>
+                <div class="shape-decoration circle3"></div>
+                <div class="shape-decoration circle4"></div>
+                <div class="shape-decoration circle5"></div>
+
+                <div class="content-left">
+                    <div class="illustration">
+                        <div class="illustration-wrapper">
+                            <img src="../images/p2.png" alt="" ／>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <div class="explanation position-relative">
+                        <h3>Draw mindmap by tagging</h3>
+                        <p>
+                            Using intuitive way to tag your notes.
+                            Your notes will naturally grow up on the mindmap tree.
+                            All things will be well organized and classified.
+                        </p>
+
+                        <div class="learn-more">
+                            <div class="learn-more-button position-relative">
+                                <div class="learn-more-button-name">Learn more</div>
+                                <div class="learn-more-button-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-b content-b3 position-relative">
+                <div class="shape-decoration square1"></div>
+                <div class="shape-decoration square2"></div>
+                <div class="shape-decoration square3"></div>
+                <div class="shape-decoration square4"></div>
+                <div class="shape-decoration square5"></div>
+
+                <div class="content-left">
+                    <div class="explanation">
+                        <h3>Personal Knowledge Base</h3>
+                        <p>
+                            In Midinote, every tag ,in fact, is a article. You can think of it as a Wikipedia entry, and you can jump between tags, just like web link.
+                            </br>
+                            By Midinote, You are building and browsing your personal knowledge base.
+                        </p>
+                        <div class="learn-more">
+                            <div class="learn-more-button position-relative">
+                                <div class="learn-more-button-name">Learn more</div>
+                                <div class="learn-more-button-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <div class="illustration">
+                        <div class="illustration-wrapper">
+                            <img src="../images/p3.png" alt="" ／>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-b content-b4 position-relative">
+                <div class="shape-decoration triangle1"></div>
+                <div class="shape-decoration triangle2"></div>
+                <div class="shape-decoration triangle3"></div>
+                <div class="shape-decoration triangle4"></div>
+                <div class="shape-decoration triangle5"></div>
+
+                <div class="content-left">
+                    <div class="illustration">
+                        <div class="illustration-wrapper">
+                            <img src="../images/p4.png" alt="" ／>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <div class="explanation">
+                        <h3>Support 100% Offline</h3>
+                        <p>
+                            Midinote is an offline-first web app. All your data will be sync to your computer. You can use it anywhere, anytime, 100%.
+                        </p>
+                        <div class="learn-more">
+                            <div class="learn-more-button position-relative">
+                                <div class="learn-more-button-name">Learn more</div>
+                                <div class="learn-more-button-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="home-bottom">
+            <div class="home-sign-up-form">
+                <h2 class="home-form-title">Create your Midinote account</h2>
+                <div class="home-sign-up-form-content">
+                    <div class="home-form-inputs">
+                        <div>
+                            <div class="form-message form-message-name"></div>
+                            <input class="user-email" type='text' placeholder="email address" name="user-name" value=''  />
+                        </div>
+
+                        <div>
+                            <div class="form-message form-message-psw"></div>
+                            <input class="user-psw" type="password" placeholder="password" name="psw" />
+                        </div>
+                    </div>
+                    <div class="home-form-button"><span>Create an account</span></div>
+                </div>
+                <div class="home-form-announce">
+                    By creating an account, you agree to our <a>term of service</a> and <a>privacy statement</a>.
+                </div>
+            </div>
+            <div class="home-bottom-img">
+                <img src="../images/boot-print.png" alt="" />
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="site-info">
+                <div class="site-info-wrapper position-relative">
+                    <div class="site-links">
+                        <a>About</a>
+                        <a>Help center</a>
+                        <a>Terms of service</a>
+                        <a>Privacy</a>
+                    </div>
+
+                    <div class="site-logo-link">
+                        <a href="home.shtml"><!--#include file='images/logo.svg' --></a>
+                    </div>
+
+                    <div class="contact">
+                        <div class="contact-info">
+                            <span>Contact</span>
+                            <span>fun@midinote.me</span>
+                        </div>
+                        <div class="social-links">
+                            <!--#include file='images/twitter-logo.svg' -->
+                            <!--#include file='images/fb-logo.svg' -->
+                            <!--#include file='images/linkedin-logo.svg' -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>
+            </div>
+            <!--<div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>-->
+        </footer>
+
+    </div>
+
+</div>
+</body>
+
+<script type='text/javascript' >
+    const HOST_API		= '13.57.29.123'
+    const HOST_APP		= '13.57.29.123'
+    const PORT_API		= '3002'
+    const PORT_APP		= '20080'
+    const MESSAGE	= {
+        USER_REGISTER_EMAIL_REQUIRED	: 'Please input your email address',
+        USER_REGISTER_EMAIL_FORMAT	: 'The email format is bad',
+        USER_REGISTER_PASSWORD_REQUIRED	: 'Please input your password',
+        USER_REGISTER_PASSWORD_FORMAT	: 'The password format is bad',
+        USER_REGISTER_EMAIL_EXISTS	: 'The email already exists',
+    }
+    $('.home-form-button').click(function(){
+        $('.form-message').html('').removeClass("__show");
+        const email		= $('.user-name').val();
+        const password	= $('.user-psw').val();
+        console.debug('begin register with: %s:%s',email,password);
+        $.ajax({
+            url		: `http://${HOST_API}:${PORT_API}/api/user/register`,
+            data	: JSON.stringify({
+                email,
+                password,
+            }),
+            method	: 'POST',
+            contentType	: 'application/json;charset=utf-8',
+            dataType	: 'json',
+        })
+            .done(function(result){
+                console.log(result)
+            })
+            .fail(function(error){
+                console.warn('fail:',error)
+                const response	= error.responseText
+                console.log('response:',response)
+                const data	= JSON.parse(response)
+                console.log('response json:',data)
+            })
+            .always(function(data){
+                console.log('done',data)
+                if(data.code === 'OK'){
+                    console.log('register success!')
+                    const user	= data.data.user
+                    console.log('user:',user)
+                    const userCode	= data.data.userCode
+                    console.log('userCode:',userCode)
+                    //jump to app
+                    const url	= `http://${HOST_APP}:${PORT_APP}/login?k=${userCode._id}`
+                    console.log('will jump to :',url)
+                    document.location = url
+                }else{
+                    console.log('fail,code:%s',data.code)
+                    const message	= MESSAGE[data.code]
+                    var msgDiv = $(".form-message-name");;
+                    if(/^USER_REGISTER_PASSWORD.*$/.test(data.code)) {
+                        msgDiv = $(".form-message-psw");
+                    }
+
+                    if(message){
+                        msgDiv.html(message)
+                        msgDiv.addClass("__show");
+                    }else{
+                        /*$('.form-message').addClass("__show");
+                        $('.form-message').html('Something wrong!')*/
+                        console.warn('fail:','Something wrong!');
+                    }
+                }
+            })
+
+    })
+
+</script>
+
+</html>
