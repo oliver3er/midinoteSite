@@ -9,6 +9,38 @@
     <script type="text/javascript">
         $(function () {
 
+            var chars	= 'MIDINOTE,'.split('').reverse();
+            var timer   = setInterval(() => {
+                console.log('a beat');
+                const char	= chars.pop();
+                if(char){
+                    $(`<div class="char" >${char}</div>`).insertBefore('.the_cursor');
+                }else{
+                    clearInterval(timer);
+                    var timerB  = setTimeout(() =>{
+
+                        var chars2	= 'ANOTHER WAY TO NOTE'.split('').reverse();
+                        var timerB  = setInterval(() => {
+                            console.log('p2-beat');
+                            const char2	= chars2.pop();
+                            if(char2){
+                                if(" " == char2){
+                                    $(`<div class="char2" >&nbsp;</div>`).insertBefore('.the_cursor2');
+                                } else {
+                                    $(`<div class="char2" >${char2}</div>`).insertBefore('.the_cursor2');
+                                }
+                            }else{
+                                clearInterval(timerB);
+                            }
+                        },80)
+
+                    },800)
+                }
+            },160);
+
+
+
+
             $(document).bind('scroll', function (event) {
                 var v1 = document.body.scrollTop;
                 var v2 = document.documentElement.scrollTop;
@@ -51,10 +83,10 @@
         });
     </script>
 </head>
-<body class="home-body __on-load">  <!-- __on-load-->
+<body class="home-body">
 <div class="home-page">
 
-    <div class="load-page">
+    <!--<div class="load-page">
         <div class="our-name position-relative">
             <div class="our-name-words">
                 <span>M</span>
@@ -68,7 +100,7 @@
             </div>
             <div class="our-name-cursor"></div>
         </div>
-    </div>
+    </div>-->
 
     <div class="home-wrapper">
 
@@ -97,9 +129,12 @@
                             <!--#include file='images/hash-blue.svg' -->
                         </div>
                         <h1 class="main-title">
-                            <span>MIDINOTE,</span>
-                            <span>ANOTHER WAY TO</span>
-                            <span>NOTE</span>
+                            <div class="main-title-typing-name">
+                                <div class='the_cursor' ></div>
+                            </div>
+                            <div class="main-title-typing-words">
+                                <div class='the_cursor2' ></div>
+                            </div>
                         </h1>
 
                         <h2 class="main-sub-title">
@@ -261,8 +296,15 @@
                 <h2 class="home-form-title">Create your Midinote account</h2>
                 <div class="home-sign-up-form-content">
                     <div class="home-form-inputs">
-                        <input class="home-form-user-name" placeholder="email address" name="user-name" />
-                        <input class="home-form-psw" placeholder="password" name="psw" />
+                        <div>
+                            <div class="form-message form-message-name"></div>
+                            <input class="user-email" type='text' placeholder="email address" name="user-name" value=''  />
+                        </div>
+
+                        <div>
+                            <div class="form-message form-message-psw"></div>
+                            <input class="user-psw" type="password" placeholder="password" name="psw" />
+                        </div>
                     </div>
                     <div class="home-form-button"><span>Create an account</span></div>
                 </div>
@@ -311,4 +353,77 @@
 
 </div>
 </body>
+
+<script type='text/javascript' >
+    const HOST_API		= '13.57.29.123'
+    const HOST_APP		= '13.57.29.123'
+    const PORT_API		= '3002'
+    const PORT_APP		= '20080'
+    const MESSAGE	= {
+        USER_REGISTER_EMAIL_REQUIRED	: 'Please input your email address',
+        USER_REGISTER_EMAIL_FORMAT	: 'The email format is bad',
+        USER_REGISTER_PASSWORD_REQUIRED	: 'Please input your password',
+        USER_REGISTER_PASSWORD_FORMAT	: 'The password format is bad',
+        USER_REGISTER_EMAIL_EXISTS	: 'The email already exists',
+    }
+    $('.home-form-button').click(function(){
+        $('.form-message').html('').removeClass("__show");
+        const email		= $('.user-name').val();
+        const password	= $('.user-psw').val();
+        console.debug('begin register with: %s:%s',email,password);
+        $.ajax({
+            url		: `http://${HOST_API}:${PORT_API}/api/user/register`,
+            data	: JSON.stringify({
+                email,
+                password,
+            }),
+            method	: 'POST',
+            contentType	: 'application/json;charset=utf-8',
+            dataType	: 'json',
+        })
+            .done(function(result){
+                console.log(result)
+            })
+            .fail(function(error){
+                console.warn('fail:',error)
+                const response	= error.responseText
+                console.log('response:',response)
+                const data	= JSON.parse(response)
+                console.log('response json:',data)
+            })
+            .always(function(data){
+                console.log('done',data)
+                if(data.code === 'OK'){
+                    console.log('register success!')
+                    const user	= data.data.user
+                    console.log('user:',user)
+                    const userCode	= data.data.userCode
+                    console.log('userCode:',userCode)
+                    //jump to app
+                    const url	= `http://${HOST_APP}:${PORT_APP}/login?k=${userCode._id}`
+                    console.log('will jump to :',url)
+                    document.location = url
+                }else{
+                    console.log('fail,code:%s',data.code)
+                    const message	= MESSAGE[data.code]
+                    var msgDiv = $(".form-message-name");;
+                    if(/^USER_REGISTER_PASSWORD.*$/.test(data.code)) {
+                        msgDiv = $(".form-message-psw");
+                    }
+
+                    if(message){
+                        msgDiv.html(message)
+                        msgDiv.addClass("__show");
+                    }else{
+                        /*$('.form-message').addClass("__show");
+                        $('.form-message').html('Something wrong!')*/
+                        console.warn('fail:','Something wrong!');
+                    }
+                }
+            })
+
+    })
+
+</script>
+
 </html>
