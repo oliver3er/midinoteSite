@@ -19,7 +19,7 @@
                     clearInterval(timer);
                     var timerB  = setTimeout(() =>{
 
-                        var chars2	= 'ANOTHER WAY TO NOTE'.split('').reverse();
+                        var chars2	= 'ANOTHER WAY TO TAKE NOTES'.split('').reverse();
                         var timerB  = setInterval(() => {
                             console.log('p2-beat');
                             const char2	= chars2.pop();
@@ -56,28 +56,57 @@
                     $(".home-header").removeClass("__site-is-below");
                 }
 
-                if (700 < scrollTop && scrollTop < 940) {
+                /*var label1Y = $(".rectangle2").offset().top;
+                var label2Y = $(".circle4").offset().top;
+                var label3Y = $(".square2").offset().top;
+                var label4Y = $(".triangle2").offset().top;*/
+
+                if(780<scrollTop<980) {
                     $(".rectangle2").removeClass("__show").addClass("__show");
-                }else {
+                }
+                if(scrollTop<780 || scrollTop>980){
                     $(".rectangle2").removeClass("__show");
                 }
 
-                if (1300 < scrollTop && scrollTop < 1500) {
+                if(1330<scrollTop<1530) {
                     $(".circle4").removeClass("__show").addClass("__show");
-                } else {
+                }
+                if(scrollTop<1330 || scrollTop>1530) {
                     $(".circle4").removeClass("__show");
                 }
-                if (1800 < scrollTop && scrollTop < 2000) {
+
+                if(1890<scrollTop<2090) {
                     $(".square2").removeClass("__show").addClass("__show");
-                } else {
+                }
+                if(scrollTop<1890 || scrollTop>2090) {
                     $(".square2").removeClass("__show");
                 }
-                if (2350 < scrollTop && scrollTop < 2550) {
+
+                if(2480<scrollTop<2880) {
                     $(".triangle2").removeClass("__show").addClass("__show");
-                } else {
+                }
+                if(scrollTop<2480 || scrollTop>2880){
                     $(".triangle2").removeClass("__show");
                 }
 
+                /*console.log('11111111111111111&scroll: %s:%s',label1Y,scrollTop);
+                console.log('22222222222222222&scroll: %s:%s',label2Y,scrollTop);
+                console.log('33333333333333333&scroll: %s:%s',label3Y,scrollTop);
+                console.log('44444444444444444&scroll: %s:%s',label4Y,scrollTop);*/
+
+            });
+
+            $(".language").bind("click",function(){
+                var selection = $(".lang-selection");
+                if(selection.hasClass("__open")) {
+                    selection.removeClass("__open");
+                }else {
+                    selection.addClass("__open");
+                }
+            });
+
+            $(".__option_cn").bind("click",function(){
+                window.location='../cn/index.shtml';
             });
 
         });
@@ -107,15 +136,25 @@
         <header class="home-header">
             <div class="home-header-wrapper">
                 <div class="home-logo">
-                    <!--#include file='images/logo.svg' -->
-                    <!--#include file='images/logo-word.svg' -->
+                    <!--#include file='../images/logo.svg' -->
+                    <!--#include file='../images/logo-word.svg' -->
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li class="__selected">About</li>
+                        <li>About</li>
                         <li>Contact</li>
+                        <li>Sign up</li>
                         <li>Sign in</li>
                     </ul>
+                    <div class="language position-relative">
+                        <!--#include file='../images/lang.svg' -->
+                        <span>English</span>
+                        <!--#include file='../images/down-arrow.svg' -->
+                        <div class="lang-selection">
+                            <div class="lang-selection-option __option_en">English(US)</div>
+                            <div class="lang-selection-option __option_cn">中文(简体)</div>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -126,7 +165,7 @@
                     <div class="home-1-main-bd"></div>
                     <div class="main-left">
                         <div class="big-blue-word">
-                            <!--#include file='images/hash-blue.svg' -->
+                            <!--#include file='../images/hash-blue.svg' -->
                         </div>
                         <h1 class="main-title">
                             <div class="main-title-typing-name">
@@ -144,7 +183,7 @@
                         <div class="main-decoration-tag position-relative">
                             <div class="main-blue-tag">
                                 <div class="main-tag-description">
-                                    <!--#include file='images/arrow1.svg' -->
+                                    <!--#include file='../images/arrow1.svg' -->
                                     <div>SCROLL DOWN</div>
                                 </div>
 
@@ -164,21 +203,22 @@
 
         <div class="home-content">
             <div class="content-b content-b1 position-relative">
-                <div >
+                <div>
                     <div class="shape-decoration rectangle1"></div>
-                    <div class="shape-decoration rectangle2"></div>
+                    <!--<div class="shape-decoration rectangle2"></div>-->
                     <div class="shape-decoration rectangle3"></div>
                     <div class="shape-decoration rectangle4"></div>
                     <div class="shape-decoration rectangle5"></div>
                 </div>
 
                 <div class="content-left">
-                    <div class="explanation">
+                    <div class="explanation position-relative">
                         <h3>Your True Second Brain</h3>
                         <p>
                             We use tags and mindmaps to organize notes.
                             Its a totally new way to take notes faster, freer and brain-like.
                         </p>
+                        <div class="shape-decoration rectangle2"></div>
                     </div>
                 </div>
 
@@ -195,20 +235,12 @@
                 <div class="shape-decoration circle1"></div>
                 <div class="shape-decoration circle2"></div>
                 <div class="shape-decoration circle3"></div>
-                <div class="shape-decoration circle4"></div>
-                <div class="shape-decoration circle5"></div>
 
-                <div class="content-left">
-                    <div class="illustration">
-                        <div class="illustration-wrapper">
-                            <img src="../images/p2.png" alt="" ／>
-                        </div>
-                    </div>
-                </div>
+                <div class="shape-decoration circle5"></div>
 
                 <div class="content-right">
                     <div class="explanation position-relative">
-                        <h3>Draw mindmap by tagging</h3>
+                        <h3>Draw mindmap with tagging</h3>
                         <p>
                             Using intuitive way to tag your notes.
                             Your notes will naturally grow up on the mindmap tree.
@@ -221,19 +253,30 @@
                                 <div class="learn-more-button-bg"></div>
                             </div>
                         </div>
+
+                        <div class="shape-decoration circle4"></div>
                     </div>
                 </div>
+
+                <div class="content-left">
+                    <div class="illustration">
+                        <div class="illustration-wrapper">
+                            <img src="../images/p2.png" alt="" ／>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="content-b content-b3 position-relative">
                 <div class="shape-decoration square1"></div>
-                <div class="shape-decoration square2"></div>
+
                 <div class="shape-decoration square3"></div>
                 <div class="shape-decoration square4"></div>
                 <div class="shape-decoration square5"></div>
 
                 <div class="content-left">
-                    <div class="explanation">
+                    <div class="explanation position-relative">
                         <h3>Personal Knowledge Base</h3>
                         <p>
                             In Midinote, every tag ,in fact, is a article. You can think of it as a Wikipedia entry, and you can jump between tags, just like web link.
@@ -246,6 +289,7 @@
                                 <div class="learn-more-button-bg"></div>
                             </div>
                         </div>
+                        <div class="shape-decoration square2"></div>
                     </div>
                 </div>
 
@@ -260,21 +304,13 @@
 
             <div class="content-b content-b4 position-relative">
                 <div class="shape-decoration triangle1"></div>
-                <div class="shape-decoration triangle2"></div>
+
                 <div class="shape-decoration triangle3"></div>
                 <div class="shape-decoration triangle4"></div>
                 <div class="shape-decoration triangle5"></div>
 
-                <div class="content-left">
-                    <div class="illustration">
-                        <div class="illustration-wrapper">
-                            <img src="../images/p4.png" alt="" ／>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="content-right">
-                    <div class="explanation">
+                    <div class="explanation position-relative">
                         <h3>Support 100% Offline</h3>
                         <p>
                             Midinote is an offline-first web app. All your data will be sync to your computer. You can use it anywhere, anytime, 100%.
@@ -285,50 +321,63 @@
                                 <div class="learn-more-button-bg"></div>
                             </div>
                         </div>
+                        <div class="shape-decoration triangle2"></div>
                     </div>
                 </div>
+
+                <div class="content-left">
+                    <div class="illustration">
+                        <div class="illustration-wrapper">
+                            <img src="../images/p4.png" alt="" ／>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
 
         <div class="home-bottom">
-            <div class="home-sign-up-form">
-                <h2 class="home-form-title">Create your Midinote account</h2>
-                <div class="home-sign-up-form-content">
-                    <div class="home-form-inputs">
-                        <div>
-                            <div class="form-message form-message-name"></div>
-                            <input class="user-email" type='text' placeholder="email address" name="user-name" value=''  />
-                        </div>
+            <div class="home-bottom-wrapper position-relative">
+                <div class="home-sign-up-form">
+                    <h2 class="home-form-title">Create your Midinote account</h2>
+                    <div class="home-sign-up-form-content">
+                        <div class="home-form-inputs">
+                            <div>
+                                <div class="form-message form-message-name"></div>
+                                <input class="user-email" type='text' placeholder="email address" name="user-name" value=''  />
+                            </div>
 
-                        <div>
-                            <div class="form-message form-message-psw"></div>
-                            <input class="user-psw" type="password" placeholder="password" name="psw" />
+                            <div>
+                                <div class="form-message form-message-psw"></div>
+                                <input class="user-psw" type="password" placeholder="password" name="psw" />
+                            </div>
                         </div>
+                        <div class="home-form-button"><span>Create an account</span></div>
                     </div>
-                    <div class="home-form-button"><span>Create an account</span></div>
+                    <div class="home-form-announce">
+                        By creating an account, you agree to our <a>term of service</a> and <a>privacy statement</a>.
+                    </div>
                 </div>
-                <div class="home-form-announce">
-                    By creating an account, you agree to our <a>term of service</a> and <a>privacy statement</a>.
+                <div class="home-bottom-img">
+                    <img src="../images/boot-print.png" alt="" />
                 </div>
-            </div>
-            <div class="home-bottom-img">
-                <img src="../images/boot-print.png" alt="" />
             </div>
         </div>
 
         <footer class="footer">
             <div class="site-info">
                 <div class="site-info-wrapper position-relative">
+
+                    <div class="site-logo-link">
+                        <a href="home.shtml"><!--#include file='../images/logo.svg' --></a>
+                    </div>
+
                     <div class="site-links">
                         <a>About</a>
                         <a>Help center</a>
                         <a>Terms of service</a>
                         <a>Privacy</a>
-                    </div>
-
-                    <div class="site-logo-link">
-                        <a href="home.shtml"><!--#include file='images/logo.svg' --></a>
                     </div>
 
                     <div class="contact">
@@ -337,9 +386,9 @@
                             <span>fun@midinote.me</span>
                         </div>
                         <div class="social-links">
-                            <!--#include file='images/twitter-logo.svg' -->
-                            <!--#include file='images/fb-logo.svg' -->
-                            <!--#include file='images/linkedin-logo.svg' -->
+                            <!--#include file='../images/twitter-logo.svg' -->
+                            <!--#include file='../images/fb-logo.svg' -->
+                            <!--#include file='../images/linkedin-logo.svg' -->
                         </div>
                     </div>
                 </div>
@@ -355,10 +404,11 @@
 </body>
 
 <script type='text/javascript' >
-    const HOST_API		= '13.57.29.123'
-    const HOST_APP		= '13.57.29.123'
+    const HOST_API		= '52.194.22.113'
+    const HOST_APP		= 'app.midinote.me'
     const PORT_API		= '3002'
-    const PORT_APP		= '20080'
+    const PORT_APP		= '80'
+
     const MESSAGE	= {
         USER_REGISTER_EMAIL_REQUIRED	: 'Please input your email address',
         USER_REGISTER_EMAIL_FORMAT	: 'The email format is bad',
