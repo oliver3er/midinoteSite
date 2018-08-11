@@ -142,10 +142,10 @@
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li>关于</li>  <!-- class="__selected"-->
-                        <li>联系</li>
-                        <li>注册</li>
-                        <li>登录</li>
+                        <li class="link-about">关于</li>  <!-- class="__selected"-->
+                        <li class="link-contact">联系</li>
+                        <li class="link-sign-up">注册</li>
+                        <li class="link-sign-in">登录</li>
                     </ul>
 
                     <div class="language position-relative">
@@ -376,16 +376,16 @@
                     </div>
 
                     <div class="site-links __cn">
-                        <a>关于</a>
-                        <a>帮助中心</a>
-                        <a>服务条款</a>
-                        <a>隐私条款</a>
+                        <a class="link-about">关于</a>
+                        <a class="link-help">帮助中心</a>
+                        <a class="link-service">服务条款</a>
+                        <a class="link-privacy">隐私条款</a>
                     </div>
 
                     <div class="contact">
                         <div class="contact-info">
-                            <span>联系我们</span>
-                            <span>fun@midinote.me</span>
+                            <span class="link-contact">联系我们</span>
+                            <span class="link-mail">fun@midinote.me</span>
                         </div>
                         <div class="social-links">
                             <!--#include file='../images/twitter-logo.svg' -->
@@ -405,10 +405,10 @@
 </body>
 
 <script type='text/javascript' >
-    const HOST_API		= '13.57.29.123'
-    const HOST_APP		= '13.57.29.123'
+    const HOST_API		= '52.194.22.113'
+    const HOST_APP		= 'app.midinote.me'
     const PORT_API		= '3002'
-    const PORT_APP		= '20080'
+    const PORT_APP		= '80'
     const MESSAGE	= {
         USER_REGISTER_EMAIL_REQUIRED	: 'Please input your email address',
         USER_REGISTER_EMAIL_FORMAT	: 'The email format is bad',

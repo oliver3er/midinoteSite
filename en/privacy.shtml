@@ -45,6 +45,7 @@
                 }
             });
 
+
             $(".home-menu").bind('click',function(){
                 var menu = $(".menu-page");
 
@@ -68,15 +69,16 @@
 
             });
 
-            $(".home-logo").bind('click',function(){
+
+            $(".link-home").bind('click',function(){
                 window.location = 'index.shtml';
             });
-            /*$(".link-about").bind('click',function(){
+            $(".link-about").bind('click',function(){
                 window.location = 'about.shtml';
-            });*/
-            $(".link-privacy").bind('click',function(){
-                window.location = 'privacy.shtml';
             });
+            /*$(".link-privacy").bind('click',function(){
+                window.location = 'privacy.shtml';
+            });*/
             $(".link-service").bind('click',function(){
                 window.location = 'service.shtml';
             });
@@ -90,6 +92,7 @@
                 window.location = 'http://app.midinote.me/register';
             });
 
+
             $(".language").bind("click",function(){
                 var selection = $(".lang-selection");
                 if(selection.hasClass("__open")) {
@@ -100,7 +103,7 @@
             });
 
             $(".__option_cn").bind("click",function(){
-                window.location='../cn/about.shtml';
+                window.location='../cn/privacy.shtml';
             });
 
         });
@@ -117,7 +120,7 @@
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li class="link-about __selected">About</li>
+                        <li class="link-about">About</li>
                         <li class="link-contact">Contact</li>
                         <li class="link-sign-up">Sign up</li>
                         <li class="link-sign-in">Sign in</li>
@@ -140,15 +143,14 @@
                 </div>
             </div>
         </header>
-        <div class="sub-page-title">
-            <h1>About Midinote</h1>
-            <h2>We supply a special note book for people who have the habit of recording。</h2>
-        </div>
 
         <div class="sub-page-content">
-            <div class="sub-page-content-wrapper">
-                <p><strong>Midinote is a note book.</strong></p>
-                <p>Initially，Midinote was made especially for me to recording my anything...</p>
+            <div class="sub-page-file-wrapper">
+                <h2>Privacy Policy</h2>
+                <div class="sub-page-content-file">
+                    <h2 class="file-section">Updated May 25, 2018</h2>
+                    <p>adsfa akjdfljeflasj aldjfljljfa lj fsjdfhkhf</p>
+                </div>
             </div>
         </div>
 
@@ -161,10 +163,10 @@
                     </div>
 
                     <div class="site-links">
-                        <a class="link-about __selected">About</a>
+                        <a class="link-about">About</a>
                         <a class="link-help">Help center</a>
                         <a class="link-service">Terms of service</a>
-                        <a class="link-privacy">Privacy</a>
+                        <a class="link-privacy __selected">Privacy</a>
                     </div>
 
                     <div class="contact">
@@ -182,7 +184,6 @@
 
                 <div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>
             </div>
-            <!--<div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>-->
         </footer>
     </div>
 </div>
@@ -197,7 +198,7 @@
 
         <ul>
             <li class="link-home"><span>Home</span></li>
-            <li class="__selected"><span>About</span></li>
+            <li class="link-about"><span>About</span></li>
             <li class="link-contact"><span>Contact</span></li>
             <li class="link-sign-up"><span>Sign up</span></li>
             <li class="link-sign-in"><span>Sign in</span></li>

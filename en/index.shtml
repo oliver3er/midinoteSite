@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
     <script src="../js/jquery.min.js"></script>
     <script type="text/javascript">
+
+        $(window).resize(function() {
+            var width = $(this).width();
+            if(width> 980){
+                if( $(".menu-page").hasClass("__open")){
+                    $(".home-menu").show();
+                    $(".home-nav").hide();
+                    return;
+                }else {
+                    $(".home-menu").hide();
+                    $(".home-nav").show();
+                    $(".home-menu").removeClass("home-menu-open").removeClass("home-menu-close");
+                }
+            }else {
+                $(".home-menu").show();
+                $(".home-nav").hide();
+            }
+
+        });
+
         $(function () {
 
             var chars	= 'MIDINOTE,'.split('').reverse();
@@ -105,8 +125,56 @@
                 }
             });
 
+            $(".home-menu").bind('click',function(){
+                var menu = $(".menu-page");
+
+                if($(this).hasClass("home-menu-open") ){
+                    $(this).removeClass("home-menu-open").addClass("home-menu-close");
+
+                    if(menu.hasClass("__open")) {
+                        menu.removeClass("__open");
+                    }else {
+                        menu.addClass("__open");
+                    }
+                } else {
+                    $(this).removeClass("home-menu-close").addClass("home-menu-open");
+                    if(menu.hasClass("__open")) {
+                        menu.removeClass("__open");
+                    }else {
+                        menu.addClass("__open");
+                    }
+                }
+
+
+            });
+
+
             $(".__option_cn").bind("click",function(){
                 window.location='../cn/index.shtml';
+            });
+
+
+            $(".link-home").bind('click',function(){
+                window.location = 'index.shtml';
+            });
+            $(".link-about").bind('click',function(){
+                window.location = 'about.shtml';
+            });
+            $(".link-privacy").bind('click',function(){
+                window.location = 'privacy.shtml';
+            });
+            $(".link-service").bind('click',function(){
+                window.location = 'service.shtml';
+            });
+            $(".link-contact").bind('click',function(){
+                window.location = 'contact.shtml';
+            });
+            $(".link-sign-up").bind('click',function(){
+                window.location = 'http://app.midinote.me/login';
+            });
+            $(".link-sign-in").bind('click',function(){
+                $(".menu-page").removeClass("__open").removeClass("__close").addClass("__close");
+                location.href = "#home-sign-in-part";
             });
 
         });
@@ -135,16 +203,16 @@
 
         <header class="home-header">
             <div class="home-header-wrapper">
-                <div class="home-logo">
+                <div class="home-logo link-home">
                     <!--#include file='../images/logo.svg' -->
                     <!--#include file='../images/logo-word.svg' -->
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Sign up</li>
-                        <li>Sign in</li>
+                        <li class="link-about">About</li>
+                        <li class="link-contact">Contact</li>
+                        <li class="link-sign-up">Sign up</li>
+                        <li class="link-sign-in">Sign in</li>
                     </ul>
                     <div class="language position-relative">
                         <!--#include file='../images/lang.svg' -->
@@ -156,6 +224,12 @@
                         </div>
                     </div>
                 </nav>
+
+                <div class="home-menu">
+                    <span class="home-menu-p1"></span>
+                    <span class="home-menu-p2"></span>
+                    <span class="home-menu-p3"></span>
+                </div>
             </div>
         </header>
 
@@ -216,7 +290,7 @@
                         <h3>Your True Second Brain</h3>
                         <p>
                             We use tags and mindmaps to organize notes.
-                            Its a totally new way to take notes faster, freer and brain-like.
+                            Its a totally new way to take notes more fastly, more freely and brain-like.
                         </p>
                         <div class="shape-decoration rectangle2"></div>
                     </div>
@@ -337,7 +411,7 @@
 
         </div>
 
-        <div class="home-bottom">
+        <div id="home-sign-in-part" class="home-bottom">
             <div class="home-bottom-wrapper position-relative">
                 <div class="home-sign-up-form">
                     <h2 class="home-form-title">Create your Midinote account</h2>
@@ -370,20 +444,20 @@
                 <div class="site-info-wrapper position-relative">
 
                     <div class="site-logo-link">
-                        <a href="home.shtml"><!--#include file='../images/logo.svg' --></a>
+                        <a href="index.shtml"><!--#include file='../images/logo.svg' --></a>
                     </div>
 
                     <div class="site-links">
-                        <a>About</a>
-                        <a>Help center</a>
-                        <a>Terms of service</a>
-                        <a>Privacy</a>
+                        <a class="link-about">About</a>
+                        <a class="link-help">Help center</a>
+                        <a class="link-service">Terms of service</a>
+                        <a class="link-privacy">Privacy</a>
                     </div>
 
                     <div class="contact">
                         <div class="contact-info">
-                            <span>Contact</span>
-                            <span>fun@midinote.me</span>
+                            <span class="link-contact">Contact</span>
+                            <span class="link-mail">fun@midinote.me</span>
                         </div>
                         <div class="social-links">
                             <!--#include file='../images/twitter-logo.svg' -->
@@ -395,12 +469,34 @@
 
                 <div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>
             </div>
-            <!--<div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>-->
         </footer>
 
     </div>
 
 </div>
+
+
+<div class="menu-page">
+    <div class="menu-page-wrapper">
+        <aside class="menu-page-info-slogan">
+            <p>
+                Midinote is a totally new way to take notes more fastly, more freely and brain-like.
+            </p>
+        </aside>
+
+        <ul>
+            <li class="__selected"><span>Home</span></li>
+            <li class="link-about"><span>About</span></li>
+            <li class="link-contact"><span>Contact</span></li>
+            <li class="link-sign-up"><span>Sign up</span></li>
+            <li class="link-sign-in"><span>Sign in</span></li>
+        </ul>
+    </div>
+
+</div>
+
+
+
 </body>
 
 <script type='text/javascript' >
