@@ -114,8 +114,8 @@
         <header class="home-header sub-page-header">
             <div class="home-header-wrapper">
                 <div class="home-logo link-home">
-                    <!--#include file='../images/logo.svg' -->
-                    <!--#include file='../images/logo-word.svg' -->
+                    <!--#include file='/images/logo.svg' -->
+                    <!--#include file='/images/logo-word.svg' -->
                 </div>
                 <nav class="home-nav">
                     <ul>
@@ -125,9 +125,9 @@
                         <li class="link-sign-in">Sign in</li>
                     </ul>
                     <div class="language position-relative">
-                        <!--#include file='../images/lang.svg' -->
+                        <!--#include file='/images/lang.svg' -->
                         <span>English</span>
-                        <!--#include file='../images/down-arrow.svg' -->
+                        <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
                             <div class="lang-selection-option __option_en">English(US)</div>
                             <div class="lang-selection-option __option_cn">中文(简体)</div>
@@ -158,7 +158,7 @@
                 <div class="site-info-wrapper position-relative">
 
                     <div class="site-logo-link">
-                        <a href="home.shtml"><!--#include file='../images/logo.svg' --></a>
+                        <a href="home.shtml"><!--#include file='/images/logo.svg' --></a>
                     </div>
 
                     <div class="site-links">
@@ -174,9 +174,9 @@
                             <span class="link-mail">fun@midinote.me</span>
                         </div>
                         <div class="social-links">
-                            <!--#include file='../images/twitter-logo.svg' -->
-                            <!--#include file='../images/fb-logo.svg' -->
-                            <!--#include file='../images/linkedin-logo.svg' -->
+                            <!--#include file='/images/twitter-logo.svg' -->
+                            <!--#include file='/images/fb-logo.svg' -->
+                            <!--#include file='/images/linkedin-logo.svg' -->
                         </div>
                     </div>
                 </div>

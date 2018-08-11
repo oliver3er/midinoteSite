@@ -136,9 +136,9 @@
 
         <header class="home-header">
             <div class="home-header-wrapper">
-                <div class="home-logo">
-                    <!--#include file='../images/logo.svg' -->
-                    <!--#include file='../images/logo-word.svg' -->
+                <div class="home-logo link-home">
+                    <!--#include file='/images/logo.svg' -->
+                    <!--#include file='/images/logo-word.svg' -->
                 </div>
                 <nav class="home-nav">
                     <ul>
@@ -167,7 +167,7 @@
                     <div class="home-1-main-bd"></div>
                     <div class="main-left">
                         <div class="big-blue-word">
-                            <!--#include file='../images/hash-blue.svg' -->
+                            <!--#include file='/images/hash-blue.svg' -->
                         </div>
                         <h1 class="main-title __cn">
                             <div class="main-title-typing-name">
@@ -185,7 +185,7 @@
                         <div class="main-decoration-tag position-relative">
                             <div class="main-blue-tag">
                                 <div class="main-tag-description">
-                                    <!--#include file='../images/arrow1.svg' -->
+                                    <!--#include file='/images/arrow1.svg' -->
                                     <div>向下浏览</div>
                                 </div>
 
@@ -372,7 +372,7 @@
                 <div class="site-info-wrapper position-relative">
 
                     <div class="site-logo-link">
-                        <a href="home.shtml"><!--#include file='../images/logo.svg' --></a>
+                        <a href="home.shtml"><!--#include file='/images/logo.svg' --></a>
                     </div>
 
                     <div class="site-links __cn">
@@ -388,9 +388,9 @@
                             <span class="link-mail">fun@midinote.me</span>
                         </div>
                         <div class="social-links">
-                            <!--#include file='../images/twitter-logo.svg' -->
-                            <!--#include file='../images/fb-logo.svg' -->
-                            <!--#include file='../images/linkedin-logo.svg' -->
+                            <!--#include file='/images/twitter-logo.svg' -->
+                            <!--#include file='/images/fb-logo.svg' -->
+                            <!--#include file='/images/linkedin-logo.svg' -->
                         </div>
                     </div>
                 </div>

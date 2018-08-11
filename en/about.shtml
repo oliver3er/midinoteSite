@@ -112,8 +112,8 @@
         <header class="home-header sub-page-header">
             <div class="home-header-wrapper">
                 <div class="home-logo link-home">
-                    <!--#include file='../images/logo.svg' -->
-                    <!--#include file='../images/logo-word.svg' -->
+                    <!--#include file='/images/logo.svg' -->
+                    <!--#include file='/images/logo-word.svg' -->
                 </div>
                 <nav class="home-nav">
                     <ul>
@@ -123,9 +123,9 @@
                         <li class="link-sign-in">Sign in</li>
                     </ul>
                     <div class="language position-relative">
-                        <!--#include file='../images/lang.svg' -->
+                        <!--#include file='/images/lang.svg' -->
                         <span>English</span>
-                        <!--#include file='../images/down-arrow.svg' -->
+                        <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
                             <div class="lang-selection-option __option_en">English(US)</div>
                             <div class="lang-selection-option __option_cn">中文(简体)</div>
@@ -142,13 +142,16 @@
         </header>
         <div class="sub-page-title">
             <h1>About Midinote</h1>
-            <h2>We supply a special note book for people who have the habit of recording。</h2>
+            <h2>We supply a special note book for people who have the habit of recording.</h2>
         </div>
 
         <div class="sub-page-content">
             <div class="sub-page-content-wrapper">
                 <p><strong>Midinote is a note book.</strong></p>
-                <p>Initially，Midinote was made especially for me to recording my anything...</p>
+                <p>Initially，Midinote was made especially for ourselves to recording anything...
+                    我们想要更快速、有效的记录，又需要在之后查找或浏览的时候，更快更，
+                    并且日积月累的记录内容可以以思维导图的形式看到，就像是大脑一样，
+                </p>
             </div>
         </div>
 
@@ -157,7 +160,7 @@
                 <div class="site-info-wrapper position-relative">
 
                     <div class="site-logo-link">
-                        <a href="home.shtml"><!--#include file='../images/logo.svg' --></a>
+                        <a href="home.shtml"><!--#include file='/images/logo.svg' --></a>
                     </div>
 
                     <div class="site-links">
@@ -173,9 +176,9 @@
                             <span class="link-mail">fun@midinote.me</span>
                         </div>
                         <div class="social-links">
-                            <!--#include file='../images/twitter-logo.svg' -->
-                            <!--#include file='../images/fb-logo.svg' -->
-                            <!--#include file='../images/linkedin-logo.svg' -->
+                            <!--#include file='/images/twitter-logo.svg' -->
+                            <!--#include file='/images/fb-logo.svg' -->
+                            <!--#include file='/images/linkedin-logo.svg' -->
                         </div>
                     </div>
                 </div>
