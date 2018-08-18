@@ -65,6 +65,7 @@
                 var v1 = document.body.scrollTop;
                 var v2 = document.documentElement.scrollTop;
                 var scrollTop = Math.max(v1, v2);
+                var widthB = $(document.body).width();
 
                 if(scrollTop >60){
                     if($(".home-header").hasClass("__site-is-below")){
@@ -79,36 +80,70 @@
                 /*var label1Y = $(".rectangle2").offset().top;
                 var label2Y = $(".circle4").offset().top;
                 var label3Y = $(".square2").offset().top;
-                var label4Y = $(".triangle2").offset().top;*/
+                var label4Y = $(".triangle2").offset().top;
 
-                if(780<scrollTop<980) {
-                    $(".rectangle2").removeClass("__show").addClass("__show");
-                }
-                if(scrollTop<780 || scrollTop>980){
-                    $(".rectangle2").removeClass("__show");
-                }
+                console.log("----------------------width:s%",widthB);*/
 
-                if(1330<scrollTop<1530) {
-                    $(".circle4").removeClass("__show").addClass("__show");
-                }
-                if(scrollTop<1330 || scrollTop>1530) {
-                    $(".circle4").removeClass("__show");
-                }
+                if(widthB>=980) {
 
-                if(1890<scrollTop<2090) {
-                    $(".square2").removeClass("__show").addClass("__show");
-                }
-                if(scrollTop<1890 || scrollTop>2090) {
-                    $(".square2").removeClass("__show");
-                }
+                    if (780 < scrollTop < 980) {
+                        $(".rectangle2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 780 || scrollTop > 980) {
+                        $(".rectangle2").removeClass("__show");
+                    }
 
-                if(2480<scrollTop<2880) {
-                    $(".triangle2").removeClass("__show").addClass("__show");
-                }
-                if(scrollTop<2480 || scrollTop>2880){
-                    $(".triangle2").removeClass("__show");
-                }
+                    if (1330 < scrollTop < 1530) {
+                        $(".circle4").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 1330 || scrollTop > 1530) {
+                        $(".circle4").removeClass("__show");
+                    }
 
+                    if (1890 < scrollTop < 2090) {
+                        $(".square2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 1890 || scrollTop > 2090) {
+                        $(".square2").removeClass("__show");
+                    }
+
+                    if (2480 < scrollTop < 2880) {
+                        $(".triangle2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 2480 || scrollTop > 2880) {
+                        $(".triangle2").removeClass("__show");
+                    }
+
+                } else {
+
+                    if (610 < scrollTop < 890) {
+                        $(".rectangle2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 610 || scrollTop > 890) {
+                        $(".rectangle2").removeClass("__show");
+                    }
+
+                    if (1315 < scrollTop < 1650) {
+                        $(".circle4").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 1315 || scrollTop > 1650) {
+                        $(".circle4").removeClass("__show");
+                    }
+
+                    if (2190 < scrollTop < 2470) {
+                        $(".square2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 2190 || scrollTop > 2470) {
+                        $(".square2").removeClass("__show");
+                    }
+
+                    if (3020 < scrollTop < 3300) {
+                        $(".triangle2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 3020 || scrollTop > 3300) {
+                        $(".triangle2").removeClass("__show");
+                    }
+                }
                 /*console.log('11111111111111111&scroll: %s:%s',label1Y,scrollTop);
                 console.log('22222222222222222&scroll: %s:%s',label2Y,scrollTop);
                 console.log('33333333333333333&scroll: %s:%s',label3Y,scrollTop);
@@ -430,7 +465,7 @@
                         <div class="home-form-button"><span>Create an account</span></div>
                     </div>
                     <div class="home-form-announce">
-                        By creating an account, you agree to our <a>term of service</a> and <a>privacy statement</a>.
+                        By creating an account, you agree to our <a href="service.shtml">term of service</a> and <a href="privacy.shtml">privacy statement</a>.
                     </div>
                 </div>
                 <div class="home-bottom-img">
