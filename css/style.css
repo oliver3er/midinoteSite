@@ -1794,6 +1794,7 @@ th {
 }
 
 .site-register {
+    margin-bottom: 8px;
     height: 14px;
     width: 100%;
     color: #838489;
@@ -1965,7 +1966,7 @@ th {
 
 .sub-page-content-wrapper, .sub-page-file-wrapper {
     margin: 0 auto;
-    padding: 60px;
+    padding: 60px 60px 100px;
     width: 100%;
     max-width: 860px;
 }
@@ -1980,8 +1981,22 @@ th {
     font-weight: 500;
 }
 
-.sub-page-content-wrapper p {
-    margin-bottom: 20px;
+.sub-page-content-wrapper>h3 {
+    margin: 16px 0;
+    font-size: .22rem;
+    font-weight: 500;
+}
+
+.sub-page-content-wrapper>h4 {
+    line-height: .18rem;
+    font-size: .16rem;
+    font-weight: 600;
+}
+
+.sub-page-content-p {
+    margin: 6px auto;
+    line-height: .2rem;
+    font-size: .16rem;
     width: 100%;
 }
 
@@ -2007,6 +2022,7 @@ th {
 }
 
 .file-content-p {
+    margin: 0 auto 10px;
     font-size: .16rem;
     color: #5e6165;
     font-weight: 400;

@@ -141,16 +141,41 @@
             </div>
         </header>
         <div class="sub-page-title">
-            <h1>About Midinote</h1>
+            <h1>About Us</h1>
             <h2>We supply a special note book for people who have the habit of recording.</h2>
         </div>
 
         <div class="sub-page-content">
             <div class="sub-page-content-wrapper">
-                <p><strong>Midinote is a note book.</strong></p>
-                <p>Initially，Midinote was made especially for ourselves to recording anything...
-                    我们想要更快速、有效的记录，又需要在之后查找或浏览的时候，更快更，
-                    并且日积月累的记录内容可以以思维导图的形式看到，就像是大脑一样，
+                <h3>Midinote is a note book.</h3>
+                <!--Initially，Midinote was made especially for ourselves to recording anything...-->
+                <p class="sub-page-content-p">
+                    Midinote，最初是为了满足我们自己记录的需要而开发的。
+                </p>
+                <h4>我们是谁？</h4>
+                <p class="sub-page-content-p">
+                    我们是两个freelancer，
+                    喜欢运动、烹饪、读书、旅行、音乐。。。。最重要的是我们也喜欢记录，我们一个搞开发一个搞设计，一起做出了Midinote.
+                </p>
+                <h4>为什么要自己做一个记录工具呢？</h4>
+                <p class="sub-page-content-p">
+                    为了解决我们以前记录时遇到的比较头疼的问题——就是随手记录了很多东西，但除了最近的和常常需要编辑的一些笔记，
+                    大部分很少有机会看到，
+                    因为笔记数量一多，没有时间去浏览所有笔记.以致时间一长，很多记录就这样"死"在笔记本里了。
+                    我们想到了使用标签，在记录时就将关键的词句设置为标签，方便查找与分类。同时标签之间建立结构关系，
+                    生成类似思维导图的图表，一目了然的知道笔记本里都有什么东西。也可以通过这个思维导图帮助思考，
+                    通过它来找到新的想法和灵感。
+                </p>
+                <p class="sub-page-content-p">所以标签的使用是midinote强力推荐的，而且为了让记录更方便有趣，用户可以通过在系统中设置、
+                    或动手开发，自己来定义标签。比如目前已有的图片标签、引用标签等。
+                    我们希望能与喜欢记录的人一起努力，让"记录"能成为更有意义更有趣的一件事。
+                </p>
+                <p class="sub-page-content-p">
+                在使用midinote的过程中，如果您有任何问题或想法，
+                    欢迎您通过邮件或社交媒体联系我们，我们会尽力在一个工作日内回复您。
+
+                </p>
+                <p class="sub-page-content-p">关注我们：F T 。。。
                 </p>
             </div>
         </div>
