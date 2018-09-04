@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Midinote</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <script src="../js/jquery.min.js"></script>
+    <script type="text/javascript"></script>
+</head>
+<body class="home-body">
+<div class="home-page home-404-page">
+    <div class="home-404-content">
+        <div class="home-404-title">Page Not Found</div>
+        <div class="home-404-bg"></div>
+        <div class="home-404-button">
+            <div class="home-404-button-icon"></div>
+            BACK TO MIDINOTE
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="site-info-404">
+            <div class="site-logo-link-404">
+                <!--#include file='images/logo.svg' -->
+            </div>
+            <div class="site-register-404">© 2018 Midinote Inc. All rights reserved.</div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
