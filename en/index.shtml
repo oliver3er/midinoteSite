@@ -212,6 +212,25 @@
                 location.href = "#home-sign-in-part";
             });
 
+
+            $(".home-form-button").bind("click",function(){
+                //判断浏览器是否支持
+                var ua = navigator.userAgent.toLowerCase();
+                if (ua.indexOf("firefox") > -1) {
+                    return;
+                }
+                //判断是否chorme浏览器
+                if (ua.indexOf("chrome") > -1){
+                    return;
+                }
+                //判断是否Safari浏览器
+                if (ua.indexOf("safari") > -1) {
+                    return;
+                }
+                location.href = "unsupported.shtml";
+
+            });
+
         });
     </script>
 </head>
