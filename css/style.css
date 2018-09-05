@@ -352,7 +352,7 @@ th {
     background-color: #0c0c0d;
     box-sizing: border-box;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     -webkit-font-variant-ligatures: none;
     font-variant-ligatures: none;
 }
@@ -2349,44 +2349,44 @@ th {
     font-size: .14rem;
 }
 
-.home-404-page {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+.home-error-page {
+    /*display: flex;
+    flex-direction: column;*/
     background-color: #f3f3f3;
+    /*overflow: hidden;*/
 }
 
-.home-404-content {
+.home-error-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    flex: 1 1 auto;
     height: 100%;
     color: #5e6165;
 }
 
-.home-404-title {
+.home-error-title {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     margin-bottom: 40px;
-    height: 25%;
+    padding: 40px 0;
     font-family: "Arial Black";
     font-size: 40px;
     font-weight: 800;
 }
 
-.home-404-bg {
-    max-height: 50%;
-    height: 50%;
+.home-error-bg.error-404 {
+    padding: 150px;
     width: 100%;
     background: url('../images/404.svg') center center no-repeat;
     background-size: auto 100%;
 }
 
-.home-404-button {
+.home-error-button {
     position: relative;
-    margin: 30px 0;
+    margin: 10px 0 50px;
     padding-left: 44px;
     padding-right: 20px;
     display: inline-block;
@@ -2396,26 +2396,26 @@ th {
     color: #ffffff;
     border-radius: 20px;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
 
     transition: transform .18s ease-in-out, background-color .15s, box-shadow .15s;
 }
 
-.home-404-button:hover {
+.home-error-button:hover {
     transform: translateY(-1px);
     background-color: rgba(41,107,204,.6);
     box-shadow: 6px 6px 10px rgba(0, 0, 0, .2);
 }
 
-.home-404-button:active {
+.home-error-button:active {
     transform: translateY(0);
     background-color: rgba(41,107,204,.75);
     box-shadow: inset 0px 0px 2px rgba(41,107,204,.9);
 }
 
-.home-404-button-icon {
+.home-error-button-icon {
     position: absolute;
     top: calc(50% - 17px);
     left: 4px;
@@ -2429,36 +2429,154 @@ th {
     box-shadow: inset 1px 1px 2px 0 #3378dd;
 }
 
-.site-info-404 {
-    padding: 20px 0;
+.site-info-error {
+    padding: 10px 0;
 }
 
-.site-logo-link-404 {
+.site-logo-link-error {
     margin: 10px auto;
     width: 24px;
     height: 24px;
 }
 
-.site-logo-link-404 svg {
+.site-logo-link-error svg {
     width: 24px;
     height: auto;
     transform-origin: 50% 50%;
 }
 
-.site-logo-link-404 svg * {
+.site-logo-link-error svg * {
     fill: #9b9b9b;
 }
 
-.site-logo-link-404:hover svg {
+.site-logo-link-error:hover svg {
     transform: rotateZ(-6deg) scale(1.05);
 }
 
-.site-register-404 {
+.site-register-error {
     height: 14px;
     color: #838489;
     font-size: .12rem;
     font-weight: 300;
     text-align: center;
+}
+
+.home-error-header {
+    flex-shrink: 0;
+    position: fixed;
+    top: 0;
+    padding: 14px 0;
+    width: 100%;
+    background: #f3f3f3;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    z-index: 10;
+}
+
+.home-error-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.home-error-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 56px;
+    min-height: calc(100% - 78px);
+    background-color: #f3f3f3;
+}
+
+.home-error-page .footer {
+    background-color: #f3f3f3;
+}
+
+.home-error-content-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+.home-error-info {
+    margin: 0 auto 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.home-error-info p {
+    text-align: center;
+    line-height: 24px;
+}
+
+
+.home-error-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.home-error-logo .logo {
+    height: 28px;
+    width: auto;
+}
+
+.home-error-logo .logo-word {
+    margin-left: 10px;
+    height: 24px;
+    width: auto;
+}
+
+.home-error-logo .logo-word * {
+    fill: #2e3035;
+}
+
+.home-error-menu {
+    display: block;
+    right: 0;
+    width: 28px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.error-unsupported-title {
+    align-items: center;
+    margin: 0;
+    height: 20%;
+}
+
+.home-error-bg.error-unsupported {
+    max-height: 50%;
+    height: 50%;
+    width: 100%;
+    /*background: url('../images/unsupported.svg') center bottom no-repeat;
+    background-size: auto 100%;*/
+}
+
+.error-unsupported {
+    height: 30%;
+    min-height: 120px;
+    width: 100%;
+    background: url('../images/unsupported.svg') center bottom no-repeat;
+    background-size: auto 80%;
+}
+
+.home-unsupported-wbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+.home-unsupported-wb>div {
+    margin: 6px auto;
+    text-align: center;
+}
+
+.home-unsupported-wbs img {
+    margin: 0 20px;
 }
 
 
