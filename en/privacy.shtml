@@ -148,44 +148,178 @@
             <div class="sub-page-file-wrapper">
                 <h2>Privacy Policy</h2>
                 <div class="sub-page-content-file">
-                    <h2 class="file-section">Updated May 25, 2018</h2>
-                    <h3>Overview</h3>
+                    <h2 class="file-section"><span style="font-weight: 400;color: #5e6165;">Last updated:</span> May 19, 2018</h2>
+                    <h3>Introduction</h3>
                     <p class="file-content-p">
-                        This Privacy Policy page describes Plutio's policies and procedures regarding the collection, use and disclosure of your information in connection with Your use of Plutio Services, Website, and Apps.
+                        Midinote is committed to protecting the privacy of your data.
+                        This Privacy Policy sets forth our policy with respect to information that is collected from <!--visitors to the Site and -->users of the Services.
                     </p>
-                    <h3>Important information and who we are</h3>
                     <p class="file-content-p">
-                        Plutio Limited (a company incorporated in England under company number 09856706) is the controller and responsible for your personal data (referred to as "we", "us" or "our" in this privacy notice).
-
-
-                        We have appointed a data privacy manager who is responsible for overseeing questions in relation to this privacy notice. If you have any questions about this privacy notice, including any requests to exercise your legal rights, please contact the data privacy manager using the details set out below.
-
-
-                        Full name of legal entity: Plutio Limited
-                        Email address: dataprotection@plutio.com
-                        Postal address: Plutio Ltd, 8 London Road, London, SE1 6JZ
-
-                        You have the right to make a complaint at any time to the Information Commissioner's Office (ICO), the UK supervisory authority for data protection issues (www.ico.org.uk). We would, however, appreciate the chance to deal with your concerns before you approach the ICO so please contact us in the first instance.
+                        The notes and other content you put into Midinote is private by default, we do not own your data.
+                        By using the services, you give Midinote permission to do certain things with your data so that we can provide you with our services.
+                        For example, you give us permission to back it up, send it over a network, display it on your various devices, etc.
                     </p>
-                    <h3>The data we collect about you</h3>
                     <p class="file-content-p">
-                        We provide an online service designed for freelancers and small businesses. The information we gather enables us to personalize, improve and continue to operate the Services. In connection with certain aspects of the Services, we may request, collect and/or display some of your Personal Information. “Personal Information” is information about an identifiable individual, and may include information such as the individual’s name, email address, telephone number, bank account details, taxation details, and accounting and financial information. We may collect Personal Information directly from You when You:
-
-                        Register or accept an invite to use Plutio.
-                        Post to the Plutio Community group or on our blog.
-                        contact us via the built-in live chats, via email, phone or by any other means.
-                        Visit our Website or Apps.
-
-                        You can always choose not to provide Your Personal Information to us, but it may mean that we are unable to provide you with the Services.
-
-
-                        We do not collect any Special Categories of Personal Data about you (this includes details about your race or ethnicity, religious or philosophical beliefs, sex life, sexual orientation, political opinions, trade union membership, information about your health and genetic and biometric data). Nor do we collect any information about criminal convictions and offences.
+                        For the sake of better prevention of information security,
+                        our systems perform services you have requested on your devices, such as search, related notes, and compile statistics.
+                        And so we do not analyze your data,
+                        we just store the backups of your data for protecting your data from accidental loss and theft.
                     </p>
-
-                    <h3>Contacting Midinote.</h3>
                     <p class="file-content-p">
-                        If you have any questions or comments about this Privacy Policy or your personal information, to make an access or correction request, to exercise any applicable rights, to make a complaint, or to obtain information about our policies and practices with respect to any service providers outside Canada, our Privacy Officer (or Data Protection Officer) can be reached by mail or email using the following contact information: by email at privacy@dribbble.com or by mail at 524 Yates St., Victoria, BC, V8W 1K8, Canada.
+                        We only collect the information you choose to give us, and we process it with your consent, or on another legal basis;
+                        we only require the minimum amount of personal information that is necessary to fulfill the purpose of your interaction with us;
+                        we don't sell it to third parties; and we only use it as this Privacy Policy describes.
                     </p>
+                    <h3>What Information Midinote Collects</h3>
+                    <p class="file-content-p">
+                        We collect information about you when you provide it to us, when you use our Services, and when other sources provide it to us, as further described below.
+                    </p>
+                    <h4>Information from users with accounts</h4>
+                    <p class="file-content-p">
+                        If you <b>create an account</b>, we require some basic information at the time of account creation.
+                        You will create your own user name and password, and we will ask you for a valid email address.
+                        You also have the option to give us more information if you want to, and this may include "User Personal Information".
+                    </p>
+                    <p class="file-content-p">
+                        "User Personal Information" means any information that is defined to be personal information under applicable privacy laws.
+                        Usually, this refers to any information about an identifiable individual or any information that can be used to identify an individual.
+                        Information such as a user name and password, an email address.
+                    </p>
+                    <p class="file-content-p">
+                        User Personal Information does not include aggregated, non-personally identifying information.
+                        We may use aggregated, non-personally identifying information to operate, improve, and optimize our website and service.
+                        Your identity and personal information will be kept anonymous in Aggregated Data.
+                    </p>
+                    <h4>Information from our support channels</h4>
+                    <p class="file-content-p">
+                        The Services also include our customer support, where you may choose to submit information regarding a problem you are experiencing with a Service.
+                        Whether you open a support ticket, speak to one of our representatives directly or otherwise engage with our support team,
+                        you will be asked to provide contact information, a summary of the problem you are experiencing,
+                        and any other documentation, screenshots or information that would be helpful in resolving the issue.
+                    </p>
+                    <h4>Information we collect automatically</h4>
+                    <p class="file-content-p">
+                        When you visit our website or interact with us through the Services, the information we collect about you
+                        includes your browser type, language preference, referring site, additional websites requested, and the date and time of each request.
+                        We also collect potentially personally-identifying information like Internet Protocol (IP) addresses.
+                    </p>
+                    <p class="file-content-p">
+                        We collect this information to better understand how our users use Midinote,
+                        and to monitor and protect the security of the website.
+                    </p>
+                    <h4>Aggregated information</h4>
+                    <p class="file-content-p">
+                        In an ongoing effort to better understand and serve the users of the Services,
+                        we may conduct research on our customer demographics, interests and behavior based on the information collected.
+                        This research may be compiled and analyzed on an aggregate basis, and we may share this aggregate data with our affiliates and agents.
+                        We may also disclose aggregated user statistics in order to describe our services to prospective business partners,
+                        and to other third parties for other lawful purposes.
+                    </p>
+                    <h4>Cookies</h4>
+                    <p class="file-content-p">
+                        We also use “cookies” or similar technologies to to provide functionality and to recognize you across different Services and devices.
+                        For example, we use cookies to store your language preferences or other settings so you don‘t have to set them up every time you visit Midinote.
+                    </p>
+
+                    <h3>What Information Midinote Does Not Collect</h3>
+                    <p class="file-content-p">
+                        We do not collect sensitive personal information, such as social security numbers, genetic data,
+                        health information, or religious information.
+                    </p>
+                    <p class="file-content-p">
+                        We do not knowingly provide the Services to, and will not knowingly collect the personal information from anyone under the age of 13.
+                        Other countries may have different minimum age limits,
+                        and if you are below the minimum age for providing consent for data collection in your country,
+                        you may not use Midinote without obtaining your parents' or legal guardians' consent.
+                    </p>
+
+                    <h3>Where We Process Your Information</h3>
+                    <p class="file-content-p">
+                        The Company is based in the People's Republic of China.
+                        No matter where you are located, you consent to the processing and transferring of your information in and to the China.
+                        and other countries. The laws of the China.
+                        and other countries governing data collection and use may not be as comprehensive or protective as the laws of the country where you live.
+                    </p>
+
+                    <h3>How We Use Your Information</h3>
+                    <p class="file-content-p">
+                        We use the information you provide in a manner that is consistent with this Privacy Policy.
+                        If you provide information for a certain reason, we may use the information in connection with the reason for which it was provided.
+                        For instance, if you contact us by email, we will use the information you provide to answer your question or resolve your problem.
+                        Also, if you provide information in order to obtain access to the Services,
+                        we will use your information to provide you with access to such services and to monitor your use of such services.
+                        We may also use your information collected through the Services to help us improve the content and functionality of the Services,
+                        to better understand our users and to improve the Services.
+                        We may use this information to contact you in the future to tell you about services we believe will be of interest to you.
+                        If we do so, each marketing communication we send you will contain instructions permitting you to "opt-out" of receiving future marketing communications.
+                        In addition, if at any time you wish not to receive any future marketing communications or you wish to have your name deleted from our mailing lists,
+                        please contact us as indicated below.
+                    </p>
+
+                    <h3>How We Share And Disclose The Information We Collect</h3>
+                    <p class="file-content-p">
+                        <b>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information.</b>
+                        This does not include trusted third parties who assist us in operating our website,
+                        conducting our business, or servicing you, so long as those parties agree to keep this information confidential.
+                    </p>
+                    <p class="file-content-p">
+                        Compliance with Laws and Law Enforcement.
+                        We may disclose personal information if required to do so by law or
+                        in the good-faith belief that such action is necessary to comply with the law
+                        or respond to a court order, judicial or other government subpoena,
+                        or warrant in the manner required by the requesting entity.
+                    </p>
+                    <p class="file-content-p">
+                        We also reserve the right to disclose information that we believe,
+                        in good faith, is appropriate or necessary
+                        to take precautions against liability;
+                        protect us from fraudulent, abusive, or unlawful uses;
+                        to investigate and defend ourselves against third-party claims or allegations;
+                        to assist government enforcement agencies;
+                        to protect the security or integrity of the Services or Site;
+                        enforce our Terms of Service;
+                        or to protect the rights, property, or personal safety of us,our users, or others.
+                    </p>
+
+                    <h3>How We Store Your Information</h3>
+                    <p class="file-content-p">
+                        Your data will be stored locally on your device.
+                        In addition, we store your data backups in our services to protect the data
+                        from loss, misuse, or destruction.
+                    </p>
+
+                    <!--h3>How you can access and control your information</h3>
+                    <p class="file-content-p">
+                        If you're already a Midinote user, you can manage your information simply by logging into
+                        your account and editing your information directly within the Midinote service.
+                    </p>
+                    <p class="file-content-p">
+                        Generally, we will retain your information for as long as your account is active or as needed to provide you services.
+                    </p>
+                    <p class="file-content-p">
+                        We may retain certain your information indefinitely,
+                        unless you delete it or request its deletion.
+                        For example, we don’t automatically delete inactive user accounts,
+                        so unless you choose to delete your account, we will retain your account information indefinitely.
+                    </p-->
+
+                    <h3>Changes To Our Privacy Policy</h3>
+                    <p class="file-content-p">
+                        Although most changes are likely to be minor, Midinote may change our Privacy Policy
+                        from time to time.
+                        We will provide notification to Users of material changes to this Privacy Policy
+                        through our Website at least 30 days prior to the change taking effect by posting a notice on our home page.
+                        For changes to this Privacy Policy that do not affect your rights,
+                        we encourage visitors to check our Site Policy repository frequently.
+                    </p>
+
+                    <h3>Contact Us</h3>
+                    <p class="file-content-p">
+                        Please also feel free to contact us if you have any questions
+                        about Midinote's Privacy Policy or information practices.
+                        You may contact us as follows: privacy@midinote.me.
+                    </p>
+
                 </div>
             </div>
         </div>
