@@ -147,58 +147,164 @@
             <div class="sub-page-file-wrapper">
                 <h2>Terms of Service</h2>
                 <div class="sub-page-content-file">
-                    <h2 class="file-section">Updated May 25, 2018.</h2>
-                    <p class="file-section-description">
-                        Thank you for using GitHub! We're happy you're here.
-                        Please read this Terms of Service agreement carefully before accessing or using GitHub.
-                        Because it is such an important contract between us and our users,
-                        we have tried to make it as clear as possible.
-                        For your convenience, we have presented these terms in a short non-binding summary followed by the full legal terms.
-                    </p>
-                    <h3>1. Definitions</h3>
+                    <h2 class="file-section"><span style="font-weight: 400;color: #5e6165;">Last updated:</span> May 25, 2018</h2>
                     <p class="file-content-p">
-                        The “Agreement” refers, collectively, to all the terms, conditions, notices contained or referenced in this document (the “Terms of Service” or the "Terms") and all other operating rules, policies (including the GitHub Privacy Statement, available at github.com/site/privacy) and procedures that we may publish from time to time on the Website. Most of our site policies are available at help.github.com/categories/site-policy.
-                        The “Service” refers to the applications, software, products, and services provided by GitHub.
-                        The “Website” refers to GitHub’s website located at github.com, and all content, services, and products provided by GitHub at or through the Website. It also refers to GitHub-owned subdomains of github.com, such as education.github.com and pages.github.com. These Terms also govern GitHub’s conference websites, such as githubuniverse.com, and product websites, such as atom.io. Occasionally, websites owned by GitHub may provide different or additional terms of service. If those additional terms conflict with this Agreement, the more specific terms apply to the relevant page or service.
-                        “The User,” “You,” and “Your” refer to the individual person, company, or organization that has visited or is using the Website or Service; that accesses or uses any part of the Account; or that directs the use of the Account in the performance of its functions. A User must be at least 13 years of age. Special terms may apply for business or government Accounts (See Section B(5): Additional Terms).
-                        “GitHub,” “We,” and “Us” refer to GitHub, Inc., as well as our affiliates, directors, subsidiaries, contractors, licensors, officers, agents, and employees.
-                        “Content” refers to content featured or displayed through the Website, including without limitation text, data, articles, images, photographs, graphics, software, applications, designs, features, and other materials that are available on the Website or otherwise available through the Service. "Content" also includes Services. “User-Generated Content” is Content, written or otherwise, created or uploaded by our Users. "Your Content" is Content that you create or own.
-                        An "Account" represents your legal relationship with GitHub. A “User Account” represents an individual User’s authorization to log in to and use the Service and serves as a User’s identity on GitHub. “Organizations” are shared workspaces that may be associated with a single entity or with one or more Users where multiple Users can collaborate across many projects at once. A User Account can be a member of any number of Organizations.
+                        Thank you for using Midinote!
+                        This Terms of Service (the “Terms”) constitutes a contract between Midinote (“we”, “our” or “us”) and you ("user" or "your").
+                        The Terms describes the rights and responsibilities that apply to your use of Midinote’s websites and services (collectively, the “Service”).
                     </p>
-                    <h3>2. Account Terms</h3>
                     <p class="file-content-p">
-                        1. Account Controls
-                        Users. Subject to these Terms, you retain ultimate administrative control over your User Account and the Content within it.
-
-                        Organizations. The "owner" of an Organization that was created under these Terms has ultimate administrative control over that Organization and the Content within it. Within the Service, an owner can manage User access to the Organization’s data and projects. An Organization may have multiple owners, but there must be at least one User Account designated as an owner of an Organization. If you are the owner of an Organization under these Terms, we consider you responsible for the actions that are performed on or through that Organization.
-
-                        2. Required Information
-                        You must provide a valid email address in order to complete the signup process. Any other information requested, such as your real name, is optional, unless you are accepting these terms on behalf of a legal entity (in which case we need more information about the legal entity) or if you opt for a paid Account, in which case additional information will be necessary for billing purposes.
-
-                        3. Account Requirements
-                        We have a few simple rules for User Accounts on GitHub's Service.
-
-                        You must be a human to create an Account. Accounts registered by "bots" or other automated methods are not permitted. We do permit machine accounts:
-                        A machine account is an Account set up by an individual human who accepts the Terms on behalf of the Account, provides a valid email address, and is responsible for its actions. A machine account is used exclusively for performing automated tasks. Multiple users may direct the actions of a machine account, but the owner of the Account is ultimately responsible for the machine's actions. You may maintain no more than one free machine account in addition to your free User Account.
-                        One person or legal entity may maintain no more than one free Account (if you choose to control a machine account as well, that's fine, but it can only be used for running a machine).
-                        You must be age 13 or older. While we are thrilled to see brilliant young coders get excited by learning to program, we must comply with United States law. GitHub does not target our Service to children under 13, and we do not permit any Users under 13 on our Service. If we learn of any User under the age of 13, we will terminate that User’s Account immediately. If you are a resident of a country outside the United States, your country’s minimum age may be older; in such a case, you are responsible for complying with your country’s laws.
-                        Your login may only be used by one person — i.e., a single login may not be shared by multiple people. A paid Organization may only provide access to as many User Accounts as your subscription allows.
-                        4. User Account Security
-                        You are responsible for keeping your Account secure while you use our Service. We offer tools such as two-factor authentication to help you maintain your Account's security, but the content of your Account and its security are up to you.
-
-                        You are responsible for all content posted and activity that occurs under your Account (even when content is posted by others who have Accounts under your Account).
-                        You are responsible for maintaining the security of your Account and password. GitHub cannot and will not be liable for any loss or damage from your failure to comply with this security obligation.
-                        You will promptly notify GitHub if you become aware of any unauthorized use of, or access to, our Service through your Account, including any unauthorized use of your password or Account.
-                        5. Additional Terms
-                        In some situations, third parties' terms may apply to your use of GitHub. For example, you may be a member of an organization on GitHub with its own terms or license agreements; you may download an application that integrates with GitHub; or you may use GitHub to authenticate to another service. Please be aware that while these Terms are our full agreement with you, other parties' terms govern their relationships with you.
-
-                        If you are a government User or otherwise accessing or using any GitHub Service in a government capacity, this Government Amendment to GitHub Terms of Service applies to you, and you agree to its provisions.
-
-                        If you have signed up for GitHub Business Cloud, the Business Cloud Addendum applies to you, and you agree to its provisions.
+                        Please read the Terms carefully before using the Service.
+                        By using the Service, you acknowledge that you have read, understood,
+                        and agree with all provisions of the Terms and Midinote’s Privacy Policy (the “Privacy Policy”).
+                        If you don’t agree to the Terms and the Privacy Policy you may not use the Service.
                     </p>
-                    <h3>Contacting Midinote.</h3>
+
+                    <h3>1. Your Midinote Account</h3>
                     <p class="file-content-p">
-                        You may contact Midinote by email at contact@dribbble.com or by mail at 524 Yates St., Victoria, BC, V8W 1K8, Canada.
+                        If you create an account on the Service (your “Account”),
+                        you retain ultimate administrative control over your Account and the Content within it.
+                    </p>
+                    <p class="file-content-p">
+                        You are responsible for maintaining the security of your Account and its content.
+                        We cannot and will not be liable for any loss or damage from your failure to
+                        provide us with accurate information or to keep your Account Information secure.
+                        And you are fully responsible for all activities that occur under your Account
+                        and any other actions taken on the Service.
+                        You must immediately notify Midinote of any unauthorized uses of,
+                        or access to, our Service through your Account, including any unauthorized use of your password or Account.
+                    </p>
+                    <h3>2. Rules of Conduct and Usage</h3>
+                    <p class="file-content-p">
+                        Once your account is created and you accept these Terms, we grant you a limited, non-exclusive license
+                        to use the Service subject to these Terms, for so long as you are not barred from receiving
+                        the Service under the laws applicable to you, until you close your account voluntarily or
+                        until we close your account pursuant to these Terms.
+                    </p>
+                    <p class="file-content-p">
+                        Your use of the Website and Service must not violate any applicable laws,
+                        including copyright or trademark laws, export control laws, or other laws in your jurisdiction.
+                        You are responsible for making sure that your use of the Service is in compliance with laws and any applicable regulations.
+                    </p>
+                    <h3>Termination</h3>
+                    <p class="file-content-p">
+                        Midinote may terminate your access to all or any part of the Service at any time,
+                        with or without cause, with or without notice, effective immediately.
+                        If you wish to terminate your Account, you may simply discontinue using the Service.
+                        All provisions of the Terms which by their nature should survive termination shall survive termination,
+                        including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+                    </p>
+
+                    <h3>Disclaimer of Warranties</h3>
+                    <p class="file-content-p">
+                        <b>Your use of the Service and all Content forming part of or related to the Service,
+                        including any Content you upload or submit and any third party software and Content,
+                        are at your sole responsibility and risk.
+                        The Service are provided on an “as is” and “as available” basis.
+                        We expressly disclaim all warranties of any kind, whether express or implied, including,
+                        but not limited to, the implied warranties of title, merchantability, fitness for a particular purpose and
+                            non-infringement.
+                        </b>
+                    </p>
+                    <p class="file-content-p">
+                        <b>Midinote does not warrant that: the Service will meet your requirements;
+                        that the Service will be uninterrupted, timely, secure, or error-free;
+                        that the information provided through the Service is accurate, reliable or correct;
+                        that any defects or errors will be corrected;
+                        that the Service will be available at any particular time or location;
+                        or that the Service is free of viruses or other harmful components.
+                            You assume full responsibility and risk of loss resulting from your downloading and/or use of files, information, content or other material obtained from the Service.</b>
+                    </p>
+
+                    <h3>Limitation of Liability</h3>
+                    <p class="file-content-p">
+                        You understand and agree that we will not be liable to you or any third party for any
+                        loss of profits, use, goodwill, or data, or for any incidental, indirect, special,
+                        consequential or exemplary damages, however arising, that result from
+                    </p>
+                    <ul class="file-content-ul">
+                        <li>your use or inability to use the Service;</li>
+                        <li>any modification, price change, suspension or discontinuance of the Service;</li>
+                        <li>unauthorized access to or alterations of your transmissions or data;</li>
+                        <li>any other matter relating to the Service.</li>
+                    </ul>
+                    <p class="file-content-p">
+                        Some jurisdictions do not allow the limitation or exclusion of incidental, consequential or other types of damages,
+                        so some of the above limitation may not apply to you.
+                    </p>
+
+                    <h3>Indemnification</h3>
+                    <p class="file-content-p">
+                        You agree to indemnify us, defend us, and hold us harmless from and against any loss,
+                        liability, claim, demand, damages, and expenses, including reasonable attorney's fees,
+                        arising out of or in connection with
+                        (i) your use of and access to the Service; (ii) your violation of any term of these Terms;
+                        (iii) your violation of any third party right, including without limitation any copyright, property, or privacy right or any third party agreement;
+                        or (iv) any of Your Content or information in your Account or any other information you post or through the Service. As used in this section, "you" shall include anyone accessing the Service using your password.
+                    </p>
+
+                    <h3>Changes to The Terms</h3>
+                    <p class="file-content-p">
+                        We reserve the right, at our sole discretion, to amend this Terms of Service
+                        at any time and will update the Terms in the event of any such amendments.
+                        We will notify our Users of material changes to this Agreement at least 30 days prior to the change taking effect
+                        by posting a notice on our home page.
+                        For non-material modifications,
+                        your continued use of the Service constitutes agreement to our revisions of the Terms.
+                    </p>
+
+                    <h3>Miscellaneous</h3>
+                    <h4>Governing law</h4>
+                    <p class="file-content-p">
+                        This Agreement shall be governed by and construed in accordance with the laws of
+                        the People's Republic of China.
+                        The courts of the People's Republic of China shall have exclusive jurisdiction to adjudicate
+                        any dispute arising under or in connection with this Agreement.
+                    </p>
+
+                    <h4>Force majeure event</h4>
+                    <p class="file-content-p">
+                        We shall not be liable for any delay or failure to perform resulting from causes outside
+                        the reasonable control of we, including without limitation any failure to perform
+                        hereunder due to unforeseen circumstances or cause beyond our control such as war, riots,
+                        fire, floods, natural disaster, extreme weather, criminal activity, accident
+                        act of government or terrorism, embargoes, network infrastructure failures, strikes,
+                        disruptions in communications including wireless and telecommunication,
+                        or any other disruption to our abilities to provide our services to the extent
+                        that the disruption is beyond our control.
+                    </p>
+
+                    <h4>Section headings and summaries</h4>
+                    <p class="file-content-p">
+                        Throughout this Agreement, each section includes titles and brief summaries of the following terms and conditions.
+                        These section titles and brief summaries are not legally binding.
+                    </p>
+
+                    <h4>Severability</h4>
+                    <p class="file-content-p">
+                        If any part of this Agreement is held invalid or unenforceable,
+                        that portion of the Agreement will be construed to reflect the parties’ original intent.
+                        The remaining portions will remain in full force and effect.
+                    </p>
+
+                    <h4>Modification, Waiver</h4>
+                    <p class="file-content-p">
+                        No modification of or amendment to these terms, nor any waiver of any rights under these terms,
+                        will be effective unless expressly agreed upon by us.
+                        Waiver by us of a breach of any provision of these terms will not operate
+                        as a waiver of any other or subsequent breach.
+                    </p>
+
+                    <h4>Entire agreement</h4>
+                    <p class="file-content-p">
+                        This Agreement constitutes the entire agreement and understanding between you and us
+                        with respect to the subject matter herein and supersedes all prior written and oral agreements,
+                        discussions, or representations between the you and us.
+                    </p>
+
+                    <h4>Questions</h4>
+                    <p class="file-content-p">
+                        If you have any questions about these Terms, please contact support@midinote.me.
                     </p>
                 </div>
             </div>

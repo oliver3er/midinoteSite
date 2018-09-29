@@ -2017,8 +2017,15 @@ th {
 
 .sub-page-content-file h3 {
     margin: 20px 0 10px;
+    font-size: .2rem;
+    font-weight: 800;
+}
+
+.sub-page-content-file h4 {
+    margin: 18px 0 8px;
     font-size: .18rem;
-    font-weight: 600;
+    font-weight: 700;
+    color: #5e6165;
 }
 
 .file-content-p {
@@ -2029,9 +2036,23 @@ th {
     line-height: .2rem;
 }
 
+.file-content-ul {
+    margin: 10px 0;
+    font-size: .16rem;
+    color: #5e6165;
+    font-weight: 400;
+    line-height: .24rem;
+}
+
+.file-content-ul li {
+    margin-left: 10px;
+    padding-left: 10px;
+    background: url("../images/li-chevron.png") 0 9px no-repeat;
+}
+
 .file-section {
     margin-bottom: 20px;
-    font-size: .18rem;
+    font-size: .16rem;
     font-weight: 900;
     padding-bottom: 10px;
     border-bottom: 1px solid #cecece;
