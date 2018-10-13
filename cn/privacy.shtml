@@ -102,8 +102,8 @@
                 }
             });
 
-            $(".__option_cn").bind("click",function(){
-                window.location='../cn/privacy.shtml';
+            $(".__option_en").bind("click",function(){
+                window.location='../en/privacy.shtml';
             });
 
         });
@@ -127,7 +127,7 @@
                     </ul>
                     <div class="language position-relative">
                         <!--#include file='/images/lang.svg' -->
-                        <span>English</span>
+                        <span>中文(简体)</span>
                         <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
                             <div class="lang-selection-option __option_en">English(US)</div>
@@ -146,95 +146,173 @@
 
         <div class="sub-page-content">
             <div class="sub-page-file-wrapper">
-                <h2>Privacy Policy</h2>
+                <h2>隐私政策</h2>
                 <div class="sub-page-content-file">
-                    <h2 class="file-section"><span style="font-weight: 400;color: #5e6165;">Last updated:</span> May 19, 2018</h2>
-                    <h3>Introduction</h3>
+                    <h2 class="file-section"><span style="font-weight: 400;color: #5e6165;">最近更新时间：</span> 2018-5-19</h2>
+                    <h3>引言</h3>
                     <p class="file-content-p">
-                        Midinote is committed to protecting the privacy of your data.
-                        This Privacy Policy sets forth our policy with respect to information that is collected from <!--visitors to the Site and -->users of the Services.
+                        Midinote致力于保护您的信息隐私。本隐私政策规定了我们关于用户信息的政策。
                     </p>
-                    <p class="file-content-p">
+
+                    <!--p class="file-content-p">
                         The notes and other content you put into Midinote is private by default, we do not own your data.
                         By using the services, you give Midinote permission to do certain things with your data so that we can provide you with our services.
                         For example, you give us permission to back it up, send it over a network, display it on your various devices, etc.
+                    </p-->
+                    <p class="file-content-p">
+                        用户的任何存放在Midinote中的笔记和其他数据都是默认私有的，我们并不拥有用户的数据。
                     </p>
+                    <p class="file-content-p">
+                        使用我们的服务即表示允许我们在一定范围内使用您的数据，以便您可以使用Midinote服务。
+                        例如，数据的备份，数据网络传输，以及不同的设备上的显示等服务。
+                    </p>
+
                     <!--<p class="file-content-p">
                         For the sake of better prevention of information security,
                         our systems perform services you have requested on your devices, such as search, related notes, and compile statistics.
                         And so we do not analyze your data,
                         we just store the backups of your data for protecting your data from accidental loss and theft.
                     </p>-->
-                    <p class="file-content-p">
+                    <!--<p class="file-content-p">
                         We only collect the information you choose to give us, and we process it with your consent, or on another legal basis;
                         we only require the minimum amount of personal information that is necessary to fulfill the purpose of your interaction with us;
                         we don't sell it to third parties; and we only use it as this Privacy Policy describes.
-                    </p>
-                    <h3>What Information Midinote Collects</h3>
+                    </p>-->
+
                     <p class="file-content-p">
+                        我们只收集用户选择提供给我们的信息，并且我们对信息的处理都是在用户的准许及合法的基础上；
+                        </br>我们仅需要最少量的信息，即用户名与电子邮件地址，即可满足用户的使用；
+                        </br>我们不会将用户信息卖给任何第三方；
+                        </br>我们会严格按照隐私政策使用用户数据。
+                    </p>
+
+                    <h3>我们可能收集的信息</h3>
+
+                    <!--<h3>What Information Midinote Collects</h3>-->
+                    <!--<p class="file-content-p">
                         We collect information about you when you provide it to us, when you use our Services, and when other sources provide it to us, as further described below.
-                    </p>
-                    <h4>Information from users with accounts</h4>
+                    </p>-->
+
                     <p class="file-content-p">
+                        我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的服务。
+                    </p>
+
+                    <h4>用户提供的信息</h4>
+
+                    <!--<h4>Information from users with accounts</h4>-->
+                    <!--<p class="file-content-p">
                         If you <b>create an account</b>, we require some basic information at the time of account creation.
                         You will create your own user name and password, and we will ask you for a valid email address.
                         You also have the option to give us more information if you want to, and this may include "User Personal Information".
-                    </p>
+                    </p>-->
+
                     <p class="file-content-p">
+                        用户在<b>注册账户时</b>，需要提供的基本信息，用户名、密码及有效的电子邮件地址。</br>
+                        如果您愿意，您还可以选择提供更多信息，这可能包括“用户个人信息”。
+                    </p>
+                    <!--<p class="file-content-p">
                         "User Personal Information" means any information that is defined to be personal information under applicable privacy laws.
                         Usually, this refers to any information about an identifiable individual or any information that can be used to identify an individual.
                         Information such as a user name and password, an email address.
-                    </p>
+                    </p>-->
+
                     <p class="file-content-p">
+                        “用户个人信息”指根据适用的隐私法律定义为个人信息的任何信息。
+                        通常，这指的是有关可识别的个人的任何信息或可用于识别个人的任何信息。例如，用户名与密码，电子邮件地址等信息。
+                    </p>
+
+                    <!--<p class="file-content-p">
                         User Personal Information does not include aggregated, non-personally identifying information.
                         We may use aggregated, non-personally identifying information to operate, improve, and optimize our website and service.
                         Your identity and personal information will be kept anonymous in Aggregated Data.
-                    </p>
-                    <h4>Information from our support channels</h4>
+                    </p>-->
                     <p class="file-content-p">
+                        用户个人信息不包括汇总的非个人识别信息。
+                        我们可能会使用汇总的、非个人识别信息来操作、改进和优化我们的网站和服务。
+                        用户的身份和个人信息将在汇总数据中保持匿名。
+                    </p>
+                    <!--<h4>Information from our support channels</h4>-->
+                    <h4>来自支持渠道的信息</h4>
+                    <!--<p class="file-content-p">
                         The Services also include our customer support, where you may choose to submit information regarding a problem you are experiencing with a Service.
                         Whether you open a support ticket, speak to one of our representatives directly or otherwise engage with our support team,
                         you will be asked to provide contact information, a summary of the problem you are experiencing,
                         and any other documentation, screenshots or information that would be helpful in resolving the issue.
-                    </p>
-                    <h4>Information we collect automatically</h4>
+                    </p>-->
                     <p class="file-content-p">
+                        我们的服务包括客户支持，您可以提交有关使用中遇到的问题。
+                        当您与我们的客户支持代表或团队取得联系，
+                        您将被要求提供联系信息，您遇到的问题摘要，
+                        以及有助于解决问题的任何其他文档，屏幕截图或信息。
+                    </p>
+                    <!--<h4>Information we collect automatically</h4>-->
+                    <h4>系统自动收集的信息</h4>
+                    <!--<p class="file-content-p">
                         When you visit our website or interact with us through the Services, the information we collect about you
                         includes your browser type, language preference, referring site, additional websites requested, and the date and time of each request.
                         We also collect potentially personally-identifying information like Internet Protocol (IP) addresses.
-                    </p>
+                    </p>-->
                     <p class="file-content-p">
+                        我们的服务系统收集有关用户的信息，其中包括浏览器类型，语言首选项，引用网站，请求的其他网站以及请求的日期和时间。
+                        我们还收集潜在的个人识别信息，如IP地址。
+                    </p>
+                    <!--<p class="file-content-p">
                         We collect this information to better understand how our users use Midinote,
                         and to monitor and protect the security of the website.
-                    </p>
-                    <h4>Aggregated information</h4>
+                    </p>-->
                     <p class="file-content-p">
+                        我们收集此类信息用来更好地了解我们的用户如何使用Midinote，并监控和保护网站的安全。
+                    </p>
+                    <!--<h4>Aggregated information</h4>-->
+                    <h4>汇总信息</h4>
+                    <!--<p class="file-content-p">
                         In an ongoing effort to better understand and serve the users of the Services,
                         we may conduct research on our customer demographics, interests and behavior based on the information collected.
                         This research may be compiled and analyzed on an aggregate basis, and we may share this aggregate data with our affiliates and agents.
                         We may also disclose aggregated user statistics in order to describe our services to prospective business partners,
                         and to other third parties for other lawful purposes.
+                    </p>-->
+                    <p class="file-content-p">
+                        为了更好的了解和服务用户，我们可能会根据收集的信息，对消费者市场的统计、兴趣和行为进行研究。
+                        此类研究在汇总的基础上编制和分析，我们可与我们的附属机构和代理商共享这一汇总数据。
+                        我们还可能会披露汇总的用户统计信息，以便向潜在的业务合作伙伴描述我们的服务，以及出于其他合法目的的其他第三方。
                     </p>
                     <h4>Cookies</h4>
-                    <p class="file-content-p">
+                    <!--<p class="file-content-p">
                         We also use "cookies" or similar technologies to provide functionality and to recognize you across different Services and devices.
                         For example, we use cookies to store your language preferences or other settings so you don‘t have to set them up every time you visit Midinote.
+                    </p>-->
+                    <p class="file-content-p">
+                        我们使用“cookies”或类似技术来提供功能，和在不同的服务和设备中识别用户。
+                        例如，我们使用cookie来存储您的语言首选项或其他设置，因此您不必在每次访问Midinote时都设置它们。
                     </p>
 
-                    <h3>What Information Midinote Does Not Collect</h3>
-                    <p class="file-content-p">
+                    <!--<h3>What Information Midinote Does Not Collect</h3>-->
+                    <h3>我们不收集的信息</h3>
+                    <!--<p class="file-content-p">
                         We do not collect sensitive personal information, such as social security numbers, genetic data,
                         health information, or religious information.
-                    </p>
+                    </p>-->
                     <p class="file-content-p">
-                        We do not knowingly provide the Services to, and will not knowingly collect the personal information from anyone under the age of 18.
+                        我们不会收集敏感的个人信息，例如社会保险号码，遗传数据，健康信息或宗教信息。
+                    </p>
+                    <!--<p class="file-content-p">
+                        We do not knowingly provide the Services to, and will not knowingly collect the personal information from anyone under the age of 13.
                         Other countries may have different minimum age limits,
                         and if you are below the minimum age for providing consent for data collection in your country,
                         you may not use Midinote without obtaining your parents' or legal guardians' consent.
+                    </p>-->
+
+                    <p class="file-content-p">
+                        我们不会故意向18岁以下的未成年人提供服务和收集个人信息。
+                        其他国家可能有不同的最低年龄限制，如果您低于在您所在国家或地区允许收集个人数据的最低年龄，
+                        未经父母或法定监护人同意，不得使用Midinote。
                     </p>
 
-                    <h3>Where We Process Your Information</h3>
-                    <p class="file-content-p">
+
+                    <!--<h3>Where We Process Your Information</h3>-->
+                    <h3>我们处理用户信息的地方</h3>
+                    <!--p class="file-content-p">
                         We store the software and data you submit and your account, profile,
                         and member information (including Personal Information) on "cloud" servers owned
                         and operated by third party providers.
@@ -246,10 +324,18 @@
                         No matter where you are located, you consent to the processing and transferring of your information in and to the China
                         and other countries. The laws of the China
                         and other countries governing data collection and use may not be as comprehensive or protective as the laws of the country where you live.-->
+                    <!--/p-->
+
+                    <p class="file-content-p">
+                        我们将我们的软件和用户数据、帐户信息，个人资料等，存储在第三方提供商运营的“云”服务器上。
+                        我们的服务设定为加密所有存储的数据。我们目前的提供商是Amazon Web Services (AWS)。
+                        有关AWS隐私保护和数据安全信息，请访问：
+                        <a href="http://aws.amazon.com/security">http://aws.amazon.com/security</a>。
                     </p>
 
-                    <h3>How We Use Your Information</h3>
-                    <p class="file-content-p">
+                    <!--<h3>How We Use Your Information</h3>-->
+                    <h3>我们可能如何使用用户信息</h3>
+                    <!--<p class="file-content-p">
                         We use the information you provide in a manner that is consistent with this Privacy Policy.
                         If you provide information for a certain reason, we may use the information in connection with the reason for which it was provided.
                         For instance, if you contact us by email, we will use the information you provide to answer your question or resolve your problem.
@@ -261,22 +347,42 @@
                         If we do so, each marketing communication we send you will contain instructions permitting you to "opt-out" of receiving future marketing communications.
                         In addition, if at any time you wish not to receive any future marketing communications or you wish to have your name deleted from our mailing lists,
                         please contact us as indicated below.
+                    </p>-->
+                    <p class="file-content-p">
+                        我们以符合本隐私政策的方式使用用户提供的信息。如果您出于某种原因提供信息，我们也会照此原因来使用您所提供的信息。
+                        例如，如果您通过电子邮件与我们联系，我们将根据您所提供的信息来回答您的问题或解决您的问题。
+                        如果您提供信息以获取对服务的访问权限，我们将使用此信息为您提供服务，并监控您对此服务的使用。
+                        我们还可能使用通过服务收集的信息来帮助我们改进服务的内容和功能，更好地了解我们的用户并改进服务。
+                        我们可能会使用收集到的信息与您联系，推荐您可能会感兴趣的服务。
+                        如果您不希望接收我们的推荐信息，您可以通过邮件联系我们或使用我们提供的“选择退出”选项，取消接收此类信息。
                     </p>
 
-                    <h3>How We Share and Disclose The Information We Collect</h3>
-                    <p class="file-content-p">
-                        <b>We do not sell, trade, or otherwise transfer to outside parties your personal information.</b>
+                    <!--<h3>How We Share and Disclose The Information We Collect</h3>-->
+                    <h3>我们如何分享或披露用户信息</h3>
+                    <!--<p class="file-content-p">
+                        <b>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information.</b>
                         This does not include trusted third parties who assist us in operating our website,
                         conducting our business, or servicing you, so long as those parties agree to keep this information confidential.
-                    </p>
+                    </p>-->
                     <p class="file-content-p">
+                        我们不会将您的个人信息出售或以其他任何方式转让给第三方。
+                        其中不包括受信任的，同意信息保密的，我们的合作伙伴和第三方服务供应商、承包商及代理。
+                    </p>
+                    <!--<p class="file-content-p">
                         Compliance with Laws and Law Enforcement.
                         We may disclose personal information if required to do so by law or
                         in the good-faith belief that such action is necessary to comply with the law
                         or respond to a court order, judicial or other government subpoena,
                         or warrant in the manner required by the requesting entity.
-                    </p>
+                    </p>-->
                     <p class="file-content-p">
+                        我们可能为以下需要而保留、保存或披露您的个人信息：</br>
+                        遵守适用的法律法规；</br>
+                        遵守法院命令或其他法律程序的规定；</br>
+                        遵守相关政府机关的要求；</br>
+                        为遵守适用的法律法规、维护社会公共利益，或保护我们的客户、我们及其他用户或雇员的人身和财产安全或合法权益所合理必需的用途。
+                    </p>
+                    <!--<p class="file-content-p">
                         We also reserve the right to disclose information that we believe,
                         in good faith, is appropriate or necessary
                         to take precautions against liability;
@@ -286,13 +392,17 @@
                         to protect the security or integrity of the Services or Site;
                         enforce our Terms of Service;
                         or to protect the rights, property, or personal safety of us,our users, or others.
-                    </p>
+                    </p>-->
 
-                    <h3>How We Store Your Information</h3>
-                    <p class="file-content-p">
+                    <!--<h3>How We Store Your Information</h3>-->
+                    <h3>我们如何存储用户信息</h3>
+                    <!--<p class="file-content-p">
                         The content you put in will be stored locally on your device.
                         In addition, we store your data backups in our services to protect the data
                         from loss or destruction.
+                    </p>-->
+                    <p class="file-content-p">
+                        您输入的内容将存储在您本地的设备中。我们的服务端只存储用户的数据备份，以避免数据的丢失或破坏。
                     </p>
 
                     <!--h3>How you can access and control your information</h3>
@@ -310,21 +420,27 @@
                         so unless you choose to delete your account, we will retain your account information indefinitely.
                     </p-->
 
-                    <h3>Changes to Our Privacy Policy</h3>
-                    <p class="file-content-p">
+                    <!--<h3>Changes to Our Privacy Policy</h3>-->
+                    <h3>变更</h3>
+                    <!--<p class="file-content-p">
                         Although most changes are likely to be minor, Midinote may change our Privacy Policy
                         from time to time.
                         We will provide notification to Users of material changes to this Privacy Policy
                         through our Website at least 30 days prior to the change taking effect by posting a notice on our home page.
                         For changes to this Privacy Policy that do not affect your rights,
                         we encourage visitors to check our Site Policy repository frequently.
+                    </p>-->
+                    <p class="file-content-p">
+                        我们可能适时修订本《隐私政策》的条款。
+                        我们将在更改生效前至少30天通过我们的网站向用户发送有关本隐私政策重大变更的通知，方法是在我们的主页上发布通知。
+                        我们鼓励用户经常查看我们网站的政策的相关信息，以免造成您在本《隐私政策》下权利的实质减少。
                     </p>
 
-                    <h3>Contact Us</h3>
+                    <!--<h3>Contact Us</h3>-->
+                    <h3>联系我们</h3>
                     <p class="file-content-p">
-                        Please also feel free to contact us if you have any questions
-                        about Midinote's Privacy Policy or information practices.
-                        You may contact us as follows: support@midinote.me.
+                        如果您对Midinote的隐私政策或信息惯例有任何疑问，请随时与我们联系。
+                        您可以通过邮件方式联系我们：support@midinote.me。
                     </p>
 
                 </div>

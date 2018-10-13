@@ -2036,6 +2036,15 @@ th {
     line-height: .2rem;
 }
 
+.file-content-p a {
+    color: #4183c4;
+    text-decoration: none;
+}
+
+.file-content-p a:hover {
+    text-decoration: underline;
+}
+
 .file-content-ul {
     margin: 10px 0;
     font-size: .16rem;
