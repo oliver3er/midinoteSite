@@ -29,34 +29,43 @@
 
         $(function () {
 
-            var chars	= 'MIDINOTE,'.split('').reverse();
-            var timer   = setInterval(() => {
-                console.log('a beat');
-                const char	= chars.pop();
-                if(char){
-                    $(`<div class="char" >${char}</div>`).insertBefore('.the_cursor');
-                }else{
-                    clearInterval(timer);
-                    var timerB  = setTimeout(() =>{
+			
+			var line1	= 'MIDINOTE,'
+			var line2	= 'ANOTHER WAY TO TAKE NOTES'
+			if(window.innerWidth < 600){
+				//do not show the animation
+				document.getElementById('line1').innerHTML		= line1
+				document.getElementById('line2').innerHTML		= line2
+			}else{
+				var chars	= line1.split('').reverse();
+				var chars2	= line2.split('').reverse();
+				var timer   = setInterval(() => {
+					console.log('a beat');
+					const char	= chars.pop();
+					if(char){
+						$(`<div class="char" >${char}</div>`).insertBefore('.the_cursor');
+					}else{
+						clearInterval(timer);
+						var timerB  = setTimeout(() =>{
 
-                        var chars2	= 'ANOTHER WAY TO TAKE NOTES'.split('').reverse();
-                        var timerB  = setInterval(() => {
-                            console.log('p2-beat');
-                            const char2	= chars2.pop();
-                            if(char2){
-                                if(" " == char2){
-                                    $(`<div class="char2" >&nbsp;</div>`).insertBefore('.the_cursor2');
-                                } else {
-                                    $(`<div class="char2" >${char2}</div>`).insertBefore('.the_cursor2');
-                                }
-                            }else{
-                                clearInterval(timerB);
-                            }
-                        },80)
+							var timerB  = setInterval(() => {
+								console.log('p2-beat');
+								const char2	= chars2.pop();
+								if(char2){
+									if(" " == char2){
+										$(`<div class="char2" >&nbsp;</div>`).insertBefore('.the_cursor2');
+									} else {
+										$(`<div class="char2" >${char2}</div>`).insertBefore('.the_cursor2');
+									}
+								}else{
+									clearInterval(timerB);
+								}
+							},80)
 
-                    },800)
-                }
-            },160);
+						},800)
+					}
+				},160);
+			}
 
 
 
@@ -303,10 +312,10 @@
                         </div>
                         <h1 class="main-title">
                             <div class="main-title-typing-name">
-                                <div class='the_cursor' ></div>
+                                <div id='line1' class='the_cursor' ></div>
                             </div>
                             <div class="main-title-typing-words">
-                                <div class='the_cursor2' ></div>
+                                <div id='line2' class='the_cursor2' ></div>
                             </div>
                         </h1>
 
