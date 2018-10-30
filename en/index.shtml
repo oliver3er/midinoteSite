@@ -32,41 +32,34 @@
 			
 			var line1	= 'MIDINOTE,'
 			var line2	= 'ANOTHER WAY TO TAKE NOTES'
-			if(window.innerWidth < 600){
-				//do not show the animation
-				document.getElementById('line1').innerHTML		= line1
-				document.getElementById('line2').innerHTML		= line2
-			}else{
-				var chars	= line1.split('').reverse();
-				var chars2	= line2.split('').reverse();
-				var timer   = setInterval(() => {
-					console.log('a beat');
-					const char	= chars.pop();
-					if(char){
-						$(`<div class="char" >${char}</div>`).insertBefore('.the_cursor');
-					}else{
-						clearInterval(timer);
-						var timerB  = setTimeout(() =>{
+			var chars	= line1.split('').reverse();
+			var chars2	= line2.split('').reverse();
+			var timer   = setInterval(function(){
+				console.log('a beat');
+				const char	= chars.pop();
+				if(char){
+					$(`<div class="char" >${char}</div>`).insertBefore('.the_cursor');
+				}else{
+					clearInterval(timer);
+					var timerB  = setTimeout(function(){
 
-							var timerB  = setInterval(() => {
-								console.log('p2-beat');
-								const char2	= chars2.pop();
-								if(char2){
-									if(" " == char2){
-										$(`<div class="char2" >&nbsp;</div>`).insertBefore('.the_cursor2');
-									} else {
-										$(`<div class="char2" >${char2}</div>`).insertBefore('.the_cursor2');
-									}
-								}else{
-									clearInterval(timerB);
+						var timerB  = setInterval(function(){
+							console.log('p2-beat');
+							const char2	= chars2.pop();
+							if(char2){
+								if(" " == char2){
+									$(`<div class="char2" >&nbsp;</div>`).insertBefore('.the_cursor2');
+								} else {
+									$(`<div class="char2" >${char2}</div>`).insertBefore('.the_cursor2');
 								}
-							},80)
+							}else{
+								clearInterval(timerB);
+							}
+						},80)
 
-						},800)
-					}
-				},160);
-			}
-
+					},800)
+				}
+			},160);
 
 
 
