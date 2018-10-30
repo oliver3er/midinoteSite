@@ -6,6 +6,7 @@
     <title>Midinote</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
     <script src="../js/jquery.min.js"></script>
+	<script src='../js/visit.js' ></script>
     <script type="text/javascript">
 
         $(window).resize(function() {
@@ -231,16 +232,6 @@
 
         });
     </script>
-	<script>
-		//script for website visit statistic 
-		var _hmt = _hmt || [];
-		(function() {
-			var hm = document.createElement("script");
-			hm.src = "https://hm.baidu.com/hm.js?b818c7d32182ddf560d048990532663f";
-			var s = document.getElementsByTagName("script")[0]; 
-			s.parentNode.insertBefore(hm, s);
-		})();
-	</script>
 </head>
 <body class="home-body">
 <div class="home-page">
