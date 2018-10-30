@@ -2889,6 +2889,7 @@ th {
 @media screen and (max-width: 450px) {
     .explanation h3 {
         font-size: 20px;
+        white-space: nowrap;
     }
 
 }
