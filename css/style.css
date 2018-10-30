@@ -2315,6 +2315,7 @@ th {
 .menu-page li span {
     position: relative;
     padding-bottom: 4px;
+    white-space: nowrap;
 }
 
 .menu-page li span:after {
@@ -2374,9 +2375,10 @@ th {
     bottom: 0;
     left: 40px;
     margin: 0;
-    width: 200px;
+    width: 100%;
     color: #9b9b9b;
     font-size: .14rem;
+    line-height: 20px;
 }
 
 .home-error-page {
@@ -2876,6 +2878,10 @@ th {
 
     .main-title-typing-words {
         width: 320px;
+    }
+
+    .explanation h3 {
+        font-size: 24px;
     }
 
 }

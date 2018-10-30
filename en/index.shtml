@@ -144,10 +144,6 @@
                         $(".triangle2").removeClass("__show");
                     }
                 }
-                /*console.log('11111111111111111&scroll: %s:%s',label1Y,scrollTop);
-                console.log('22222222222222222&scroll: %s:%s',label2Y,scrollTop);
-                console.log('33333333333333333&scroll: %s:%s',label3Y,scrollTop);
-                console.log('44444444444444444&scroll: %s:%s',label4Y,scrollTop);*/
 
             });
 
@@ -263,10 +259,10 @@
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li class="link-about">About</li>
-                        <li class="link-contact">Contact</li>
+                        <li class="link-about">About us</li>
+                        <!--<li class="link-contact">Contact</li>
                         <li class="link-sign-up">Sign up</li>
-                        <li class="link-sign-in">Sign in</li>
+                        <li class="link-sign-in">Sign in</li>-->
                     </ul>
                     <div class="language position-relative">
                         <!--#include file='/images/lang.svg' -->
@@ -502,16 +498,16 @@
                     </div>
 
                     <div class="site-links">
-                        <a class="link-about">About</a>
-                        <a class="link-help">Help center</a>
+                        <a class="link-about">About us</a>
+                        <!--<a class="link-help">Help center</a>-->
                         <a class="link-service">Terms of service</a>
                         <a class="link-privacy">Privacy</a>
                     </div>
 
                     <div class="contact">
                         <div class="contact-info">
-                            <span class="link-contact">Contact</span>
-                            <span class="link-mail">fun@midinote.me</span>
+                            <!--<span class="link-contact">Contact</span>-->
+                            <span class="link-mail">support@midinote.me</span>
                         </div>
                         <div class="social-links">
                             <!--#include file='/images/twitter-logo.svg' -->
@@ -534,16 +530,17 @@
     <div class="menu-page-wrapper">
         <aside class="menu-page-info-slogan">
             <p>
-                Midinote is a totally new way to take notes more fastly, more freely and brain-like.
+                <!--Midinote is a totally new way to take notes more fastly, more freely and brain-like.-->
+                Quickly record your memory, in a well-organized and brain-like way.
             </p>
         </aside>
 
         <ul>
             <li class="__selected"><span>Home</span></li>
-            <li class="link-about"><span>About</span></li>
-            <li class="link-contact"><span>Contact</span></li>
+            <li class="link-about"><span>About us</span></li>
+            <!--<li class="link-contact"><span>Contact</span></li>
             <li class="link-sign-up"><span>Sign up</span></li>
-            <li class="link-sign-in"><span>Sign in</span></li>
+            <li class="link-sign-in"><span>Sign in</span></li>-->
         </ul>
     </div>
 
