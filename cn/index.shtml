@@ -29,7 +29,10 @@
 
         $(function () {
 
-            var chars	= 'MIDINOTE,'.split('').reverse();
+            var line1	= 'MIDINOTE,'
+            var line2	= '用另一种方式记录'
+            var chars	= line1.split('').reverse();
+            var chars2	= line2.split('').reverse();
             var timer   = setInterval(function(){
                 console.log('a beat');
                 const char	= chars.pop();
@@ -64,6 +67,7 @@
                 var v1 = document.body.scrollTop;
                 var v2 = document.documentElement.scrollTop;
                 var scrollTop = Math.max(v1, v2);
+                var widthB = $(document.body).width();
 
                 if(scrollTop >60){
                     if($(".home-header").hasClass("__site-is-below")){
@@ -75,43 +79,89 @@
                     $(".home-header").removeClass("__site-is-below");
                 }
 
-                /*var label1Y = $(".rectangle2").offset().top;
-                var label2Y = $(".circle4").offset().top;
-                var label3Y = $(".square2").offset().top;
-                var label4Y = $(".triangle2").offset().top;*/
+                if(widthB>=980) {
 
-                if(780<scrollTop<980) {
-                    $(".rectangle2").removeClass("__show").addClass("__show");
-                }
-                if(scrollTop<780 || scrollTop>980){
-                    $(".rectangle2").removeClass("__show");
+                    if (780 < scrollTop < 980) {
+                        $(".rectangle2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 780 || scrollTop > 980) {
+                        $(".rectangle2").removeClass("__show");
+                    }
+
+                    if (1330 < scrollTop < 1530) {
+                        $(".circle4").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 1330 || scrollTop > 1530) {
+                        $(".circle4").removeClass("__show");
+                    }
+
+                    if (1890 < scrollTop < 2090) {
+                        $(".square2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 1890 || scrollTop > 2090) {
+                        $(".square2").removeClass("__show");
+                    }
+
+                    if (2480 < scrollTop < 2880) {
+                        $(".triangle2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 2480 || scrollTop > 2880) {
+                        $(".triangle2").removeClass("__show");
+                    }
+
+                } else {
+
+                    if (610 < scrollTop < 890) {
+                        $(".rectangle2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 610 || scrollTop > 890) {
+                        $(".rectangle2").removeClass("__show");
+                    }
+
+                    if (1315 < scrollTop < 1650) {
+                        $(".circle4").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 1315 || scrollTop > 1650) {
+                        $(".circle4").removeClass("__show");
+                    }
+
+                    if (2190 < scrollTop < 2470) {
+                        $(".square2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 2190 || scrollTop > 2470) {
+                        $(".square2").removeClass("__show");
+                    }
+
+                    if (3020 < scrollTop < 3300) {
+                        $(".triangle2").removeClass("__show").addClass("__show");
+                    }
+                    if (scrollTop < 3020 || scrollTop > 3300) {
+                        $(".triangle2").removeClass("__show");
+                    }
                 }
 
-                if(1330<scrollTop<1530) {
-                    $(".circle4").removeClass("__show").addClass("__show");
-                }
-                if(scrollTop<1330 || scrollTop>1530) {
-                    $(".circle4").removeClass("__show");
+            });
+
+            $(".home-menu").bind('click',function(){
+                var menu = $(".menu-page");
+
+                if($(this).hasClass("home-menu-open") ){
+                    $(this).removeClass("home-menu-open").addClass("home-menu-close");
+
+                    if(menu.hasClass("__open")) {
+                        menu.removeClass("__open");
+                    }else {
+                        menu.addClass("__open");
+                    }
+                } else {
+                    $(this).removeClass("home-menu-close").addClass("home-menu-open");
+                    if(menu.hasClass("__open")) {
+                        menu.removeClass("__open");
+                    }else {
+                        menu.addClass("__open");
+                    }
                 }
 
-                if(1890<scrollTop<2090) {
-                    $(".square2").removeClass("__show").addClass("__show");
-                }
-                if(scrollTop<1890 || scrollTop>2090) {
-                    $(".square2").removeClass("__show");
-                }
-
-                if(2480<scrollTop<2880) {
-                    $(".triangle2").removeClass("__show").addClass("__show");
-                }
-                if(scrollTop<2480 || scrollTop>2880){
-                    $(".triangle2").removeClass("__show");
-                }
-
-                /*console.log('11111111111111111&scroll: %s:%s',label1Y,scrollTop);
-                console.log('22222222222222222&scroll: %s:%s',label2Y,scrollTop);
-                console.log('33333333333333333&scroll: %s:%s',label3Y,scrollTop);
-                console.log('44444444444444444&scroll: %s:%s',label4Y,scrollTop);*/
 
             });
 
@@ -127,6 +177,47 @@
 
             $(".__option_en").bind("click",function(){
                 window.location='../en/index.shtml';
+            });
+
+            $(".link-home").bind('click',function(){
+                window.location = 'index.shtml';
+            });
+            $(".link-about").bind('click',function(){
+                window.location = 'about.shtml';
+            });
+            $(".link-privacy").bind('click',function(){
+                window.location = 'privacy.shtml';
+            });
+            $(".link-service").bind('click',function(){
+                window.location = 'service.shtml';
+            });
+            $(".link-contact").bind('click',function(){
+                window.location = 'contact.shtml';
+            });
+            $(".link-sign-up").bind('click',function(){
+                window.location = 'http://app.midinote.me/login';
+            });
+            $(".link-sign-in").bind('click',function(){
+                $(".menu-page").removeClass("__open").removeClass("__close").addClass("__close");
+                location.href = "#home-sign-in-part";
+            });
+
+            $(".home-form-button").bind("click",function(){
+                //判断浏览器是否支持
+                var ua = navigator.userAgent.toLowerCase();
+                if (ua.indexOf("firefox") > -1) {
+                    return;
+                }
+                //判断是否chorme浏览器
+                if (ua.indexOf("chrome") > -1){
+                    return;
+                }
+                //判断是否Safari浏览器
+                if (ua.indexOf("safari") > -1) {
+                    return;
+                }
+                location.href = "unsupported.shtml";
+
             });
 
         });
@@ -161,22 +252,28 @@
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li class="link-about">关于</li>  <!-- class="__selected"-->
-                        <li class="link-contact">联系</li>
+                        <li class="link-about">关于我们</li>  <!-- class="__selected"-->
+                        <!--<li class="link-contact">联系</li>
                         <li class="link-sign-up">注册</li>
-                        <li class="link-sign-in">登录</li>
+                        <li class="link-sign-in">登录</li>-->
                     </ul>
 
                     <div class="language position-relative">
-                        <!--#include file='../images/lang.svg' -->
+                        <!--#include file='/images/lang.svg' -->
                         <span>中文(简体)</span>
-                        <!--#include file='../images/down-arrow.svg' -->
+                        <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
                             <div class="lang-selection-option __option_en">English(US)</div>
                             <div class="lang-selection-option __option_cn">中文(简体)</div>
                         </div>
                     </div>
                 </nav>
+
+                <div class="home-menu">
+                    <span class="home-menu-p1"></span>
+                    <span class="home-menu-p2"></span>
+                    <span class="home-menu-p3"></span>
+                </div>
             </div>
         </header>
 
@@ -198,7 +295,8 @@
                         </h1>
 
                         <h2 class="main-sub-title">
-                            We are different from Evernote, we ditched tired old notebook to make something more awsome.
+                            <!--We are different from Evernote, we ditched tired old notebook to make something more awsome.-->
+                            不同于印象笔记，我们摒弃老式的笔记工具的做法，让记录更神奇。
                         </h2>
 
                         <div class="main-decoration-tag position-relative">
@@ -359,7 +457,7 @@
         </div>
 
         <div class="home-bottom">
-            <div class="home-bottom-wrapper position-relative">
+            <!--<div class="home-bottom-wrapper position-relative">
                 <div class="home-sign-up-form">
                     <h2 class="home-form-title">创建你的Midinote账号</h2>
                     <div class="home-sign-up-form-content">
@@ -383,6 +481,21 @@
                 <div class="home-bottom-img">
                     <img src="../images/boot-print.png" alt="" />
                 </div>
+            </div>    for temp waiting for the app is OK-->
+
+            <div class="home-bottom-4-construction">
+                <div class="home-bottom-construction">
+                    <div class="home-construction-title">正在构建中。。。</div>
+                    <div class="home-construction-p">
+                        <div>
+                            <div>Midinote应用正在开发中，&nbsp;</div><div>即将发布.</div>
+                        </div>
+                        <div>
+                            <div>在此期间,&nbsp;</div>
+                            <div> 请关注我们的 <a href=""><!--#include file='/images/twitter-logo.svg' --></a> 和 <a href=""><!--#include file='/images/fb-logo.svg' --></a> 账号，查看最新动态.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -395,16 +508,16 @@
                     </div>
 
                     <div class="site-links __cn">
-                        <a class="link-about">关于</a>
-                        <a class="link-help">帮助中心</a>
+                        <a class="link-about">关于我们</a>
+                        <!--<a class="link-help">帮助中心</a>-->
                         <a class="link-service">服务条款</a>
-                        <a class="link-privacy">隐私条款</a>
+                        <a class="link-privacy">隐私</a>
                     </div>
 
                     <div class="contact">
                         <div class="contact-info">
-                            <span class="link-contact">联系我们</span>
-                            <span class="link-mail">fun@midinote.me</span>
+                            <!--<span class="link-contact">联系我们</span>-->
+                            <span class="link-mail">support@midinote.me</span>
                         </div>
                         <div class="social-links">
                             <!--#include file='/images/twitter-logo.svg' -->
@@ -421,6 +534,45 @@
     </div>
 
 </div>
+
+<div class="menu-page">
+    <div class="menu-page-wrapper">
+        <aside class="menu-page-info-slogan">
+            <p>
+                快速记笔记, 轻松整理和归类, 就像你大脑的延伸。
+            </p>
+        </aside>
+
+        <div class="menu-page-main position-relative">
+            <div class="language">
+                <!--#include file='/images/lang.svg' -->
+                <span>中文(简体)</span>
+                <!--#include file='/images/down-arrow.svg' -->
+                <div class="lang-selection">
+                    <div class="lang-selection-option __option_en">English(US)</div>
+                    <div class="lang-selection-option __option_cn">中文(简体)</div>
+                </div>
+            </div>
+
+            <ul>
+                <li class="__selected"><span>首页</span></li>
+                <li class="link-about"><span>关于我们</span></li>
+                <!--<li class="link-contact"><span>Contact</span></li>
+                <li class="link-sign-up"><span>Sign up</span></li>
+                <li class="link-sign-in"><span>Sign in</span></li>-->
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+    (function(){ var widget_id = '06pohkrdQX';var d=document;var w=window;function l(){
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+<!-- {/literal} END JIVOSITE CODE -->
+
 </body>
 
 <script type='text/javascript' >
@@ -428,6 +580,7 @@
     const HOST_APP		= 'app.midinote.me'
     const PORT_API		= '3002'
     const PORT_APP		= '80'
+
     const MESSAGE	= {
         USER_REGISTER_EMAIL_REQUIRED	: 'Please input your email address',
         USER_REGISTER_EMAIL_FORMAT	: 'The email format is bad',
