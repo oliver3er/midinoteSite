@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Midinote</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+    <script src="../js/jquery.min.js"></script>
+    <script src='../js/visit.js' ></script>
+    <script type="text/javascript">
+
+        $(window).resize(function() {
+            var width = $(this).width();
+            if(width> 980){
+                if( $(".menu-page").hasClass("__open")){
+                    $(".home-menu").show();
+                    $(".home-nav").hide();
+                    return;
+                }else {
+                    $(".home-menu").hide();
+                    $(".home-nav").show();
+                    $(".home-menu").removeClass("home-menu-open").removeClass("home-menu-close");
+                }
+            }else {
+                $(".home-menu").show();
+                $(".home-nav").hide();
+            }
+
+        });
+
+        $(function () {
+
+            $(document).bind('scroll', function (event) {
+                var v1 = document.body.scrollTop;
+                var v2 = document.documentElement.scrollTop;
+                var scrollTop = Math.max(v1, v2);
+
+                if (scrollTop > 50) {
+                    if ($(".home-header").hasClass("__site-is-below")) {
+
+                    } else {
+                        $(".home-header").addClass("__site-is-below");
+                    }
+                } else if (scrollTop < 50) {
+                    $(".home-header").removeClass("__site-is-below");
+                }
+            });
+
+            $(".home-menu").bind('click',function(){
+                var menu = $(".menu-page");
+
+                if($(this).hasClass("home-menu-open") ){
+                    $(this).removeClass("home-menu-open").addClass("home-menu-close");
+
+                    if(menu.hasClass("__open")) {
+                        menu.removeClass("__open");
+                    }else {
+                        menu.addClass("__open");
+                    }
+                } else {
+                    $(this).removeClass("home-menu-close").addClass("home-menu-open");
+                    if(menu.hasClass("__open")) {
+                        menu.removeClass("__open");
+                    }else {
+                        menu.addClass("__open");
+                    }
+                }
+
+
+            });
+
+            $(".home-logo").bind('click',function(){
+                window.location = 'index.shtml';
+            });
+            /*$(".link-about").bind('click',function(){
+                window.location = 'about.shtml';
+            });*/
+            $(".link-privacy").bind('click',function(){
+                window.location = 'privacy.shtml';
+            });
+            $(".link-service").bind('click',function(){
+                window.location = 'service.shtml';
+            });
+            $(".link-contact").bind('click',function(){
+                window.location = 'contact.shtml';
+            });
+            $(".link-sign-up").bind('click',function(){
+                window.location = 'http://app.midinote.me/login';
+            });
+            $(".link-sign-in").bind('click',function(){
+                window.location = 'http://app.midinote.me/register';
+            });
+
+            $(".language").bind("click",function(){
+                var selection = $(".lang-selection");
+                if(selection.hasClass("__open")) {
+                    selection.removeClass("__open");
+                }else {
+                    selection.addClass("__open");
+                }
+            });
+
+            $(".__option_en").bind("click",function(){
+                window.location='../en/about.shtml';
+            });
+
+            $(".link-home").bind('click',function(){
+                window.location = 'index.shtml';
+            });
+            $(".link-about").bind('click',function(){
+                window.location = 'about.shtml';
+            });
+            $(".link-privacy").bind('click',function(){
+                window.location = 'privacy.shtml';
+            });
+            $(".link-service").bind('click',function(){
+                window.location = 'service.shtml';
+            });
+            $(".link-contact").bind('click',function(){
+                window.location = 'contact.shtml';
+            });
+            $(".link-sign-up").bind('click',function(){
+                window.location = 'http://app.midinote.me/login';
+            });
+            $(".link-sign-in").bind('click',function(){
+                $(".menu-page").removeClass("__open").removeClass("__close").addClass("__close");
+                location.href = "#home-sign-in-part";
+            });
+
+        });
+    </script>
+</head>
+<body class="home-body">
+<div class="home-page">
+    <div class="home-wrapper">
+        <header class="home-header sub-page-header">
+            <div class="home-header-wrapper">
+                <div class="home-logo link-home">
+                    <!--#include file='/images/logo.svg' -->
+                    <!--#include file='/images/logo-word.svg' -->
+                </div>
+                <nav class="home-nav">
+                    <ul>
+                        <li class="link-about __selected">关于我们</li>
+                        <!--<li class="link-contact">Contact</li>
+                        <li class="link-sign-up">Sign up</li>
+                        <li class="link-sign-in">Sign in</li>-->
+                    </ul>
+                    <div class="language position-relative">
+                        <!--#include file='/images/lang.svg' -->
+                        <span>中文(简体)</span>
+                        <!--#include file='/images/down-arrow.svg' -->
+                        <div class="lang-selection">
+                            <div class="lang-selection-option __option_en">English(US)</div>
+                            <div class="lang-selection-option __option_cn">中文(简体)</div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="home-menu">
+                    <span class="home-menu-p1"></span>
+                    <span class="home-menu-p2"></span>
+                    <span class="home-menu-p3"></span>
+                </div>
+            </div>
+        </header>
+        <div class="sub-page-title">
+            <h1>关于我们</h1>
+            <h2>We supply a special note book for people who have the habit of recording.</h2>
+        </div>
+
+        <div class="sub-page-content">
+            <div class="sub-page-content-wrapper">
+                <h3>Midinote is a note book.</h3>
+                <!--Initially，Midinote was made especially for ourselves to recording anything...-->
+                <p class="sub-page-content-p">
+                    Midinote，最初是为了满足我们自己记录的需要而开发的。
+                </p>
+                <h4>我们是谁？</h4>
+                <p class="sub-page-content-p">
+                    我们是两个freelancer，
+                    喜欢运动、烹饪、读书、旅行、音乐。。。。最重要的是我们也喜欢记录，我们一个搞开发一个搞设计，一起做出了Midinote.
+                </p>
+                <h4>为什么要自己做一个记录工具呢？</h4>
+                <p class="sub-page-content-p">
+                    为了解决我们以前记录时遇到的比较头疼的问题——就是随手记录了很多东西，但除了最近的和常常需要编辑的一些笔记，
+                    大部分很少有机会看到，
+                    因为笔记数量一多，没有时间去浏览所有笔记.以致时间一长，很多记录就这样"死"在笔记本里了。
+                    我们想到了使用标签，在记录时就将关键的词句设置为标签，方便查找与分类。同时标签之间建立结构关系，
+                    生成类似思维导图的图表，一目了然的知道笔记本里都有什么东西。也可以通过这个思维导图帮助思考，
+                    通过它来找到新的想法和灵感。
+                </p>
+                <h4>我们的目标</h4>
+                <p class="sub-page-content-p">可以说Midinote是一个基于标签的系统，
+                    我们在使用中发现了很多基于标签的令人惊喜的好处。。。。。。
+                    （同时也存在一些问题，这使我们也在不断探索、改进记录方法，
+                    让记录更方便、分类更合理、管理更容易、让记录者享受到更多记录的乐趣。）
+                    所以，标签的使用是midinote强力推荐的，而且为了让记录更方便有趣，用户可以通过在系统中设置、
+                    或动手开发，自己来定义标签。比如目前已有的待办事项标签、图片标签、引用标签等。
+                    我们希望能与喜欢记录的人一起努力，让"记录"能成为更有意义更有趣的一件事。
+                </p>
+                <p class="sub-page-content-p">
+                    在使用midinote的过程中，如果您有任何问题或想法，
+                    欢迎您通过邮件或社交媒体联系我们，我们会尽力在一个工作日内回复您。
+
+                </p>
+                <p class="sub-page-content-p">关注我们：F T 。。。
+                </p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="site-info">
+                <div class="site-info-wrapper position-relative">
+
+                    <div class="site-logo-link">
+                        <a href="home.shtml"><!--#include file='/images/logo.svg' --></a>
+                    </div>
+
+                    <div class="site-links">
+                        <a class="link-about __selected">关于我们</a>
+                        <!--<a class="link-help">Help center</a>-->
+                        <a class="link-service">服务条款</a>
+                        <a class="link-privacy">隐私</a>
+                    </div>
+
+                    <div class="contact">
+                        <div class="contact-info">
+                            <!--<span class="link-contact">Contact</span>-->
+                            <span class="link-mail">support@midinote.me</span>
+                        </div>
+                        <div class="social-links">
+                            <!--#include file='/images/twitter-logo.svg' -->
+                            <!--#include file='/images/fb-logo.svg' -->
+                            <!--#include file='/images/linkedin-logo.svg' -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>
+            </div>
+            <!--<div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>-->
+        </footer>
+    </div>
+</div>
+
+<div class="menu-page">
+    <div class="menu-page-wrapper">
+        <aside class="menu-page-info-slogan">
+            <p>
+                快速记笔记, 轻松整理和归类, 就像你大脑的延伸.
+            </p>
+        </aside>
+
+        <div class="menu-page-main position-relative">
+            <div class="language">
+                <!--#include file='/images/lang.svg' -->
+                <span>中文(简体)</span>
+                <!--#include file='/images/down-arrow.svg' -->
+                <div class="lang-selection">
+                    <div class="lang-selection-option __option_en">English(US)</div>
+                    <div class="lang-selection-option __option_cn">中文(简体)</div>
+                </div>
+            </div>
+            <ul>
+                <li class="link-home"><span>首页</span></li>
+                <li class="__selected"><span>关于我们</span></li>
+                <!--<li class="link-contact"><span>Contact</span></li>
+                <li class="link-sign-up"><span>Sign up</span></li>
+                <li class="link-sign-in"><span>Sign in</span></li>-->
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
