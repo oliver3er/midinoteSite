@@ -1996,16 +1996,68 @@ th {
 }
 
 .sub-page-content-wrapper>h4 {
+    margin-top: 16px;
     line-height: .18rem;
     font-size: .16rem;
     font-weight: 600;
 }
 
 .sub-page-content-p {
-    margin: 6px auto;
+    margin: 10px auto;
     line-height: .2rem;
     font-size: .16rem;
     width: 100%;
+}
+
+.sub-page-contact-p {
+    margin: 4px 0;
+    line-height: .2rem;
+    font-size: .16rem;
+    width: 100%;
+}
+
+.common-link-in-content {
+    color: #498cf3;
+    text-decoration: none;
+}
+.common-link-in-content:hover {
+    text-decoration: underline;
+}
+
+.social-link-in-content {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: 0;
+    margin: 0 5px;
+    width: 21px;
+    height: 14px;
+}
+
+.social-link-in-content:nth-of-type(1) {
+    top: 4px;
+}
+
+.social-link-in-content:hover svg * {
+    fill: #66a0fa;
+}
+.social-link-in-content:hover svg {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+}
+
+.social-link-in-content svg {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.social-link-in-content svg * {
+    fill: #498cf3;
 }
 
 .sub-page-content-file {
