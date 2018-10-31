@@ -8,20 +8,39 @@
     <script src="../js/jquery.min.js"></script>
 	<script src='../js/visit.js' ></script>
     <script type="text/javascript">
+        $(window).resize(function() {
+            var width = $(this).width();
+            if(width> 980){
+                if( $(".menu-page").hasClass("__open")){
+                    $(".home-menu").show();
+                    $(".home-nav").hide();
+                    return;
+                }else {
+                    $(".home-menu").hide();
+                    $(".home-nav").show();
+                    $(".home-menu").removeClass("home-menu-open").removeClass("home-menu-close");
+                }
+            }else {
+                $(".home-menu").show();
+                $(".home-nav").hide();
+            }
+
+        });
+
         $(function () {
 
             var chars	= 'MIDINOTE,'.split('').reverse();
-            var timer   = setInterval(() => {
+            var timer   = setInterval(function(){
                 console.log('a beat');
                 const char	= chars.pop();
                 if(char){
                     $(`<div class="char" >${char}</div>`).insertBefore('.the_cursor');
                 }else{
                     clearInterval(timer);
-                    var timerB  = setTimeout(() =>{
+                    var timerB  = setTimeout(function(){
 
                         var chars2	= '用另一种方式记录'.split('').reverse();
-                        var timerB  = setInterval(() => {
+                        var timerB  = setInterval(function(){
                             console.log('p2-beat');
                             const char2	= chars2.pop();
                             if(char2){
@@ -38,7 +57,6 @@
                     },800)
                 }
             },160);
-
 
 
 

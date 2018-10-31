@@ -538,13 +538,25 @@
             </p>
         </aside>
 
-        <ul>
-            <li class="__selected"><span>Home</span></li>
-            <li class="link-about"><span>About us</span></li>
-            <!--<li class="link-contact"><span>Contact</span></li>
-            <li class="link-sign-up"><span>Sign up</span></li>
-            <li class="link-sign-in"><span>Sign in</span></li>-->
-        </ul>
+        <div class="menu-page-main position-relative">
+            <div class="language">
+                <!--#include file='/images/lang.svg' -->
+                <span>English</span>
+                <!--#include file='/images/down-arrow.svg' -->
+                <div class="lang-selection">
+                    <div class="lang-selection-option __option_en">English(US)</div>
+                    <div class="lang-selection-option __option_cn">中文(简体)</div>
+                </div>
+            </div>
+
+            <ul>
+                <li class="__selected"><span>Home</span></li>
+                <li class="link-about"><span>About us</span></li>
+                <!--<li class="link-contact"><span>Contact</span></li>
+                <li class="link-sign-up"><span>Sign up</span></li>
+                <li class="link-sign-in"><span>Sign in</span></li>-->
+            </ul>
+        </div>
     </div>
 
 </div>
