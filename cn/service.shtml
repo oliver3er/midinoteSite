@@ -120,10 +120,10 @@
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li class="link-about">About</li>
-                        <li class="link-contact">Contact</li>
+                        <li class="link-about">关于我们</li>
+                        <!--<li class="link-contact">Contact</li>
                         <li class="link-sign-up">Sign up</li>
-                        <li class="link-sign-in">Sign in</li>
+                        <li class="link-sign-in">Sign in</li>-->
                     </ul>
                     <div class="language position-relative">
                         <!--#include file='/images/lang.svg' -->
@@ -424,16 +424,16 @@
                     </div>
 
                     <div class="site-links">
-                        <a class="link-about">About</a>
-                        <a class="link-help">Help center</a>
-                        <a class="link-service __selected">Terms of service</a>
-                        <a class="link-privacy">Privacy</a>
+                        <a class="link-about">关于我们</a>
+                        <!--<a class="link-help">Help center</a>-->
+                        <a class="link-service __selected">服务条款</a>
+                        <a class="link-privacy">隐私</a>
                     </div>
 
                     <div class="contact">
                         <div class="contact-info">
-                            <span class="link-contact">Contact</span>
-                            <span class="link-mail">fun@midinote.me</span>
+                            <!--<span class="link-contact">Contact</span>-->
+                            <span class="link-mail">support@midinote.me</span>
                         </div>
                         <div class="social-links">
                             <!--#include file='/images/twitter-logo.svg' -->
@@ -457,13 +457,24 @@
             </p>
         </aside>
 
-        <ul>
-            <li class="link-home"><span>Home</span></li>
-            <li class="link-about"><span>About</span></li>
-            <li class="link-contact"><span>Contact</span></li>
-            <li class="link-sign-up"><span>Sign up</span></li>
-            <li class="link-sign-in"><span>Sign in</span></li>
-        </ul>
+        <div class="menu-page-main position-relative">
+            <div class="language">
+                <!--#include file='/images/lang.svg' -->
+                <span>中文(简体)</span>
+                <!--#include file='/images/down-arrow.svg' -->
+                <div class="lang-selection">
+                    <div class="lang-selection-option __option_en">English(US)</div>
+                    <div class="lang-selection-option __option_cn">中文(简体)</div>
+                </div>
+            </div>
+            <ul>
+                <li class="link-home"><span>首页</span></li>
+                <li class="link-about"><span>关于我们</span></li>
+                <!--<li class="link-contact"><span>Contact</span></li>
+                <li class="link-sign-up"><span>Sign up</span></li>
+                <li class="link-sign-in"><span>Sign in</span></li>-->
+            </ul>
+        </div>
     </div>
 
 </div>
