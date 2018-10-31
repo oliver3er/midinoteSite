@@ -104,6 +104,29 @@
                 window.location='../cn/about.shtml';
             });
 
+            $(".link-home").bind('click',function(){
+                window.location = 'index.shtml';
+            });
+            $(".link-about").bind('click',function(){
+                window.location = 'about.shtml';
+            });
+            $(".link-privacy").bind('click',function(){
+                window.location = 'privacy.shtml';
+            });
+            $(".link-service").bind('click',function(){
+                window.location = 'service.shtml';
+            });
+            $(".link-contact").bind('click',function(){
+                window.location = 'contact.shtml';
+            });
+            $(".link-sign-up").bind('click',function(){
+                window.location = 'http://app.midinote.me/login';
+            });
+            $(".link-sign-in").bind('click',function(){
+                $(".menu-page").removeClass("__open").removeClass("__close").addClass("__close");
+                location.href = "#home-sign-in-part";
+            });
+
         });
     </script>
 </head>
@@ -225,18 +248,28 @@
     <div class="menu-page-wrapper">
         <aside class="menu-page-info-slogan">
             <p>
-                <!--Midinote is a totally new way to take notes more fastly, more freely and brain-like.-->
                 Quickly record your memory, in a well-organized and brain-like way.
             </p>
         </aside>
 
-        <ul>
-            <li class="link-home"><span>Home</span></li>
-            <li class="__selected"><span>About us</span></li>
-            <!--<li class="link-contact"><span>Contact</span></li>
-            <li class="link-sign-up"><span>Sign up</span></li>
-            <li class="link-sign-in"><span>Sign in</span></li>-->
-        </ul>
+        <div class="menu-page-main position-relative">
+            <div class="language">
+                <!--#include file='/images/lang.svg' -->
+                <span>English</span>
+                <!--#include file='/images/down-arrow.svg' -->
+                <div class="lang-selection">
+                    <div class="lang-selection-option __option_en">English(US)</div>
+                    <div class="lang-selection-option __option_cn">中文(简体)</div>
+                </div>
+            </div>
+            <ul>
+                <li class="link-home"><span>Home</span></li>
+                <li class="__selected"><span>About us</span></li>
+                <!--<li class="link-contact"><span>Contact</span></li>
+                <li class="link-sign-up"><span>Sign up</span></li>
+                <li class="link-sign-in"><span>Sign in</span></li>-->
+            </ul>
+        </div>
     </div>
 
 </div>
