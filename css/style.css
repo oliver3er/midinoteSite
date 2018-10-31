@@ -2633,6 +2633,79 @@ th {
     margin: 0 20px;
 }
 
+/**for temp **/
+.home-bottom-4-construction {
+    margin: 0 auto;
+    max-width: 1080px;
+    height: 100%;
+    background: url("../images/construction.svg") right bottom no-repeat;
+    background-size: 60% auto;
+}
+
+.home-bottom-construction {
+    padding-left: 20px;
+    width: 70%;
+    height: 100%;
+}
+
+.home-construction-title {
+    padding-top: 75px;
+    text-align: center;
+    line-height: 36px;
+    font-size: .3rem;
+    font-weight: 800;
+    letter-spacing: .6px;
+}
+
+.home-construction-p {
+    margin: 40px 0;
+    color: #ececec;
+    line-height: .24rem;
+    text-align: center;
+    font-size: .16rem;
+    font-weight: 400;
+}
+.home-construction-p>div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 270px;
+}
+
+.home-construction-p a {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    left: 0;
+    width: 21px;
+    height: 14px;
+}
+
+.home-construction-p a:nth-child(1) {
+    top: 4px;
+}
+
+.home-construction-p a:hover svg * {
+    fill: #f3f3f3;
+}
+.home-construction-p a:hover svg {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+}
+
+.home-construction-p a svg {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.home-construction-p a svg * {
+    fill: #498cf3;
+}
 
 
 @media screen and (min-width: 1180px) {
@@ -2881,6 +2954,19 @@ th {
         float: none;
         height: 26px;
         line-height: 26px;
+    }
+
+    /*for temp*/
+    .home-bottom-construction {
+        width: 90%;
+    }
+    .home-construction-title {
+        font-size: .24rem;
+        font-weight: 600;
+    }
+    .home-construction-p {
+        font-size: .14rem;
+        font-weight: 400;
     }
 
 }

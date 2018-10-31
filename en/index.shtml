@@ -465,7 +465,7 @@
         </div>
 
         <div id="home-sign-in-part" class="home-bottom">
-            <div class="home-bottom-wrapper position-relative">
+            <!--<div class="home-bottom-wrapper position-relative">
                 <div class="home-sign-up-form">
                     <h2 class="home-form-title">Create your Midinote account</h2>
                     <div class="home-sign-up-form-content">
@@ -488,6 +488,21 @@
                 </div>
                 <div class="home-bottom-img">
                     <img src="../images/boot-print.png" alt="" />
+                </div>
+            </div>  for temp waiting for the app is OK-->
+
+            <div class="home-bottom-4-construction">
+                <div class="home-bottom-construction">
+                    <div class="home-construction-title">UNDER CONSTRUCTION</div>
+                    <div class="home-construction-p">
+                        <div>
+                            <div>We are currently working on this app.&nbsp;</div><div>Our app is coming soon.</div>
+                        </div>
+                        <div>
+                            <div>In the meantime,&nbsp;</div>
+                            <div> check our <a href=""><!--#include file='/images/twitter-logo.svg' --></a> and <a href=""><!--#include file='/images/fb-logo.svg' --></a> accounts.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
