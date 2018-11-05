@@ -445,8 +445,8 @@
                 </div>
 
                 <div class="content-left">
-                    <div class="illustration">
-                        <div class="illustration-wrapper illustration-offline-work">
+                    <div class="illustration illustration-offline-work">
+                        <div class="illustration-wrapper">
                             <img src="../images/offline.svg" alt="" ／>
                         </div>
                     </div>
