@@ -1504,9 +1504,9 @@ th {
 
 .triangle1 {
     position: absolute;
-    right: calc(50% + 196px);
+    right: calc(50% + 80px);
     left: auto;
-    top: 30px;
+    top: 40px;
     width: 248px;
     height: 216px;
     opacity: .63;
