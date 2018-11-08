@@ -2776,13 +2776,13 @@ th {
 
 
 #jivo-iframe-container.jivo-iframe-container-bottom.jivo-collapsed {
-    min-width: 56px;
+    min-width: 56px !important;
     height: 56px;
     border-radius: 6px !important;
 }
 
 #jivo-iframe-container.jivo-iframe-container-bottom.jivo-expanded {
-    min-width: 300px;
+    min-width: 300px !important;
     height: 377px;
     border-radius: 6px !important;
 }
@@ -2799,10 +2799,13 @@ th {
     height: 56px !important;
 }
 
-.label_39._bottom_3v {
-    height: 56px;
-    min-width: 56px !important;
-    border-radius: 6px !important;
+jdiv.label_39._bottom_3v {
+    height: 56px !important;
+    width: 56px !important;
+    border-top-right-radius: 6px !important;
+    border-top-left-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
 }
 
 
