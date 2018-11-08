@@ -2777,18 +2777,26 @@ th {
 
 #jivo-iframe-container.jivo-iframe-container-bottom.jivo-collapsed {
     min-width: 56px !important;
+    width: 56px !important;
     height: 56px !important;
     border-radius: 6px !important;
 }
 
 #jivo-iframe-container.jivo-iframe-container-bottom.jivo-expanded {
     min-width: 300px !important;
+    width: 300px !important;
     height: 377px !important;
     border-radius: 6px !important;
 }
 
 div#jivosite-adword, .hoverBox_10 {
     display: none !important;
+}
+
+div.labelStatus_3J {
+    width: 56px;
+    height: 56px;
+    background-position: center center;
 }
 
 .text_eD {
@@ -2806,6 +2814,7 @@ div#jivosite-adword, .hoverBox_10 {
 jdiv.label_39._bottom_3v {
     height: 56px !important;
     width: 56px !important;
+    min-width: 56px !important;
     border-top-right-radius: 6px !important;
     border-top-left-radius: 6px !important;
     border-bottom-right-radius: 6px !important;
