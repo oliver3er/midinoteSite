@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Midinote | Another way to take notes.</title>
+	<!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Only Evernote? We are different, we use totally tag-based system to organize your notes, to record your memory in a well-organized, brain-like and visual way." />
+
+<meta property="og:title" content="Plutio - One app to manage your entire business."/>
+<meta name="twitter:title" content="Plutio - One app to manage your entire business."><meta name="description" content="From projects and tasks to invoices and time tracking, everything you need in one intuitive platform."><meta property="og:description" content="From projects and tasks to invoices and time tracking, everything you need in one intuitive platform."><meta name="twitter:description" content="From projects and tasks to invoices and time tracking, everything you need in one intuitive platform."><meta property="og:image" content="https://plutio.com/assets/images/brand/brand-assets/share-cover.jpg"><meta name="twitter:image" content="https://plutio.com/assets/images/brand/brand-assets/share-cover.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="1200"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta charset="utf-8"><!-- CSS Stylesheets--><link rel="stylesheet" type="text/css" href="/assets/css/main.min.css?v1"><link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900" rel="stylesheet"><!-- Meta Tags--><meta name="google-site-verification" content="W5TSqluY2snaJVL8hO9be9gvFXvhMOftLXy9PONW9zg"><meta name="language" content="English"><meta name="copyright" content="Plutio"><meta name="distribution" content="Global"><meta name="designer" content="Plutio"><meta name="author" content="Plutio"><meta name="country" content="UK"><!-- Twitter--><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@PlutioHQ"><meta name="twitter:creator" content="@PlutioHQ"><!-- Facebook--><meta property="og:type" content="website"><meta property="og:url" content="https://plutio.com"><meta property="og:locale" content="en_GB">
     <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
     <script src="../js/jquery.min.js"></script>
 	<script src='../js/visit.js' ></script>
     <script type="text/javascript">
-
+		//{{{
         $(window).resize(function() {
             var width = $(this).width();
             if(width> 980){
@@ -231,6 +236,7 @@
             });
 
         });
+		//}}}
     </script>
 </head>
 <body class="home-body">
