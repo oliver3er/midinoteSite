@@ -2777,17 +2777,17 @@ th {
 
 #jivo-iframe-container.jivo-iframe-container-bottom.jivo-collapsed {
     min-width: 56px !important;
-    height: 56px;
+    height: 56px !important;
     border-radius: 6px !important;
 }
 
 #jivo-iframe-container.jivo-iframe-container-bottom.jivo-expanded {
     min-width: 300px !important;
-    height: 377px;
+    height: 377px !important;
     border-radius: 6px !important;
 }
 
-#jivosite-adword, .hoverBox_10 {
+div#jivosite-adword, .hoverBox_10 {
     display: none !important;
 }
 
@@ -2797,6 +2797,10 @@ th {
 
 .label_39 .text_eD {
     height: 56px !important;
+}
+
+.label_39._bottom_3v {
+    min-width: 56px;
 }
 
 jdiv.label_39._bottom_3v {
