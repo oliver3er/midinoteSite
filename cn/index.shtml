@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Midinote | 记笔记新方法</title>
-	<meta name="language" content="English">
+	<meta name="language" content="Chinese">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 	<meta name="description" content="记笔记只能用Evernote? 我们有所不同, 我们使用完全基于标签的方式组织你的笔记, 用一种组织化的, 类人脑的和可视化的方式来呈现你的记忆." />
@@ -44,6 +42,7 @@
 
         $(function () {
 
+			/* cuz the SEO problem, close the animation temporarily 
             var line1	= 'MIDINOTE,'
             var line2	= '用另一种方式记录'
             var chars	= line1.split('').reverse();
@@ -75,8 +74,7 @@
                     },800)
                 }
             },160);
-
-
+			*/
 
             $(document).bind('scroll', function (event) {
                 var v1 = document.body.scrollTop;
@@ -301,12 +299,8 @@
                             <!--#include file='/images/hash-blue.svg' -->
                         </div>
                         <h1 class="main-title __cn">
-                            <div class="main-title-typing-name">
-                                <div class='the_cursor' ></div>
-                            </div>
-                            <div class="main-title-typing-words">
-                                <div class='the_cursor2' ></div>
-                            </div>
+							Midinote,<br/>
+							记笔记新方法
                         </h1>
 
                         <h2 class="main-sub-title">

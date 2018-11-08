@@ -44,7 +44,7 @@
 
         $(function () {
 
-			
+			/* cuz SEO problem, close the slogan js temporarily 	
 			var line1	= 'MIDINOTE,'
 			var line2	= 'ANOTHER WAY TO TAKE NOTES'
 			var chars	= line1.split('').reverse();
@@ -75,8 +75,7 @@
 					},800)
 				}
 			},160);
-
-
+			*/
 
             $(document).bind('scroll', function (event) {
                 var v1 = document.body.scrollTop;
@@ -310,14 +309,9 @@
                             <!--#include file='/images/hash-blue.svg' -->
                         </div>
                         <h1 class="main-title">
-                            <div class="main-title-typing-name">
-                                <div id='line1' class='the_cursor' ></div>
-                            </div>
-                            <div class="main-title-typing-words">
-                                <div id='line2' class='the_cursor2' ></div>
-                            </div>
+							MIDINOTE,
+							ANOTHER WAY TO TAKE NOTES
                         </h1>
-
                         <h2 class="main-sub-title">
 							Only Evernote? We are different, we use totally tag-based system to organize your notes, to record your memory in a well-organized, brain-like and visual way.
                         </h2>
@@ -547,7 +541,7 @@
                     <div class="contact">
                         <div class="contact-info">
                             <!--<span class="link-contact">Contact</span>-->
-                            <span class="link-mail">support@midinote.me</span>
+							<span class="link-mail"><a href="mailto:support@midinote.me" >support@midinote.me</a></span>
                         </div>
                         <div class="social-links">
                             <!--#include file='/images/twitter-logo.svg' -->

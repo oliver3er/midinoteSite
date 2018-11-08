@@ -200,7 +200,7 @@
                 <h4>About the name: Midinote</h4>
                 <p class="sub-page-content-p">
                     The name comes from the philosopher Sartre's notebook.
-                    </br>In a biography of Sartre (<a class="common-link-in-content" href="https://www.amazon.com/Adieux-Farewell-Sartre-Simone-Beauvoir/dp/039472898X?keywords=Sartre+Beauvoir&qid=1540814263&s=Books&sr=1-2&ref=sr_1_2">Adieux: A Farewell to Sartre</a>),
+                    </br>In a biography of Sartre (<a class="common-link-in-content" target="_blank" href="https://www.amazon.com/Adieux-Farewell-Sartre-Simone-Beauvoir/dp/039472898X?keywords=Sartre+Beauvoir&qid=1540814263&s=Books&sr=1-2&ref=sr_1_2">Adieux: A Farewell to Sartre</a>),
                     he mentioned he accidentally found a notebook on a metro train,
                     which is a blank notebook with alphabetical tabs.
                     He used it to record his thoughts of philosophy,
@@ -220,7 +220,7 @@
 
                 </p>
                 <div class="sub-page-contact-p">
-                    e-mail: <a class="common-link-in-content" href="">support@midinote.me</a>
+                    e-mail: <a class="common-link-in-content" href="emailto:support@midinote.me">support@midinote.me</a>
                 </div>
                 <div class="sub-page-contact-p">
                     follow us: <a class="social-link-in-content" href=""><!--#include file='/images/twitter-logo.svg' --></a>

@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>服务条款 | Midinote</title>
+	<meta name="language" content="Chinese">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<meta name="description" content="记笔记只能用Evernote? 我们有所不同, 我们使用完全基于标签的方式组织你的笔记, 用一种组织化的, 类人脑的和可视化的方式来呈现你的记忆." />
+	<!-- OG meta -->
+	<meta property="og:type" content="website" >
+	<meta property="og:title" content="Midinote 服务条款" >
+	<meta property="og:description" content="记笔记只能用Evernote? 我们有所不同, 我们使用完全基于标签的方式组织你的笔记, 用一种组织化的, 类人脑的和可视化的方式来呈现你的记忆." >
+	<meta property="og:image" content="http://localhost:8088/images/sartre.png" >
+	<meta property="og:url" content="http://www.midinote.me/cn/service.shtml" >
+	<!-- twitter meta -->
+	<meta name="twitter:card" content="summary" >
+	<meta name="twitter:site" content="@midinote" >
+	<meta name="twitter:create" content"@midinote" >
+
     <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
     <script src="../js/jquery.min.js"></script>
 	<script src='../js/visit.js' ></script>
