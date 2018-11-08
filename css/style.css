@@ -2774,7 +2774,7 @@ th {
     fill: #498cf3;
 }
 
-
+/*
 #jivo-iframe-container.jivo-iframe-container-bottom.jivo-collapsed {
     min-width: 56px !important;
     width: 56px !important;
@@ -2787,6 +2787,24 @@ th {
     width: 300px !important;
     height: 377px !important;
     border-radius: 6px !important;
+}
+
+.container-with-leaf.jivo-offline .jivo-bottom-left-square {
+    display: none;
+}
+
+div#jivo-iframe-container.jivo-iframe-container-bottom:not(.jivo-c-mobile) {
+    -webkit-transition: height .3s cubic-bezier(.39, .24, .21, .99),opacity 0s !important;
+    transition: height .3s cubic-bezier(.39, .24, .21, .99),opacity 0s !important;
+}
+
+.chat-mode .container-with-leaf.jivo-fixed-bottom {
+    -webkit-border-top-right-radius: 6px;
+    -khtml-border-top-right-radius: 6px;
+    -moz-border-top-right-radius: 6px;
+    -ms-border-top-right-radius: 6px;
+    -o-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 div#jivosite-adword, .hoverBox_10 {
@@ -2807,19 +2825,16 @@ div.labelStatus_3J {
     height: 56px !important;
 }
 
-.label_39._bottom_3v {
-    min-width: 56px;
-}
-
 jdiv.label_39._bottom_3v {
     height: 56px !important;
     width: 56px !important;
+    min-width: 56px;
     min-width: 56px !important;
     border-top-right-radius: 6px !important;
     border-top-left-radius: 6px !important;
     border-bottom-right-radius: 6px !important;
     border-bottom-left-radius: 6px !important;
-}
+}*/
 
 
 @media screen and (min-width: 1180px) {
