@@ -3,12 +3,21 @@
 <head>
     <title>Midinote | Another way to take notes.</title>
 	<!-- Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="language" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 	<meta name="description" content="Only Evernote? We are different, we use totally tag-based system to organize your notes, to record your memory in a well-organized, brain-like and visual way." />
+	<!-- OG meta -->
+	<meta property="og:type" content="website" >
+	<meta property="og:title" content="Midinote, Another Way to Take Notes" >
+	<meta property="og:description" content="Only Evernote? We are different, we use totally tag-based system to organize your notes, to record your memory in a well-organized, brain-like and visual way." >
+	<meta property="og:image" content="http://localhost:8088/images/sartre.png" >
+	<meta property="og:url" content="http://www.midinote.me" >
+	<!-- twitter meta -->
+	<meta name="twitter:card" content="summary" >
+	<meta name="twitter:site" content="@midinote" >
+	<meta name="twitter:create" content"@midinote" >
 
-<meta property="og:title" content="Plutio - One app to manage your entire business."/>
-<meta name="twitter:title" content="Plutio - One app to manage your entire business."><meta name="description" content="From projects and tasks to invoices and time tracking, everything you need in one intuitive platform."><meta property="og:description" content="From projects and tasks to invoices and time tracking, everything you need in one intuitive platform."><meta name="twitter:description" content="From projects and tasks to invoices and time tracking, everything you need in one intuitive platform."><meta property="og:image" content="https://plutio.com/assets/images/brand/brand-assets/share-cover.jpg"><meta name="twitter:image" content="https://plutio.com/assets/images/brand/brand-assets/share-cover.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="1200"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta charset="utf-8"><!-- CSS Stylesheets--><link rel="stylesheet" type="text/css" href="/assets/css/main.min.css?v1"><link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900" rel="stylesheet"><!-- Meta Tags--><meta name="google-site-verification" content="W5TSqluY2snaJVL8hO9be9gvFXvhMOftLXy9PONW9zg"><meta name="language" content="English"><meta name="copyright" content="Plutio"><meta name="distribution" content="Global"><meta name="designer" content="Plutio"><meta name="author" content="Plutio"><meta name="country" content="UK"><!-- Twitter--><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@PlutioHQ"><meta name="twitter:creator" content="@PlutioHQ"><!-- Facebook--><meta property="og:type" content="website"><meta property="og:url" content="https://plutio.com"><meta property="og:locale" content="en_GB">
     <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
     <script src="../js/jquery.min.js"></script>
 	<script src='../js/visit.js' ></script>
@@ -223,7 +232,7 @@
                 if (ua.indexOf("firefox") > -1) {
                     return;
                 }
-                //判断是否chorme浏览器
+                //判断是否Chrome浏览器
                 if (ua.indexOf("chrome") > -1){
                     return;
                 }
@@ -561,7 +570,6 @@
     <div class="menu-page-wrapper">
         <aside class="menu-page-info-slogan">
             <p>
-                <!--Midinote is a totally new way to take notes more fastly, more freely and brain-like.-->
                 Quickly record your memory, in a well-organized and brain-like way.
             </p>
         </aside>
@@ -590,12 +598,14 @@
 </div>
 
 
+<!-- spell-checker:disable -->
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script type='text/javascript'>
     (function(){ var widget_id = '06pohkrdQX';var d=document;var w=window;function l(){
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
 </script>
 <!-- {/literal} END JIVOSITE CODE -->
+<!-- spell-checker:enable -->
 
 </body>
 

@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Midinote</title>
+    <title>About Midinote: our story | Midinote</title>
+	<meta name="language" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<meta name="description" content="Midinote is a special notebook app for people who have the habit of recording." />
+	<!-- OG meta -->
+	<meta property="og:type" content="website" >
+	<meta property="og:title" content="About Midinote: our story" >
+	<meta property="og:description" content="Midinote is a special notebook app for people who have the habit of recording." >
+	<meta property="og:image" content="http://localhost:8088/images/sartre.png" >
+	<meta property="og:url" content="http://www.midinote.me/en/about.shtml" >
+	<!-- twitter meta -->
+	<meta name="twitter:card" content="summary" >
+	<meta name="twitter:site" content="@midinote" >
+	<meta name="twitter:create" content"@midinote" >
+
     <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
     <script src="../js/jquery.min.js"></script>
 	<script src='../js/visit.js' ></script>
