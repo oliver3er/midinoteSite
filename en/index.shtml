@@ -354,7 +354,7 @@
                 <div class="content-right">
                     <div class="illustration">
                         <div class="illustration-wrapper">
-                            <img src="../images/p1.png" alt="" ／>
+                            <img src="../images/addnote.gif" alt="" ／>
                         </div>
                     </div>
                 </div>
@@ -537,7 +537,7 @@
                         <div class="social-links">
                             <!--#include file='/images/twitter-logo.svg' -->
                             <!--#include file='/images/fb-logo.svg' -->
-                            <!--#include file='/images/linkedin-logo.svg' -->
+                            <!--#include file='/images/wb-logo.svg' -->
                         </div>
                     </div>
                 </div>
