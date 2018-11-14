@@ -83,28 +83,12 @@
 
             });
 
-
-            $(".home-logo").bind('click',function(){
-                window.location = 'index.shtml';
-            });
-            $(".link-about").bind('click',function(){
-                window.location = 'about.shtml';
-            });
-            $(".link-privacy").bind('click',function(){
-                window.location = 'privacy.shtml';
-            });
-            /*$(".link-service").bind('click',function(){
-                window.location = 'service.shtml';
-            });*/
-            $(".link-contact").bind('click',function(){
-                window.location = 'contact.shtml';
-            });
-            $(".link-sign-up").bind('click',function(){
+            /*$(".link-sign-up").bind('click',function(){
                 window.location = 'http://app.midinote.me/login';
             });
             $(".link-sign-in").bind('click',function(){
                 window.location = 'http://app.midinote.me/register';
-            });
+            });*/
 
             $(".language").bind("click",function(){
                 var selection = $(".lang-selection");
@@ -113,10 +97,6 @@
                 }else {
                     selection.addClass("__open");
                 }
-            });
-
-            $(".__option_en").bind("click",function(){
-                window.location='../en/service.shtml';
             });
 
         });
@@ -128,12 +108,14 @@
         <header class="home-header sub-page-header">
             <div class="home-header-wrapper">
                 <div class="home-logo link-home">
+                    <a href="index.shtml">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
+                    </a>
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li class="link-about">关于我们</li>
+                        <li class="link-about"><a href="about.shtml">关于我们</a></li>
                         <!--<li class="link-contact">Contact</li>
                         <li class="link-sign-up">Sign up</li>
                         <li class="link-sign-in">Sign in</li>-->
@@ -143,7 +125,7 @@
                         <span>中文(简体)</span>
                         <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
-                            <div class="lang-selection-option __option_en">English(US)</div>
+                            <div class="lang-selection-option __option_en"><a href="../en/service.shtml">English(US)</a></div>
                             <div class="lang-selection-option __option_cn">中文(简体)</div>
                         </div>
                     </div>
@@ -162,105 +144,45 @@
                 <h2>服务条款</h2>
                 <div class="sub-page-content-file">
                     <h2 class="file-section"><span style="font-weight: 400;color: #5e6165;">最近更新时间：</span> 2018-5-25</h2>
-                    <!--<p class="file-content-p">
-                        Thank you for using Midinote!
-                        This Terms of Service (the "Terms") constitutes a contract between Midinote ("we", "our" or "us") and you ("user" or "your").
-                        The Terms describes the rights and responsibilities that apply to your use of Midinote’s websites and services (collectively, the "Service").
-                    </p>-->
                     <p class="file-content-p">
                         感谢使用Midinote!<br/>
                         本服务条款（“条款”）构成Midinote（“我们”，“我们的”或“我们”）与您（“用户”或“您的”）之间的合同。本条款描述了您使用Midinote网站和服务（统称为“服务”）的权利和责任。
                     </p>
-                    <!--<p class="file-content-p">
-                        Please read the Terms carefully before using the Service.
-                        By using the Service, you acknowledge that you have read, understood,
-                        and agree with all provisions of the Terms and Midinote’s Privacy Policy (the "Privacy Policy").
-                        If you don't agree to the Terms and the Privacy Policy you may not use the Service.
-                    </p>-->
+
                     <p class="file-content-p">
                         在使用本服务之前，请仔细阅读本条款。通过使用本服务即表示您确认已阅读，理解并同意本条款和Midinote隐私政策（“隐私政策”）的所有条款。如您不同意本服务协议及/或随时对其的修改，请停止使用Midinote提供的服务。
                     </p>
 
-                    <!--<h3>Your Midinote Account</h3>-->
                     <h3>Midinote账号</h3>
-                    <!--<p class="file-content-p">
-                        If you create an account on the Service (your "Account"),
-                        you retain ultimate administrative control over your Account and the Content within it.
-                    </p>-->
+
                     <p class="file-content-p">
                         用户使用我们的服务创建帐户，用户即对帐户及其中的内容保留最终的管理控制权。
                     </p>
-                    <!--<p class="file-content-p">
-                        You are responsible for maintaining the security of your Account and its content.
-                        We cannot and will not be liable for any loss or damage from your failure to
-                        provide us with accurate information or to keep your Account Information secure.
-                        And you are fully responsible for all activities that occur under your Account
-                        and any other actions taken on the Service.
-                        You must immediately notify Midinote of any unauthorized uses of,
-                        or access to, our Service through your Account, including any unauthorized use of your password or Account.
-                    </p>-->
+
                     <p class="file-content-p">
                         您有责任维护您的帐户及其内容的安全性。因您提供的信息不正确或未能保证您帐户信息的安全而造成任何损失或损害的，我们概不负责。并且，您对您的帐户下发生的所有活动（包括获得您的帐户信息的其他人的活动）负全部责任。如果您发现有人未经授权即通过您的账户使用或访问我们的服务，您应立即更改密码并通知我们。
                     </p>
-                    <!--<h3>Rules of Conduct and Usage</h3>-->
+
                     <h3>使用规则</h3>
-                    <!--<p class="file-content-p">
-                        Once your account is created and you accept these Terms, we grant you a limited, non-exclusive license
-                        to use the Service subject to these Terms, for so long as you are not barred from receiving
-                        the Service under the laws applicable to you, until you close your account voluntarily or
-                        until we close your account pursuant to these Terms.
-                    </p>-->
                     <p class="file-content-p">
                         您创建帐户并接受本条款之后，我们即授予您根据本条款使用本服务的有限、非独占性许可，直到您自愿关闭帐户或者我们根据本条款关闭您的帐户为止。
                     </p>
-                    <!--<p class="file-content-p">
-                        Your use of the Website and Service must not violate any applicable laws,
-                        including copyright or trademark laws, export control laws, or other laws in your jurisdiction.
-                        You are responsible for making sure that your use of the Service is in compliance with laws and any applicable regulations.
-                    </p>-->
+
                     <p class="file-content-p">
                         您对本网站和服务的使用不得违反任何适用法律，包括您所在司法辖区的版权法、商标法、出口管制法或其他法律。您有责任确保您对本服务的使用符合法律和任何适用法规。
                     </p>
-                    <!--<h3>Termination</h3>-->
+
                     <h3>终止服务</h3>
-                    <!--<p class="file-content-p">
-                        Midinote may terminate your access to all or any part of the Service at any time,
-                        with or without cause, with or without notice, effective immediately.
-                        If you wish to terminate your Account, you may simply discontinue using the Service.
-                        All provisions of the Terms which by their nature should survive termination shall survive termination,
-                        including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
-                    </p>-->
                     <p class="file-content-p">
                         Midinote保留在不事先通知用户的情况下随时中断或终止部分或全部网络服务的权利。如果您希望终止帐户，可直接停止使用本服务。本条款的所有条款在终止后继续有效，包括但不限于所有权条款，保证免责声明，赔偿和责任限制。
                     </p>
-
-                    <!--<h3>Disclaimer of Warranties</h3>-->
                     <h3>免责声明</h3>
-                    <!--<p class="file-content-p">
-                        <b>Your use of the Service and all Content forming part of or related to the Service,
-                        including any Content you upload or submit and any third party software and Content,
-                        are at your sole responsibility and risk.
-                        The Service are provided on an "as is" and "as available" basis.
-                        We expressly disclaim all warranties of any kind, whether express or implied, including,
-                        but not limited to, the implied warranties of title, merchantability, fitness for a particular purpose and
-                            non-infringement.
-                        </b>
-                    </p>-->
                     <p class="file-content-p">
                         <b>用户使用本服务所存在的风险将完全由其自行承担；因其使用本服务而产生的一切后果也由其自行承担。
                             本服务基于“原样”和“可用”为基础提供。
                             我们明确拒绝任何明示或暗示的保证，包括但不限于所有权，可交易性，适合特殊目的和无侵权行为的任何暗示保证。
                         </b>
                     </p>
-                    <!--<p class="file-content-p">
-                        <b>Midinote does not warrant that: the Service will meet your requirements;
-                        that the Service will be uninterrupted, timely, secure, or error-free;
-                        that the information provided through the Service is accurate, reliable or correct;
-                        that any defects or errors will be corrected;
-                        that the Service will be available at any particular time or location;
-                        or that the Service is free of viruses or other harmful components.
-                            You assume full responsibility and risk of loss resulting from your downloading and/or use of files, information, content or other material obtained from the Service.</b>
-                    </p>-->
                     <p class="file-content-p">
                         <b>Midinote不保证以下事宜：
                             <ul class="file-content-ul">
@@ -277,93 +199,40 @@
                         <b>因下载和/或使用从服务获得的文件、信息、内容或其他材料而导致的全部责任和损失风险由用户承担。</b>
                     </p>
 
-                    <!--<h3>Limitation of Liability</h3>-->
                     <h3>责任限制</h3>
-                    <!--<p class="file-content-p">
-                        You understand and agree that we will not be liable to you or any third party for any
-                        loss of profits, use, goodwill, or data, or for any incidental, indirect, special,
-                        consequential or exemplary damages, however arising, that result from
-                    </p>-->
                     <p class="file-content-p">
                         您明确理解并同意，Midinote对于以下情形造成的任何直接、间接、附带、特别、衍生性或惩罚性损害赔偿，包括但不限于，利润损失、商誉、使用、数据及其他无形损失的损害赔偿，均不对您承担责任：
                     </p>
-                    <!--<ul class="file-content-ul">
-                        <li>your use or inability to use the Service;</li>
-                        <li>any modification, price change, suspension or discontinuance of the Service;</li>
-                        <li>unauthorized access to or alterations of your transmissions or data;</li>
-                        <li>any other matter relating to the Service.</li>
-                    </ul>-->
                     <ul class="file-content-ul">
                         <li>使用或无法使用本服务；</li>
                         <li>服务的任何修改，价格变动，暂停或终止；</li>
                         <li>您的传输、内容或数据未经授权的访问或损失、损坏或更改；</li>
                         <li>本服务有关的任何其他事项。</li>
                     </ul>
-                    <!--<p class="file-content-p">
-                        Some jurisdictions do not allow the limitation or exclusion of incidental, consequential or other types of damages,
-                        so some of the above limitation may not apply to you.
-                    </p>-->
                     <p class="file-content-p">
                         某些司法管辖区不允许排除某些保证或条件，或限制或排除因故意行为、疏忽、违反合同或违反隐含条款，或偶发性的或后果性的损害引起的损失或损害的责任。因此，只有在您的司法管辖区合法的责任和其他限制（如有）将适用于您，
                         我们的责任以法律允许的最大范围为限。
                     </p>
 
-                    <!--<h3>Indemnification</h3>-->
                     <h3>赔偿</h3>
-                    <!--<p class="file-content-p">
-                        You agree to indemnify us, defend us, and hold us harmless from and against any loss,
-                        liability, claim, demand, damages, and expenses, including reasonable attorney's fees,
-                        arising out of or in connection with
-                        (i) your use of and access to the Service; (ii) your violation of any term of these Terms;
-                        (iii) your violation of any third party right, including without limitation any copyright, property, or privacy right or any third party agreement;
-                        or (iv) any of Your Content or information in your Account or any other information you post or through the Service. As used in this section, "you" shall include anyone accessing the Service using your password.
-                    </p>-->
                     <p class="file-content-p">
                         您同意赔偿，并保证Midinote免受因下列原因导致的损失、负债、索赔、损害和开支（包括法律及其他专业费用）的损害。<br/>
                         (i)您使用本服务的任何部分；(ii)您对本服务条款的任何违约；(iii)您违反任何第三方权利，包括但不限于任何版权，财产或隐私权或任何第三方协议。
                         如本节所述，“您”应包括使用您的密码访问服务的任何人。
                     </p>
 
-                    <!--<h3>Changes to The Terms</h3>-->
                     <h3>变更</h3>
-                    <!--<p class="file-content-p">
-                        We reserve the right, at our sole discretion, to amend this Terms of Service
-                        at any time and will update the Terms in the event of any such amendments.
-                        We will notify our Users of material changes to this Agreement at least 30 days prior to the change taking effect
-                        by posting a notice on our home page.
-                        For non-material modifications,
-                        your continued use of the Service constitutes agreement to our revisions of the Terms.
-                    </p>-->
                     <p class="file-content-p">
                         我们保留自行决定随时修改本服务条款的权利，并在任何此类修改时更新条款。我们将在更改生效前至少30天通过在我们的主页上发布通知来通知我们的用户本协议的变更。您继续使用本服务即表示同意我们对本条款的修订。
                     </p>
 
-                    <!--<h3>Miscellaneous</h3>-->
                     <h3>其他规定</h3>
-                    <!--<h4>Governing law</h4>-->
                     <h4>适用法律</h4>
-                    <!--<p class="file-content-p">
-                        This Agreement shall be governed by and construed in accordance with the laws of
-                        the People's Republic of China.
-                        The courts of the People's Republic of China shall have exclusive jurisdiction to adjudicate
-                        any dispute arising under or in connection with this Agreement.
-                    </p>-->
                     <p class="file-content-p">
                         本协议受中华人民共和国法律管辖并按其解释。中华人民共和国法院拥有专属管辖权，可以裁定因本协议引起或与本协议有关的任何争议。
                     </p>
 
-                    <!--<h4>Force majeure event</h4>-->
                     <h4>不可抗力事件</h4>
-                    <!--<p class="file-content-p">
-                        We shall not be liable for any delay or failure to perform resulting from causes outside
-                        the reasonable control of we, including without limitation any failure to perform
-                        hereunder due to unforeseen circumstances or cause beyond our control such as war, riots,
-                        fire, floods, natural disaster, extreme weather, criminal activity, accident
-                        act of government or terrorism, embargoes, network infrastructure failures, strikes,
-                        disruptions in communications including wireless and telecommunication,
-                        or any other disruption to our abilities to provide our services to the extent
-                        that the disruption is beyond our control.
-                    </p>-->
                     <p class="file-content-p">
                         对于因我们可控范围以外的原因导致的任何延迟或未能履行义务，我们不承担责任。
                         包括但不限于，由于不可预见的情况或我们无法控制的原因导致的任何未履行义务，
@@ -371,58 +240,30 @@
                         禁运、网络基础设施故障、罢工、通信中断包括无线和电信或我们无法控制的情况下的任何其他干扰。
                     </p>
 
-                    <!--<h4>Section headings and summaries</h4>-->
                     <h4>章节标题和摘要</h4>
-                    <!--<p class="file-content-p">
-                        Throughout this Agreement, each section includes titles and brief summaries of the following terms and conditions.
-                        These section titles and brief summaries are not legally binding.
-                    </p>-->
                     <p class="file-content-p">
                         本服务条款中的章节标题仅为方便而设，没有任何法律或合同效力。
                     </p>
 
-                    <!--<h4>Severability</h4>-->
                     <h4>可分割性</h4>
-                    <!--<p class="file-content-p">
-                        If any part of this Agreement is held invalid or unenforceable,
-                        that portion of the Agreement will be construed to reflect the parties’ original intent.
-                        The remaining portions will remain in full force and effect.
-                    </p>-->
                     <p class="file-content-p">
                         如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，本协议的其余条款仍应有效并且有约束力。
                     </p>
 
-                    <!--<h4>Modification, Waiver</h4>-->
                     <h4>修改和豁免</h4>
-                    <!--<p class="file-content-p">
-                        No modification of or amendment to these terms, nor any waiver of any rights under these terms,
-                        will be effective unless expressly agreed upon by us.
-                        Waiver by us of a breach of any provision of these terms will not operate
-                        as a waiver of any other or subsequent breach.
-                    </p>-->
                     <p class="file-content-p">
                         除非我们明确同意，否则对这些条款的任何修改以及对这些条款下的任何权利放弃均不会生效。
                     </p>
 
-                    <!--<h4>Entire agreement</h4>-->
                     <h4>完整协议</h4>
-                    <!--<p class="file-content-p">
-                        This Agreement constitutes the entire agreement and understanding between you and us
-                        with respect to the subject matter herein and supersedes all prior written and oral agreements,
-                        discussions, or representations between the you and us.
-                    </p>-->
                     <p class="file-content-p">
                         本协议构成双方对本协议之约定事项及其他有关事宜的完整协议，除本协议规定的之外，未赋予本协议各方其他权利。
                     </p>
 
-                    <!--<h4>Questions</h4>-->
                     <h4>联系我们</h4>
-                    <!--<p class="file-content-p">
-                        If you have any questions about these Terms, please contact support@midinote.me.
-                    </p>-->
                     <p class="file-content-p">
                         如果您对本条款有任何疑问，请与我们联系。<br/>
-                        您可以通过邮件方式联系我们：support@midinote.me。
+                        您可以通过邮件方式联系我们：<a class="common-link-in-content" href="mailto:support@midinote.me">support@midinote.me</a>。
                     </p>
                 </div>
             </div>
@@ -433,25 +274,25 @@
                 <div class="site-info-wrapper position-relative">
 
                     <div class="site-logo-link">
-                        <a href="home.shtml"><!--#include file='/images/logo.svg' --></a>
+                        <a href="index.shtml"><!--#include file='/images/logo.svg' --></a>
                     </div>
 
                     <div class="site-links">
-                        <a class="link-about">关于我们</a>
+                        <a class="link-about" href="about.shtml">关于我们</a>
                         <!--<a class="link-help">Help center</a>-->
                         <a class="link-service __selected">服务条款</a>
-                        <a class="link-privacy">隐私</a>
+                        <a class="link-privacy" href="privacy.shtml">隐私</a>
                     </div>
 
                     <div class="contact">
                         <div class="contact-info">
                             <!--<span class="link-contact">Contact</span>-->
-                            <span class="link-mail">support@midinote.me</span>
+                            <span class="link-mail"><a href="mailto:support@midinote.me">support@midinote.me</a></span>
                         </div>
                         <div class="social-links">
-                            <!--#include file='/images/twitter-logo.svg' -->
-                            <!--#include file='/images/fb-logo.svg' -->
-                            <!--#include file='/images/linkedin-logo.svg' -->
+                            <a href="https://twitter.com/midinote" target="_blank"><!--#include file='/images/twitter-logo.svg' --></a>
+                            <a href="https://www.facebook.com/MidinoteHQ" target="_blank"><!--#include file='/images/fb-logo.svg' --></a>
+                            <a href="https://weibo.com/midinote" target="_blank"><!--#include file='/images/wb-logo.svg' --></a>
                         </div>
                     </div>
                 </div>
@@ -476,13 +317,13 @@
                 <span>中文(简体)</span>
                 <!--#include file='/images/down-arrow.svg' -->
                 <div class="lang-selection">
-                    <div class="lang-selection-option __option_en">English(US)</div>
+                    <div class="lang-selection-option __option_en"><a href="../en/service.shtml">English(US)</a></div>
                     <div class="lang-selection-option __option_cn">中文(简体)</div>
                 </div>
             </div>
             <ul>
-                <li class="link-home"><span>首页</span></li>
-                <li class="link-about"><span>关于我们</span></li>
+                <li class="link-home"><span><a href="index.shtml">首页</a></span></li>
+                <li class="link-about"><span><a href="about.shtml">关于我们</a></span></li>
                 <!--<li class="link-contact"><span>Contact</span></li>
                 <li class="link-sign-up"><span>Sign up</span></li>
                 <li class="link-sign-in"><span>Sign in</span></li>-->
