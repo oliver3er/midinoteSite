@@ -33,29 +33,13 @@
             });
 
 
-
-            $(".link-home").bind('click',function(){
-                window.location = 'index.shtml';
-            });
-            $(".link-about").bind('click',function(){
-                window.location = 'about.shtml';
-            });
-            $(".link-privacy").bind('click',function(){
-                window.location = 'privacy.shtml';
-            });
-            $(".link-service").bind('click',function(){
-                window.location = 'service.shtml';
-            });
-            $(".link-contact").bind('click',function(){
-                window.location = 'contact.shtml';
-            });
-            $(".link-sign-up").bind('click',function(){
+            /*$(".link-sign-up").bind('click',function(){
                 window.location = 'http://app.midinote.me/login';
             });
             $(".link-sign-in").bind('click',function(){
                 $(".menu-page").removeClass("__open").removeClass("__close").addClass("__close");
                 location.href = "#home-sign-in-part";
-            });
+            });*/
         });
 
     </script>
@@ -65,8 +49,10 @@
     <header class="home-error-header">
         <div class="home-error-header-wrapper">
             <div class="home-error-logo link-home">
+                <a href="index.shtml">
                 <!--#include file='../images/logo.svg' -->
                 <!--#include file='../images/logo-word.svg' -->
+                </a>
             </div>
             <div class="home-error-menu home-menu">
                 <span class="home-menu-p1"></span>
@@ -102,10 +88,12 @@
                     </div>
                 </div>
             </div>
+            <a href="index.shtml">
             <div class="home-error-button">
                 <div class="home-error-button-icon"></div>
                 BACK TO MIDINOTE
             </div>
+            </a>
         </div>
     </div>
     <footer class="footer">
@@ -127,8 +115,8 @@
         </aside>
 
         <ul>
-            <li class="link-home"><span>Home</span></li>
-            <li class="link-about"><span>About us</span></li>
+            <li class="link-home"><span><a href="index.shtml">Home</a></span></li>
+            <li class="link-about"><span><a href="about.shtml">About us</a></span></li>
             <!--<li class="link-contact"><span>Contact</span></li>
             <li class="link-sign-up"><span>Sign up</span></li>
             <li class="link-sign-in"><span>Sign in</span></li>-->

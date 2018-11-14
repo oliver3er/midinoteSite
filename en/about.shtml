@@ -69,27 +69,12 @@
 
             });
 
-            $(".home-logo").bind('click',function(){
-                window.location = 'index.shtml';
-            });
-            /*$(".link-about").bind('click',function(){
-                window.location = 'about.shtml';
-            });*/
-            $(".link-privacy").bind('click',function(){
-                window.location = 'privacy.shtml';
-            });
-            $(".link-service").bind('click',function(){
-                window.location = 'service.shtml';
-            });
-            $(".link-contact").bind('click',function(){
-                window.location = 'contact.shtml';
-            });
-            $(".link-sign-up").bind('click',function(){
+            /*$(".link-sign-up").bind('click',function(){
                 window.location = 'http://app.midinote.me/login';
             });
             $(".link-sign-in").bind('click',function(){
                 window.location = 'http://app.midinote.me/register';
-            });
+            });*/
 
             $(".language").bind("click",function(){
                 var selection = $(".lang-selection");
@@ -98,33 +83,6 @@
                 }else {
                     selection.addClass("__open");
                 }
-            });
-
-            $(".__option_cn").bind("click",function(){
-                window.location='../cn/about.shtml';
-            });
-
-            $(".link-home").bind('click',function(){
-                window.location = 'index.shtml';
-            });
-            $(".link-about").bind('click',function(){
-                window.location = 'about.shtml';
-            });
-            $(".link-privacy").bind('click',function(){
-                window.location = 'privacy.shtml';
-            });
-            $(".link-service").bind('click',function(){
-                window.location = 'service.shtml';
-            });
-            $(".link-contact").bind('click',function(){
-                window.location = 'contact.shtml';
-            });
-            $(".link-sign-up").bind('click',function(){
-                window.location = 'http://app.midinote.me/login';
-            });
-            $(".link-sign-in").bind('click',function(){
-                $(".menu-page").removeClass("__open").removeClass("__close").addClass("__close");
-                location.href = "#home-sign-in-part";
             });
 
         });
@@ -136,8 +94,10 @@
         <header class="home-header sub-page-header">
             <div class="home-header-wrapper">
                 <div class="home-logo link-home">
+                    <a href="index.shtml">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
+                    </a>
                 </div>
                 <nav class="home-nav">
                     <ul>
@@ -152,7 +112,7 @@
                         <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
                             <div class="lang-selection-option __option_en">English(US)</div>
-                            <div class="lang-selection-option __option_cn">中文(简体)</div>
+                            <div class="lang-selection-option __option_cn"><a href="../cn/about.shtml">中文(简体)</a></div>
                         </div>
                     </div>
                 </nav>
@@ -187,7 +147,7 @@
                 <h4>About the name: Midinote</h4>
                 <p class="sub-page-content-p">
                     The name comes from the philosopher Sartre's notebook.
-                    </br>In a biography of Sartre (<a class="common-link-in-content" href="https://www.amazon.com/Adieux-Farewell-Sartre-Simone-Beauvoir/dp/039472898X?keywords=Sartre+Beauvoir&qid=1540814263&s=Books&sr=1-2&ref=sr_1_2">Adieux: A Farewell to Sartre</a>),
+                    </br>In a biography of Sartre (<a class="common-link-in-content" href="https://www.amazon.com/Adieux-Farewell-Sartre-Simone-Beauvoir/dp/039472898X?keywords=Sartre+Beauvoir&qid=1540814263&s=Books&sr=1-2&ref=sr_1_2" target="_blank">Adieux: A Farewell to Sartre</a>),
                     he mentioned he accidentally found a notebook on a metro train,
                     which is a blank notebook with alphabetical tabs.
                     He used it to record his thoughts of philosophy,
@@ -207,11 +167,12 @@
 
                 </p>
                 <div class="sub-page-contact-p">
-                    e-mail: <a class="common-link-in-content" href="">support@midinote.me</a>
+                    e-mail: <a class="common-link-in-content" href="mailto:support@midinote.me">support@midinote.me</a>
                 </div>
                 <div class="sub-page-contact-p">
                     follow us: <a class="social-link-in-content" href=""><!--#include file='/images/twitter-logo.svg' --></a>
                     <a class="social-link-in-content" href=""><!--#include file='/images/fb-logo.svg' --></a>
+                    <a class="social-link-in-content" href=""><!--#include file='/images/wb-logo.svg' --></a>
                 </div>
             </div>
         </div>
@@ -221,25 +182,25 @@
                 <div class="site-info-wrapper position-relative">
 
                     <div class="site-logo-link">
-                        <a href="home.shtml"><!--#include file='/images/logo.svg' --></a>
+                        <a href="index.shtml"><!--#include file='/images/logo.svg' --></a>
                     </div>
 
                     <div class="site-links">
                         <a class="link-about __selected">About us</a>
                         <!--<a class="link-help">Help center</a>-->
-                        <a class="link-service">Terms of service</a>
-                        <a class="link-privacy">Privacy</a>
+                        <a class="link-service" href="service.shtml">Terms of service</a>
+                        <a class="link-privacy" href="privacy.shtml">Privacy</a>
                     </div>
 
                     <div class="contact">
                         <div class="contact-info">
                             <!--<span class="link-contact">Contact</span>-->
-                            <span class="link-mail">support@midinote.me</span>
+                            <span class="link-mail"><a href="mailto:support@midinote.me">support@midinote.me</a></span>
                         </div>
                         <div class="social-links">
-                            <!--#include file='/images/twitter-logo.svg' -->
-                            <!--#include file='/images/fb-logo.svg' -->
-                            <!--#include file='/images/linkedin-logo.svg' -->
+                            <a href="https://twitter.com/midinote" target="_blank"><!--#include file='/images/twitter-logo.svg' --></a>
+                            <a href="https://www.facebook.com/MidinoteHQ" target="_blank"><!--#include file='/images/fb-logo.svg' --></a>
+                            <a href="https://weibo.com/midinote" target="_blank"><!--#include file='/images/wb-logo.svg' --></a>
                         </div>
                     </div>
                 </div>
@@ -266,11 +227,11 @@
                 <!--#include file='/images/down-arrow.svg' -->
                 <div class="lang-selection">
                     <div class="lang-selection-option __option_en">English(US)</div>
-                    <div class="lang-selection-option __option_cn">中文(简体)</div>
+                    <div class="lang-selection-option __option_cn"><a href="../cn/about.shtml" target="_self">中文(简体)</a></div>
                 </div>
             </div>
             <ul>
-                <li class="link-home"><span>Home</span></li>
+                <li class="link-home"><span><a href="index.shtml" target="_self">Home</a></span></li>
                 <li class="__selected"><span>About us</span></li>
                 <!--<li class="link-contact"><span>Contact</span></li>
                 <li class="link-sign-up"><span>Sign up</span></li>

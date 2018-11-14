@@ -64,6 +64,7 @@ a {
 
 a:focus {
     outline:thin dotted; /* 处理“outline”在Chrome浏览器中和其它浏览器之间的不一致 */
+    outline: none;
 }
 
 a:active, a:hover {
@@ -524,6 +525,12 @@ th {
 }
 
 .home-logo {
+    /*display: flex;
+    align-items: center;
+    cursor: pointer;*/
+}
+
+.home-logo a {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -1917,6 +1924,11 @@ th {
     transition: transform .12s ease;
 }
 
+.social-links svg:last-child {
+    width: 22px;
+    height: 22px;
+}
+
 .social-links svg:hover {
     transform: scale(1.08);
 }
@@ -2633,7 +2645,13 @@ th {
 }
 
 
-.home-error-logo {
+/*.home-error-logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}*/
+
+.home-error-logo a {
     display: flex;
     align-items: center;
     cursor: pointer;

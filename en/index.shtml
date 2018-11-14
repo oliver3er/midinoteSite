@@ -182,27 +182,6 @@
 
             });
 
-
-            $(".__option_cn").bind("click",function(){
-                window.location='../cn/index.shtml';
-            });
-
-
-            $(".link-home").bind('click',function(){
-                window.location = 'index.shtml';
-            });
-            $(".link-about").bind('click',function(){
-                window.location = 'about.shtml';
-            });
-            $(".link-privacy").bind('click',function(){
-                window.location = 'privacy.shtml';
-            });
-            $(".link-service").bind('click',function(){
-                window.location = 'service.shtml';
-            });
-            $(".link-contact").bind('click',function(){
-                window.location = 'contact.shtml';
-            });
             $(".link-sign-up").bind('click',function(){
                 window.location = 'http://app.midinote.me/login';
             });
@@ -257,12 +236,14 @@
         <header class="home-header">
             <div class="home-header-wrapper">
                 <div class="home-logo link-home">
+                    <a href="index.shtml">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
+                    </a>
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li class="link-about">About us</li>
+                        <li class="link-about"><a href="about.shtml" target="_self">About us</a></li>
                         <!--<li class="link-contact">Contact</li>
                         <li class="link-sign-up">Sign up</li>
                         <li class="link-sign-in">Sign in</li>-->
@@ -273,7 +254,7 @@
                         <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
                             <div class="lang-selection-option __option_en">English(US)</div>
-                            <div class="lang-selection-option __option_cn">中文(简体)</div>
+                            <div class="lang-selection-option __option_cn"><a href="../cn/index.shtml">中文(简体)</a></div>
                         </div>
                     </div>
                 </nav>
@@ -390,7 +371,7 @@
                 <div class="content-left">
                     <div class="illustration">
                         <div class="illustration-wrapper">
-                            <img src="../images/p2.png" alt="" ／>
+                            <img src="../images/mindmap.gif" alt="" ／>
                         </div>
                     </div>
                 </div>
@@ -507,7 +488,7 @@
                         </div>
                         <div>
                             <div>In the meantime,&nbsp;</div>
-                            <div> check our <a href=""><!--#include file='/images/twitter-logo.svg' --></a> and <a href=""><!--#include file='/images/fb-logo.svg' --></a> accounts.</div>
+                            <div> check our <a href="https://twitter.com/midinote" target="_blank"><!--#include file='/images/twitter-logo.svg' --></a> <a href="https://www.facebook.com/MidinoteHQ" target="_blank"><!--#include file='/images/fb-logo.svg' --></a> and <a href="https://weibo.com/midinote" target="_blank"><!--#include file='/images/wb-logo.svg' --></a> accounts.</div>
                         </div>
                     </div>
                 </div>
@@ -523,21 +504,21 @@
                     </div>
 
                     <div class="site-links">
-                        <a class="link-about">About us</a>
+                        <a class="link-about" href="about.shtml">About us</a>
                         <!--<a class="link-help">Help center</a>-->
-                        <a class="link-service">Terms of service</a>
-                        <a class="link-privacy">Privacy</a>
+                        <a class="link-service" href="service.shtml">Terms of service</a>
+                        <a class="link-privacy" href="privacy.shtml">Privacy</a>
                     </div>
 
                     <div class="contact">
                         <div class="contact-info">
                             <!--<span class="link-contact">Contact</span>-->
-                            <span class="link-mail">support@midinote.me</span>
+                            <span class="link-mail"><a href="mailto:support@midinote.me">support@midinote.me</a></span>
                         </div>
                         <div class="social-links">
-                            <!--#include file='/images/twitter-logo.svg' -->
-                            <!--#include file='/images/fb-logo.svg' -->
-                            <!--#include file='/images/wb-logo.svg' -->
+                            <a href="https://twitter.com/midinote" target="_blank"><!--#include file='/images/twitter-logo.svg' --></a>
+                            <a href="https://www.facebook.com/MidinoteHQ" target="_blank"><!--#include file='/images/fb-logo.svg' --></a>
+                            <a href="https://weibo.com/midinote" target="_blank"><!--#include file='/images/wb-logo.svg' --></a>
                         </div>
                     </div>
                 </div>
@@ -567,13 +548,13 @@
                 <!--#include file='/images/down-arrow.svg' -->
                 <div class="lang-selection">
                     <div class="lang-selection-option __option_en">English(US)</div>
-                    <div class="lang-selection-option __option_cn">中文(简体)</div>
+                    <div class="lang-selection-option __option_cn"><a href="../cn/index.shtml" target="_self">中文(简体)</a></div>
                 </div>
             </div>
 
             <ul>
                 <li class="__selected"><span>Home</span></li>
-                <li class="link-about"><span>About us</span></li>
+                <li class="link-about"><a href="about.shtml" target="_self"><span>About us</span></a></li>
                 <!--<li class="link-contact"><span>Contact</span></li>
                 <li class="link-sign-up"><span>Sign up</span></li>
                 <li class="link-sign-in"><span>Sign in</span></li>-->
