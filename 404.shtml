@@ -17,7 +17,7 @@
         </div>
         <div class="home-error-button">
             <div class="home-error-button-icon"></div>
-            BACK TO MIDINOTE
+			<a href='/' >BACK TO MIDINOTE</a>
         </div>
     </div>
     </div>
