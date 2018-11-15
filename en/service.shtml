@@ -109,14 +109,14 @@
         <header class="home-header sub-page-header">
             <div class="home-header-wrapper">
                 <div class="home-logo link-home">
-                    <a href="index.shtml">
+                    <a href="/">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
                     </a>
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li class="link-about"><a href="about.shtml">About us</a></li>
+                        <li class="link-about"><a href="/en/about.shtml">About us</a></li>
                         <!--<li class="link-contact">Contact</li>
                         <li class="link-sign-up">Sign up</li>
                         <li class="link-sign-in">Sign in</li>-->
@@ -127,7 +127,7 @@
                         <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
                             <div class="lang-selection-option __option_en">English(US)</div>
-                            <div class="lang-selection-option __option_cn"><a href="../cn/service.shtml">中文(简体)</a></div>
+                            <div class="lang-selection-option __option_cn"><a href="/cn/service.shtml">中文(简体)</a></div>
                         </div>
                     </div>
                 </nav>
@@ -144,16 +144,16 @@
             <div class="sub-page-file-wrapper">
                 <h2>Terms of Service</h2>
                 <div class="sub-page-content-file">
-                    <h2 class="file-section"><span style="font-weight: 400;color: #5e6165;">Last updated:</span> May 25, 2018</h2>
+                    <h2 class="file-section"><span style="font-weight: 400;color: #5e6165;">Last updated:</span> Nov 15, 2018</h2>
                     <p class="file-content-p">
                         Thank you for using Midinote!
                         This Terms of Service (the "Terms") constitutes a contract between Midinote ("we", "our" or "us") and you ("user" or "your").
-                        The Terms describes the rights and responsibilities that apply to your use of Midinote’s websites and services (collectively, the "Service").
+                        The Terms describes the rights and responsibilities that apply to your use of Midinote websites and services (collectively, the "Service").
                     </p>
                     <p class="file-content-p">
                         Please read the Terms carefully before using the Service.
                         By using the Service, you acknowledge that you have read, understood,
-                        and agree with all provisions of the Terms and Midinote’s Privacy Policy (the "Privacy Policy").
+                        and agree with all provisions of the Terms and Midinote Privacy Policy (the "Privacy Policy").
                         If you don't agree to the Terms and the Privacy Policy you may not use the Service.
                     </p>
 
@@ -314,14 +314,14 @@
                 <div class="site-info-wrapper position-relative">
 
                     <div class="site-logo-link">
-                        <a href="index.shtml"><!--#include file='/images/logo.svg' --></a>
+                        <a href="/"><!--#include file='/images/logo.svg' --></a>
                     </div>
 
                     <div class="site-links">
-                        <a class="link-about" href="about.shtml">About us</a>
+                        <a class="link-about" href="/en/about.shtml">About us</a>
                         <!--<a class="link-help">Help center</a>-->
                         <a class="link-service __selected">Terms of service</a>
-                        <a class="link-privacy" href="privacy.shtml">Privacy</a>
+                        <a class="link-privacy" href="/en/privacy.shtml">Privacy</a>
                     </div>
 
                     <div class="contact">

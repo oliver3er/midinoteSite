@@ -108,14 +108,14 @@
         <header class="home-header sub-page-header">
             <div class="home-header-wrapper">
                 <div class="home-logo link-home">
-                    <a href="index.shtml">
+                    <a href="/cn/index.shtml">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
                     </a>
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li class="link-about"><a href="about.shtml">关于我们</a></li>
+                        <li class="link-about"><a href="/cn/about.shtml">关于我们</a></li>
                         <!--<li class="link-contact">Contact</li>
                         <li class="link-sign-up">Sign up</li>
                         <li class="link-sign-in">Sign in</li>-->
@@ -125,7 +125,7 @@
                         <span>中文(简体)</span>
                         <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
-                            <div class="lang-selection-option __option_en"><a href="../en/service.shtml">English(US)</a></div>
+                            <div class="lang-selection-option __option_en"><a href="/en/service.shtml">English(US)</a></div>
                             <div class="lang-selection-option __option_cn">中文(简体)</div>
                         </div>
                     </div>
@@ -143,7 +143,7 @@
             <div class="sub-page-file-wrapper">
                 <h2>服务条款</h2>
                 <div class="sub-page-content-file">
-                    <h2 class="file-section"><span style="font-weight: 400;color: #5e6165;">最近更新时间：</span> 2018-5-25</h2>
+                    <h2 class="file-section"><span style="font-weight: 400;color: #5e6165;">最近更新时间：</span> 2018-11-15</h2>
                     <p class="file-content-p">
                         感谢使用Midinote!<br/>
                         本服务条款（“条款”）构成Midinote（“我们”，“我们的”或“我们”）与您（“用户”或“您的”）之间的合同。本条款描述了您使用Midinote网站和服务（统称为“服务”）的权利和责任。
@@ -274,14 +274,14 @@
                 <div class="site-info-wrapper position-relative">
 
                     <div class="site-logo-link">
-                        <a href="index.shtml"><!--#include file='/images/logo.svg' --></a>
+                        <a href="/cn/index.shtml"><!--#include file='/images/logo.svg' --></a>
                     </div>
 
                     <div class="site-links">
-                        <a class="link-about" href="about.shtml">关于我们</a>
+                        <a class="link-about" href="/cn/about.shtml">关于我们</a>
                         <!--<a class="link-help">Help center</a>-->
                         <a class="link-service __selected">服务条款</a>
-                        <a class="link-privacy" href="privacy.shtml">隐私</a>
+                        <a class="link-privacy" href="/cn/privacy.shtml">隐私</a>
                     </div>
 
                     <div class="contact">
@@ -317,13 +317,13 @@
                 <span>中文(简体)</span>
                 <!--#include file='/images/down-arrow.svg' -->
                 <div class="lang-selection">
-                    <div class="lang-selection-option __option_en"><a href="../en/service.shtml">English(US)</a></div>
+                    <div class="lang-selection-option __option_en"><a href="/en/service.shtml">English(US)</a></div>
                     <div class="lang-selection-option __option_cn">中文(简体)</div>
                 </div>
             </div>
             <ul>
-                <li class="link-home"><span><a href="index.shtml">首页</a></span></li>
-                <li class="link-about"><span><a href="about.shtml">关于我们</a></span></li>
+                <li class="link-home"><span><a href="/cn/index.shtml">首页</a></span></li>
+                <li class="link-about"><span><a href="/cn/about.shtml">关于我们</a></span></li>
                 <!--<li class="link-contact"><span>Contact</span></li>
                 <li class="link-sign-up"><span>Sign up</span></li>
                 <li class="link-sign-in"><span>Sign in</span></li>-->

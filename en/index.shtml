@@ -250,14 +250,14 @@
         <header class="home-header">
             <div class="home-header-wrapper">
                 <div class="home-logo link-home">
-                    <a href="index.shtml">
+                    <a href="/">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
                     </a>
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li class="link-about"><a href="about.shtml" target="_self">About us</a></li>
+                        <li class="link-about"><a href="/en/about.shtml" target="_self">About us</a></li>
                         <!--<li class="link-contact">Contact</li>
                         <li class="link-sign-up">Sign up</li>
                         <li class="link-sign-in">Sign in</li>-->
@@ -268,7 +268,7 @@
                         <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
                             <div class="lang-selection-option __option_en">English(US)</div>
-                            <div class="lang-selection-option __option_cn"><a href="../cn/index.shtml">中文(简体)</a></div>
+                            <div class="lang-selection-option __option_cn"><a href="/cn/index.shtml">中文(简体)</a></div>
                         </div>
                     </div>
                 </nav>
@@ -361,7 +361,7 @@
                     <div class="explanation position-relative">
                         <h3>Mindmap & Visualization</h3>
                         <p>
-							With time, your tags will grow up into a mindmap tree of yourself and you can recall your memory in a visual way. 
+							With time, your tags will grow up into a Mindmap tree of your own and you can recall your memory in a visual way. 
                         </p>
 
 						<!--
@@ -398,7 +398,7 @@
                     <div class="explanation position-relative">
                         <h3>Personal Knowledge-Base</h3>
                         <p>
-							In Midinote, every tag, in fact, is an article, or, if you are familiar with <a href='http://en.wikipedia.org' target='_blank' >Wikipedia</a>, every tag is an entry of encyclopedia, you can browse and jump back and forth between tags, just like you do in web browser. 
+							In Midinote, every tag is an article, or, if you are familiar with <a style='text-decoration : underline;' href='http://en.wikipedia.org' target='_blank' >Wikipedia</a>, every tag is an entry of encyclopedia, you can browse and jump back and forth between tags, just like you do in web browser. 
 						</p>
 						<p>
 							With Midinote, you are building a personal knowledge base.
@@ -493,11 +493,11 @@
                     <div class="home-construction-title">UNDER CONSTRUCTION</div>
                     <div class="home-construction-p">
                         <div>
-                            <div>We are currently working on this app.&nbsp;</div><div>Our app is coming soon.</div>
+                            <div>We are currently working on this app.&nbsp;</div><div>Its coming soon.</div>
                         </div>
                         <div>
-                            <div>In the meantime,&nbsp;</div>
-                            <div> check our <a href="https://twitter.com/midinote" target="_blank"><!--#include file='/images/twitter-logo.svg' --></a> <a href="https://www.facebook.com/MidinoteHQ" target="_blank"><!--#include file='/images/fb-logo.svg' --></a> and <a href="https://weibo.com/midinote" target="_blank"><!--#include file='/images/wb-logo.svg' --></a> accounts.</div>
+                            <div>Please follow our social media for the latest developments :&nbsp;</div>
+                            <div><a href="https://twitter.com/midinote" target="_blank"><!--#include file='/images/twitter-logo.svg' --></a> <a href="https://www.facebook.com/MidinoteHQ" target="_blank"><!--#include file='/images/fb-logo.svg' --></a> <a href="https://weibo.com/midinote" target="_blank"><!--#include file='/images/wb-logo.svg' --></a></div>
                         </div>
                     </div>
                 </div>
@@ -509,14 +509,14 @@
                 <div class="site-info-wrapper position-relative">
 
                     <div class="site-logo-link">
-                        <a href="index.shtml"><!--#include file='/images/logo.svg' --></a>
+                        <a href="/"><!--#include file='/images/logo.svg' --></a>
                     </div>
 
                     <div class="site-links">
-                        <a class="link-about" href="about.shtml">About us</a>
+                        <a class="link-about" href="/en/about.shtml">About us</a>
                         <!--<a class="link-help">Help center</a>-->
-                        <a class="link-service" href="service.shtml">Terms of service</a>
-                        <a class="link-privacy" href="privacy.shtml">Privacy</a>
+                        <a class="link-service" href="/en/service.shtml">Terms of service</a>
+                        <a class="link-privacy" href="/en/privacy.shtml">Privacy</a>
                     </div>
 
                     <div class="contact">

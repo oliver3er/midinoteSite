@@ -109,14 +109,14 @@
         <header class="home-header sub-page-header">
             <div class="home-header-wrapper">
                 <div class="home-logo link-home">
-                    <a href="index.shtml">
+                    <a href="/">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
                     </a>
                 </div>
                 <nav class="home-nav">
                     <ul>
-                        <li class="link-about"><a href="about.shtml">About us</a></li>
+                        <li class="link-about"><a href="/en/about.shtml">About us</a></li>
                         <!--<li class="link-contact">Contact</li>
                         <li class="link-sign-up">Sign up</li>
                         <li class="link-sign-in">Sign in</li>-->
@@ -127,7 +127,7 @@
                         <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
                             <div class="lang-selection-option __option_en">English(US)</div>
-                            <div class="lang-selection-option __option_cn"><a href="../cn/privacy.shtml">中文(简体)</a></div>
+                            <div class="lang-selection-option __option_cn"><a href="/cn/privacy.shtml">中文(简体)</a></div>
                         </div>
                     </div>
                 </nav>
@@ -144,7 +144,7 @@
             <div class="sub-page-file-wrapper">
                 <h2>Privacy Policy</h2>
                 <div class="sub-page-content-file">
-                    <h2 class="file-section"><span style="font-weight: 400;color: #5e6165;">Last updated:</span> May 19, 2018</h2>
+                    <h2 class="file-section"><span style="font-weight: 400;color: #5e6165;">Last updated:</span> Nov 15, 2018</h2>
                     <h3>Introduction</h3>
                     <p class="file-content-p">
                         Midinote is committed to protecting the privacy of your data.
@@ -319,7 +319,7 @@
                     <h3>Contact Us</h3>
                     <p class="file-content-p">
                         Please also feel free to contact us if you have any questions
-                        about Midinote's Privacy Policy or information practices.
+                        about Midinote Privacy Policy or information practices.
                         You may contact us as follows: <a class="common-link-in-content" href="mailto:support@midinote.me">support@midinote.me</a>.
                     </p>
 
@@ -332,13 +332,13 @@
                 <div class="site-info-wrapper position-relative">
 
                     <div class="site-logo-link">
-                        <a href="index.shtml"><!--#include file='/images/logo.svg' --></a>
+                        <a href="/"><!--#include file='/images/logo.svg' --></a>
                     </div>
 
                     <div class="site-links">
-                        <a class="link-about" href="about.shtml">About us</a>
+                        <a class="link-about" href="/en/about.shtml">About us</a>
                         <!--<a class="link-help">Help center</a>-->
-                        <a class="link-service" href="service.shtml">Terms of service</a>
+                        <a class="link-service" href="/en/service.shtml">Terms of service</a>
                         <a class="link-privacy __selected">Privacy</a>
                     </div>
 

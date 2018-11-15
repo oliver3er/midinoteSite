@@ -107,7 +107,7 @@
         <header class="home-header sub-page-header">
             <div class="home-header-wrapper">
                 <div class="home-logo link-home">
-                    <a href="index.shtml">
+                    <a href="/cn/index.shtml">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
                     </a>
@@ -139,7 +139,7 @@
         </header>
         <div class="sub-page-title">
             <h1>关于我们</h1>
-            <h2>Midinote是一个笔记记录工具</h2>
+            <h2>Midinote是一款独特的笔记记录工具</h2>
         </div>
 
         <div class="sub-page-content">
@@ -174,9 +174,10 @@
                     邮件地址：<a class="common-link-in-content" href="mailto:support@midinote.me">support@midinote.me</a>
                 </div>
                 <div class="sub-page-contact-p">
-                    关注我们：<a class="social-link-in-content" href=""><!--#include file='/images/twitter-logo.svg' --></a>
-                    <a class="social-link-in-content" href=""><!--#include file='/images/fb-logo.svg' --></a>
-                    <a class="social-link-in-content" href=""><!--#include file='/images/wb-logo.svg' --></a>
+                    关注我们：
+					<a class="social-link-in-content" href="https://twitter.com/midinote" target="_blank" ><!--#include file='/images/twitter-logo.svg' --></a>
+                    <a class="social-link-in-content" href="https://www.facebook.com/MidinoteHQ" target="_blank" ><!--#include file='/images/fb-logo.svg' --></a>
+                    <a class="social-link-in-content" href="https://weibo.com/midinote" target="_blank" ><!--#include file='/images/wb-logo.svg' --></a>
                 </div>
             </div>
         </div>
@@ -186,14 +187,14 @@
                 <div class="site-info-wrapper position-relative">
 
                     <div class="site-logo-link">
-                        <a href="index.shtml"><!--#include file='/images/logo.svg' --></a>
+                        <a href="/cn/index.shtml"><!--#include file='/images/logo.svg' --></a>
                     </div>
 
                     <div class="site-links">
                         <a class="link-about __selected">关于我们</a>
                         <!--<a class="link-help">Help center</a>-->
-                        <a class="link-service" href="service.shtml">服务条款</a>
-                        <a class="link-privacy" href="privacy.shtml">隐私</a>
+                        <a class="link-service" href="/cn/service.shtml">服务条款</a>
+                        <a class="link-privacy" href="/cn/privacy.shtml">隐私</a>
                     </div>
 
                     <div class="contact">
@@ -230,12 +231,12 @@
                 <span>中文(简体)</span>
                 <!--#include file='/images/down-arrow.svg' -->
                 <div class="lang-selection">
-                    <a class="lang-selection-option __option_en"><a href="../en/about.shtml">English(US)</a></div>
+                    <a class="lang-selection-option __option_en"><a href="/en/about.shtml">English(US)</a></div>
                     <div class="lang-selection-option __option_cn">中文(简体)</div>
                 </div>
             </div>
             <ul>
-                <li class="link-home"><span><a href="index.shtml">首页</a></span></li>
+                <li class="link-home"><span><a href="/cn/index.shtml">首页</a></span></li>
                 <li class="__selected"><span>关于我们</span></li>
                 <!--<li class="link-contact"><span>Contact</span></li>
                 <li class="link-sign-up"><span>Sign up</span></li>
