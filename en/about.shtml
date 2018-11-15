@@ -10,7 +10,9 @@
 	<meta property="og:type" content="website" >
 	<meta property="og:title" content="About Midinote: our story" >
 	<meta property="og:description" content="Midinote is a special notebook app for people who have the habit of recording." >
-	<meta property="og:image" content="http://localhost:8088/images/sartre.png" >
+	<meta property="og:image" content="https://www.midinote.me/images/big-logo.jpg" >
+	<meta property="og:image:width" content="600" >
+	<meta property="og:image:height" content="600" >
 	<meta property="og:url" content="http://www.midinote.me/en/about.shtml" >
 	<!-- twitter meta -->
 	<meta name="twitter:card" content="summary" >

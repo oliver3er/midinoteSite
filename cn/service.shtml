@@ -10,7 +10,9 @@
 	<meta property="og:type" content="website" >
 	<meta property="og:title" content="Midinote 服务条款" >
 	<meta property="og:description" content="记笔记只能用Evernote? 我们有所不同, 我们使用完全基于标签的方式组织你的笔记, 用一种组织化的, 类人脑的和可视化的方式来呈现你的记忆." >
-	<meta property="og:image" content="http://localhost:8088/images/sartre.png" >
+	<meta property="og:image" content="https://www.midinote.me/images/big-logo.jpg" >
+	<meta property="og:image:width" content="600" >
+	<meta property="og:image:height" content="600" >
 	<meta property="og:url" content="http://www.midinote.me/cn/service.shtml" >
 	<!-- twitter meta -->
 	<meta name="twitter:card" content="summary" >
