@@ -277,13 +277,13 @@
             <main class="home-1-main">
                 <div class="home-1-main-wrapper position-relative">
                     <div class="home-1-main-bd"></div>
-                    <div class="main-left">
+                    <div class="main-left __cn">
                         <div class="big-blue-word">
                             <!--#include file='/images/hash-blue.svg' -->
                         </div>
-                        <h1 class="main-title __cn">
-							Midinote,<br/>
-							记笔记新方法
+                        <h1 class="main-title">
+                            <span>Midinote,</span>
+                            <span>记笔记新方法</span>
                         </h1>
 
                         <h2 class="main-sub-title">

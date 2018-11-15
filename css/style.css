@@ -734,9 +734,26 @@ th {
     font-size: .32rem;
     color: #fff;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 36px;
     letter-spacing: 1px;
     font-family: "PingFang SC",-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.main-title span {
+    display: block;
+}
+
+.__en .main-sub-title {
+    padding-top: 24px;
+    line-height: 22px;
+}
+
+.__en .main-decoration-tag {
+    margin-top: 30px;
+}
+
+.__cn .main-title {
+    line-height: 44px;
 }
 
 .main-title-typing-words, .main-title-typing-name {
@@ -816,9 +833,9 @@ th {
     /*visibility: hidden;
     opacity: 0;*/
     margin: 0 auto;
-    padding-top: 44px;
+    padding-top: 36px;
     font-size: .16rem;
-    line-height: 22px;
+    line-height: 24px;
     color: #d1d1d2;
     font-weight: 400;
     letter-spacing: .5px;
@@ -2903,11 +2920,28 @@ jdiv.label_39._bottom_3v {
         height: 500px;
     }
 
-    .main-sub-title {
-        padding-top: 24px;
+    .__en .main-sub-title {
+        padding-top: 14px;
+        line-height: 18px;
     }
 
-    .main-decoration-tag {
+    .__cn .main-sub-title {
+        padding-top: 28px;
+    }
+
+    .__cn .main-title {
+        line-height: 40px;
+    }
+
+    .__en .main-title {
+        font-size: .30rem;
+    }
+
+    .__en .main-decoration-tag {
+        margin-top: 24px;
+    }
+
+    .__cn .main-decoration-tag {
         margin-top: 30px;
     }
 
@@ -3098,6 +3132,14 @@ jdiv.label_39._bottom_3v {
         width: 100%;
     }
 
+    .__en .main-title {
+        line-height: 34px;
+    }
+
+    .__cn .main-sub-title {
+        padding-top: 20px;
+    }
+
     .site-info {
         height: 140px;
     }
@@ -3145,10 +3187,6 @@ jdiv.label_39._bottom_3v {
         z-index: 1;
     }
 
-    .main-title {
-        font-size: .3rem;
-    }
-
     .main-title-typing-words {
         width: 320px;
     }
@@ -3173,10 +3211,19 @@ jdiv.label_39._bottom_3v {
 
 @media screen and (max-width: 450px) {
 
-    .main-title {
-        margin-top: 30px;
-        font-size: .2rem;
-        line-height: .2rem;
+    .__cn .main-title {
+        margin-top: 20px;
+        font-size: .28rem;
+        line-height: 34px;
+    }
+
+    .__cn .main-sub-title {
+        padding-top: 26px;
+        font-size: .14rem;
+        line-height: .22rem;
+    }
+    .__cn .main-decoration-tag {
+        margin-top: 32px;
     }
 
     .main-title-typing-words {
@@ -3185,6 +3232,22 @@ jdiv.label_39._bottom_3v {
 
     .main-sub-title {
         width: 260px;
+    }
+
+    .__en .main-sub-title {
+        padding-top: 22px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .__en .main-title {
+        margin-top: 20px;
+        font-size: .24rem;
+        line-height: 26px;
+    }
+
+    .__en .main-decoration-tag {
+        margin-top: 24px;
     }
 
     .the_cursor, .the_cursor2 {

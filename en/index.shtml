@@ -285,13 +285,13 @@
             <main class="home-1-main">
                 <div class="home-1-main-wrapper position-relative">
                     <div class="home-1-main-bd"></div>
-                    <div class="main-left">
+                    <div class="main-left __en">
                         <div class="big-blue-word">
                             <!--#include file='/images/hash-blue.svg' -->
                         </div>
                         <h1 class="main-title">
-							MIDINOTE,
-							ANOTHER WAY TO TAKE NOTES
+                            <span>MIDINOTE,</span>
+                            <span>ANOTHER WAY TO TAKE NOTES</span>
                         </h1>
                         <h2 class="main-sub-title">
 							Only Evernote? We are different, we use totally tag-based system to organize your notes, to record your memory in a well-organized, brain-like and visual way.
