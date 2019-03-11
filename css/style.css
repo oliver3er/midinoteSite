@@ -1850,6 +1850,7 @@ th {
     margin-left: 1px;
     margin-top: 10px;
     margin-bottom: 60px;
+    padding: 0 5px;
     font-size: .16rem;
     line-height: 22px;
     color: #818285;
@@ -3317,4 +3318,14 @@ jdiv.label_39._bottom_3v {
         white-space: nowrap;
     }
 
+}
+
+@media screen and (max-width: 375px) {
+    .home-no-sign-title {
+        font-size: .18rem;
+    }
+    .home-no-sign-announce {
+        letter-spacing: .2px;
+        font-size: .14rem;
+    }
 }
