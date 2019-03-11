@@ -464,8 +464,8 @@
 
         </div>
 
-        <div class="home-bottom">
-            <div id="home-sign-in-part" class="home-bottom-wrapper position-relative">
+        <div id="home-sign-in-part" class="home-bottom">
+            <div class="home-bottom-wrapper position-relative">
                 <div class="home-sign-up-form">
                     <h2 class="home-form-title">创建你的Midinote账号</h2>
                     <div class="home-sign-up-form-content">
@@ -495,8 +495,8 @@
 		<div id="home-no-sign" style="display: none;" class="home-bottom">
             <div class="home-bottom-wrapper position-relative">
                 <div class="home-sign-up-form">
-					<h2 class="home-form-title" >不能在移动设备上注册<h2>
-                    <div class="home-form-announce">目前Midinote还不支持移动设备, 请转到电脑设备上注册使用.</div>
+					<h2 class="home-no-sign-title" >不能在移动设备上注册</h2>
+                    <div class="home-no-sign-announce">目前Midinote还不支持移动设备, 请转到电脑设备上注册使用.</div>
                 </div>
             </div>  
 		</div>

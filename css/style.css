@@ -1837,6 +1837,26 @@ th {
     height: 100%;
 }
 
+.home-no-sign-title {
+    height: 100px;
+    font-size: .22rem;
+    line-height: 100px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-align: center;
+}
+
+.home-no-sign-announce {
+    margin-left: 1px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    font-size: .16rem;
+    line-height: 22px;
+    color: #818285;
+    letter-spacing: .5px;
+    text-align: center;
+}
+
 .site-info {
     display: flex;
     flex-direction: column;
