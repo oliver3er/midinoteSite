@@ -3327,4 +3327,22 @@ jdiv.label_39._bottom_3v {
         letter-spacing: .2px;
         font-size: .14rem;
     }
+    .home-header-wrapper{
+        padding-left: 10px;
+        padding-right: 0;
+    }
+
+    .home-menu {
+        right: 10px;
+    }
+
+    .home-1-main-wrapper {
+        width: 88%;
+    }
+    .home-1-main-bd {
+        display: none;
+    }
+    .main-left {
+        background-color: transparent;
+    }
 }
