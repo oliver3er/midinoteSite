@@ -114,6 +114,7 @@
                     <a href="/">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
+                    <!--#include file='/images/logo-beta.svg' -->
                     </a>
                 </div>
                 <nav class="home-nav">

@@ -109,9 +109,10 @@
         <header class="home-header sub-page-header">
             <div class="home-header-wrapper">
                 <div class="home-logo link-home">
-                    <a href="/">
+                    <a href="index.shtml">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
+                    <!--#include file='/images/logo-beta.svg' -->
                     </a>
                 </div>
                 <nav class="home-nav">
@@ -172,7 +173,7 @@
                     Sartre wrote down his famous thoughts of Existentialism.
                     Sartre said there are some weird words on the notebook's cover: "Midi Suppositories".
                     We hope our Midinote is such a notebook
-                    and offer you good tool for note taking. Please give Midinote a try, 
+                    and offer you good tool for note taking. Please give Midinote a try,
 					it is waiting you to write down your amazing thoughts!
                 </p>
                 <p class="sub-page-content-p">
@@ -185,7 +186,7 @@
                     e-mail: <a class="common-link-in-content" href="mailto:support@midinote.me">support@midinote.me</a>
                 </div>
                 <div class="sub-page-contact-p">
-                    follow us: 
+                    follow us:
 					<a class="social-link-in-content" href="https://twitter.com/midinote" target="_blank" ><!--#include file='/images/twitter-logo.svg' --></a>
                     <a class="social-link-in-content" href="https://www.facebook.com/MidinoteHQ" target="_blank" ><!--#include file='/images/fb-logo.svg' --></a>
                     <a class="social-link-in-content" href="https://weibo.com/midinote" target="_blank" ><!--#include file='/images/wb-logo.svg' --></a>

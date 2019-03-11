@@ -116,6 +116,7 @@
                 <div class="home-logo link-home">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
+                    <!--#include file='/images/logo-beta.svg' -->
                 </div>
                 <nav class="home-nav">
                     <ul>

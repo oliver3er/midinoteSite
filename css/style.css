@@ -561,6 +561,23 @@ th {
     width: auto;
 }
 
+.home-logo .logo-beta {
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: 0;
+    height: 20px;
+    width: 42px;
+}
+
+.__site-is-below .home-logo .logo-beta {
+    height: 16px;
+    width: auto;
+}
+
+.__site-is-below .home-logo .logo-beta .logo-beta-word * {
+    fill: #2e3035;
+}
+
 .home-nav {
     display: flex;
     align-items: center;
@@ -1975,6 +1992,15 @@ th {
 }
 
 .sub-page-header .home-logo .logo-word * {
+    fill: #2e3035;
+}
+
+.sub-page-header .home-logo .logo-beta {
+    height: 18px;
+    width: auto;
+}
+
+.sub-page-header .home-logo .logo-beta .logo-beta-word * {
     fill: #2e3035;
 }
 
