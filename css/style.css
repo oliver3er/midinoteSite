@@ -526,7 +526,6 @@ th {
 
 .home-logo {
     /*display: flex;
-    align-items: center;
     cursor: pointer;*/
 }
 
@@ -559,6 +558,23 @@ th {
     margin-left: 10px;
     height: 32px;
     width: auto;
+}
+
+.home-logo .logo-beta {
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: 0;
+    height: 20px;
+    width: 42px;
+}
+
+.__site-is-below .home-logo .logo-beta {
+    height: 16px;
+    width: auto;
+}
+
+.__site-is-below .home-logo .logo-beta .logo-beta-word * {
+    fill: #2e3035;
 }
 
 .home-nav {
@@ -1820,6 +1836,27 @@ th {
     height: 100%;
 }
 
+.home-no-sign-title {
+    height: 100px;
+    font-size: .22rem;
+    line-height: 100px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    text-align: center;
+}
+
+.home-no-sign-announce {
+    margin-left: 1px;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    padding: 0 5px;
+    font-size: .16rem;
+    line-height: 22px;
+    color: #818285;
+    letter-spacing: .5px;
+    text-align: center;
+}
+
 .site-info {
     display: flex;
     flex-direction: column;
@@ -1975,6 +2012,15 @@ th {
 }
 
 .sub-page-header .home-logo .logo-word * {
+    fill: #2e3035;
+}
+
+.sub-page-header .home-logo .logo-beta {
+    height: 18px;
+    width: auto;
+}
+
+.sub-page-header .home-logo .logo-beta .logo-beta-word * {
     fill: #2e3035;
 }
 
@@ -3271,4 +3317,32 @@ jdiv.label_39._bottom_3v {
         white-space: nowrap;
     }
 
+}
+
+@media screen and (max-width: 375px) {
+    .home-no-sign-title {
+        font-size: .18rem;
+    }
+    .home-no-sign-announce {
+        letter-spacing: .2px;
+        font-size: .14rem;
+    }
+    .home-header-wrapper{
+        padding-left: 10px;
+        padding-right: 0;
+    }
+
+    .home-menu {
+        right: 10px;
+    }
+
+    .home-1-main-wrapper {
+        width: 88%;
+    }
+    .home-1-main-bd {
+        display: none;
+    }
+    .main-left {
+        background-color: transparent;
+    }
 }

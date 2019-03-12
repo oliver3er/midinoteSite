@@ -275,6 +275,7 @@
                     <a href="/">
                     <!--#include file='/images/logo.svg' -->
                     <!--#include file='/images/logo-word.svg' -->
+                    <!--#include file='/images/logo-beta.svg' -->
                     </a>
                 </div>
                 <nav class="home-nav">
@@ -510,15 +511,15 @@
                 <div class="home-bottom-img">
                     <img src="../images/boot-print.png" alt="" />
                 </div>
-            </div>  
+            </div>
 		</div>
 		<div id="home-no-sign" style="display: none;" class="home-bottom">
             <div class="home-bottom-wrapper position-relative">
                 <div class="home-sign-up-form">
-					<h2 class="home-form-title" >Can't sign up for mobile device<h2>
-                    <div class="home-form-announce">Currently Midinote does not support mobile device yet, please use a computer to sign up and use our service.</div>
+					<h2 class="home-no-sign-title" >Can't sign up for mobile device</h2>
+                    <div class="home-no-sign-announce">Currently Midinote does not support mobile device yet, please use a computer to sign up and use our service.</div>
                 </div>
-            </div>  
+            </div>
 		</div>
         <footer class="footer">
             <div class="site-info">

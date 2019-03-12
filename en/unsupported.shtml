@@ -52,6 +52,7 @@
                 <a href="index.shtml">
                 <!--#include file='/images/logo.svg' -->
                 <!--#include file='/images/logo-word.svg' -->
+                <!--#include file='/images/logo-beta.svg' -->
                 </a>
             </div>
             <div class="home-error-menu home-menu">
