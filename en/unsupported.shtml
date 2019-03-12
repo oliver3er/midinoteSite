@@ -50,8 +50,8 @@
         <div class="home-error-header-wrapper">
             <div class="home-error-logo link-home">
                 <a href="index.shtml">
-                <!--#include file='../images/logo.svg' -->
-                <!--#include file='../images/logo-word.svg' -->
+                <!--#include file='/images/logo.svg' -->
+                <!--#include file='/images/logo-word.svg' -->
                 </a>
             </div>
             <div class="home-error-menu home-menu">
@@ -69,14 +69,19 @@
                 <div class="home-error-title error-unsupported-title">Browser Not Supported!</div>
                 <div class="home-error-info">
                     <p>You're using a web browser we don't support yet.</p>
+					<!--
                     <p>Please use one of these options to improve your experience.</p>
+					-->
+					<p>Currently, we just support Google Chrome browser to use Midinote</p>
+					<p>please open Chrome or click link below to install it</p>
                 </div>
                 <div class="home-error-bg">
                     <div class="home-unsupported-wbs">
                         <div class="home-unsupported-wb">
-                            <img src="../images/chrome.png" alt="Google Chrome"/>
-                            <div>Chrome</div>
+                            <a target="_blank" href="https://www.google.com/chrome/" ><img src="../images/chrome.png" alt="Google Chrome"/></a>
+                            <div><a target="_blank" href="https://www.google.com/chrome/" >Chrome</a></div>
                         </div>
+						<!--
                         <div class="home-unsupported-wb">
                             <img src="../images/firefox.png" alt="Mozilla Firefox"/>
                             <div>Firefox</div>
@@ -85,6 +90,7 @@
                             <img src="../images/safari.png" alt="Safari"/>
                             <div>Safari</div>
                         </div>
+						-->
                     </div>
                 </div>
             </div>
@@ -99,7 +105,7 @@
     <footer class="footer">
         <div class="site-info-error">
             <div class="site-logo-link-error">
-                <!--#include file='../images/logo.svg' -->
+                <!--#include file='/images/logo.svg' -->
             </div>
             <div class="site-register-error">© 2018 Midinote Inc. All rights reserved.</div>
         </div>

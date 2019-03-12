@@ -188,11 +188,6 @@
                 }
             });
 
-            $(".link-sign-in").bind('click',function(){
-                $(".menu-page").removeClass("__open").removeClass("__close").addClass("__close");
-                location.href = "#home-sign-in-part";
-            });
-
             $(".home-form-button").bind("click",function(){
                 //判断浏览器是否支持
                 var ua = navigator.userAgent.toLowerCase();
@@ -212,7 +207,7 @@
             });
 
 			//click sign up link to scroll to bottom sign up form
-			$('.link-sign-up').bind('click', function(){
+			$('#signUp').bind('click', function(){
 				$('.home-sign-up-form')[0].scrollIntoView()
 			})
 
@@ -266,7 +261,8 @@
                 <nav class="home-nav">
                     <ul>
                         <li class="link-about"><a href="/cn/about.shtml">关于我们</a></li>  <!-- class="__selected"-->
-                        <li class="link-sign-up">注册</li>  
+                        <li id="signUp" class="link-sign-up">注册</li>  
+                        <li class="link-sign-in"><a href="https://app.midinote.me" >登录</a></li>
                         <!--<li class="link-contact">联系</li>
                         <li class="link-sign-up">注册</li>
                         <li class="link-sign-in">登录</li>-->
