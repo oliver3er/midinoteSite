@@ -349,7 +349,7 @@
                 <div class="content-right">
                     <div class="illustration">
                         <div class="illustration-wrapper">
-                            <img src="../images/addnote.gif" alt="" ／>
+                            <img src="../images/figure1.jpg" alt="" ／>
                         </div>
                     </div>
                 </div>
@@ -384,7 +384,7 @@
                 <div class="content-left">
                     <div class="illustration">
                         <div class="illustration-wrapper">
-                            <img src="../images/mindmap.gif" alt="" ／>
+                            <img src="../images/figure2.jpg" alt="" ／>
                         </div>
                     </div>
                 </div>
@@ -418,7 +418,7 @@
                 <div class="content-right">
                     <div class="illustration">
                         <div class="illustration-wrapper">
-                            <img src="../images/tags.gif" alt="" ／>
+                            <img src="../images/figure3.jpg" alt="" ／>
                         </div>
                     </div>
                 </div>
@@ -574,25 +574,22 @@
 </body>
 
 <script type='text/javascript' >
-    const HOST_API		= '52.194.22.113'
-    const HOST_APP		= 'app.midinote.me'
-    const PORT_API		= '3002'
-    const PORT_APP		= '80'
+    const HOST_URL		= 'https://app.midinote.me'
 
     const MESSAGE	= {
-        USER_REGISTER_EMAIL_REQUIRED	: 'Please input your email address',
-        USER_REGISTER_EMAIL_FORMAT	: 'The email format is bad',
-        USER_REGISTER_PASSWORD_REQUIRED	: 'Please input your password',
-        USER_REGISTER_PASSWORD_FORMAT	: 'The password format is bad',
-        USER_REGISTER_EMAIL_EXISTS	: 'The email already exists',
+        USER_REGISTER_EMAIL_REQUIRED	: '请输入你的邮件地址',
+        USER_REGISTER_EMAIL_FORMAT	: '错误的邮件格式',
+        USER_REGISTER_PASSWORD_REQUIRED	: '请输入你的密码',
+        USER_REGISTER_PASSWORD_FORMAT	: '密码格式错误',
+        USER_REGISTER_EMAIL_EXISTS	: '该邮件地址已经被注册',
     }
     $('.home-form-button').click(function(){
         $('.form-message').html('').removeClass("__show");
-        const email		= $('.user-name').val();
+        const email		= $('.user-email').val();
         const password	= $('.user-psw').val();
         console.debug('begin register with: %s:%s',email,password);
         $.ajax({
-            url		: `http://${HOST_API}:${PORT_API}/api/user/register`,
+            url		: `${HOST_URL}/api/user/register`,
             data	: JSON.stringify({
                 email,
                 password,
@@ -620,7 +617,7 @@
                     const userCode	= data.data.userCode
                     console.log('userCode:',userCode)
                     //jump to app
-                    const url	= `http://${HOST_APP}:${PORT_APP}/login?k=${userCode._id}`
+                    const url	= `${HOST_URL}/login?k=${userCode._id}`
                     console.log('will jump to :',url)
                     document.location = url
                 }else{
@@ -643,6 +640,7 @@
             })
 
     })
+
 
 </script>
 
