@@ -464,6 +464,9 @@
             <div class="home-bottom-wrapper position-relative">
                 <div class="home-sign-up-form">
                     <h2 class="home-form-title">创建你的Midinote账号</h2>
+                    <div class="home-form-announce">
+                       已经注册?请直接<a href="http://app.midinote.me" target="blank" >登录</a>
+                    </div>
                     <div class="home-sign-up-form-content">
                         <div class="home-form-inputs">
                             <div>
@@ -564,11 +567,12 @@
 
 </div>
 
-<!-- BEGIN JIVOSITE CODE {literal} -->
+<!-- BEGIN JIVOSITE CODE {literal} 
 <script type='text/javascript'>
     (function(){ var widget_id = '06pohkrdQX';var d=document;var w=window;function l(){
         var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
 </script>
+-->
 <!-- {/literal} END JIVOSITE CODE -->
 
 </body>
