@@ -247,6 +247,7 @@
         });
 		//}}}
     </script>
+    <script src="../main.js" ></script> 
 </head>
 <body class="home-body">
 <div class="home-page">
@@ -283,6 +284,7 @@
                         <li class="link-about"><a href="/en/about.shtml" target="_self">About us</a></li>
                         <li id='signUp' class="link-sign-up">Sign up</li>
                         <li class="link-sign-in"><a href="https://app.midinote.me" >Sign in</a></li>
+                        <li class="link-about"><a href="/en/help.shtml" >Help</a></li>
                         <!--<li class="link-contact">Contact</li>
                         <li class="link-sign-up">Sign up</li>
                         <li class="link-sign-in">Sign in</li>-->
