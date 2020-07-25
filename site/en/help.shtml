@@ -150,6 +150,9 @@
             <ul class="list" >
               <li><a href="#create_note" >How to create a note?</a></li>
               <li><a href="#input_tags">How to input tags</a></li>
+              <li><a href="#define_tag">How to define a tag</a></li>
+              <li><a href="#create_mindmap">How to develop my mind map structure in Midinote?</a></li>
+              <li><a href="#article" >What's article?</a></li>
             </ul>
             <h3 id="create_note" >
               <a href="#create_note" >
@@ -184,8 +187,113 @@
             </p>
             <img src="../images/help/tag3.png" />
             <p>
-            Using <span>up</span> and <span>down</span> to move the selection, press <span>enter</span> to chose your selection.
+            Using <span>up</span> and <span>down</span> to change the option, press <span>enter</span> to pick the tag you want.
             </p>
+            <p>
+            Another way to input tags is by using the tag recommender bar. On top of the app, there is a rectangle area called the tag recommender bar. As you typing note content, Midinote would analyze the content, and give you some recommended tag in the bar.
+            </p>
+            <img src="../images/help/recommender_bar.png"/>
+            <p>
+              Just click the recommended tag directly to input the tag into your notes.
+            </p>
+            <p>
+              And, you can also input tag in this way:
+            </p>
+            <p>
+              Select the text that you want it to become a tag. Then, click the <span>#</span> icon in the toolbar. The text selected would become a tag.
+            </p>
+            <img src="../images/help/toolbar_tag.png" />
+            <h3 id="define_tag">
+              <a href="#define_tag" >
+                How to define a tag?
+              </a>
+            </h3>
+            <p>&</p>
+            <h3 id="create_mindmap">
+              <a href="#create_mindmap" >
+                How to develop my mind map structure in Midinote?
+              </a>
+            </h3>
+            <p>
+              In Midinote, you can develop your own mind map structure by defining tags. Say you have a tag 'A' and 'B', if you using 'A' to define 'B', then you created a structure that B belongs to A, or you can say, B is a sub-tag of A. Presented in the mind map, the B would be a branch node linked to A.
+            </p>
+            <p>
+              First, let's show you how to define a tag. To define a tag, move mouse to the tag which you want to define. There would be a tooltip to be shown.
+            </p>
+            <img src="../images/help/tooltip.png" />
+            <p>
+              Click the 'gear' icon to open the tag setting dialog.
+            </p>
+            <img src="../images/help/setting_dialog.png" />
+            <p>
+              Find the section: "definition".Input something about: What is this tag ? Or, what is this tag about? And you can input tags just like you do it in notes. 
+            </p>
+            <img src="../images/help/definition.png" />
+            <p>
+              When you defined the relationship between tags, you will find the mind map would represent it.
+            </p>
+            <img src="../images/help/mindmap.png" />
+            <p>
+              And you will find, all those notes belong to the children tags, would belong to their parents too.
+            </p>
+            <img src="../images/help/notes.png" />
+            <h3 id="article" >
+              <a href="#article" >
+                What's article?
+              </a>
+            </h3>
+            <p>
+              In Midinote, when you login, what's presenting to you is about an 'article'.
+            </p>
+            <p>
+              As shown below, there are some elements in an article, let's discover it one by one.
+            </p>
+            <img src="../images/help/article.png" />
+            <p>
+            <strong>Article Title</strong>
+            </p>
+            <p>
+              The title of current article, actually, the must be a tag name. In the world of Midinote, every tag is an article. You can click any tag to go into the article of this tag.
+            </p>
+            <p>
+            <strong>Article Navigator</strong>
+            </p>
+            <p>
+              The navigator indicate the position/path to current article. Like what illuminated in the figure, the current article/tag is 'B', it's parent is 'A', and A's parent is the unique global tag: "Merry", the so-called unique global tag, is the first tag created when you begin to use Midinote, all other tags in Midinote belong to it.
+            </p>
+            <p>
+            The navigator also record the history of your visit between articles/tags. Using <img class="icon" src="../images/help/back.png" /> or <img class="icon" src="../images/help/forward.png" /> to go back or forward in your visit history.
+            </p>
+            <p>
+            <strong>Article Description</strong>
+            </p>
+            <p>
+              Actually, they are the definition of current tag.
+            </p>
+            <p>
+            <strong>Article Content</strong>
+            </p>
+            <p>
+              All the notes belong to this article/tag. 
+            </p>
+            <p>
+              In Midinote, if you attach a tag to a note, then, this note belongs to the tag. It would appear in the article of this tag. Also, this note would appear in all the ancestor of this tag.
+            </p>
+            <p>
+            <strong>Article Graph</strong>
+            </p>
+            <p>
+              Show this article in graph. There are two different types of graph:
+            </p>
+            <p>
+              Mind Map
+            </p>
+            <img src="../images/help/mindmap2.png" />
+            <p>
+              Bubble
+            </p>
+            <img src="../images/help/bubble.png" />
+            <p>Click icon <img class="icon" src="../images/help/mindmap_icon.png" /> or <img class="icon" src="../images/help/bubble_icon.png" /> to switch between these two graph.
           </div>
         </div>
 

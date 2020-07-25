@@ -3399,6 +3399,7 @@ jdiv.label_39._bottom_3v {
   max-width: 80%;
   margin-top: 20px;
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 .container>p span {
@@ -3412,4 +3413,10 @@ jdiv.label_39._bottom_3v {
   border: 1px solid #d1d5da;
   border-radius: 6px;
   box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
 }
