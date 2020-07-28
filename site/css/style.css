@@ -3366,6 +3366,7 @@ jdiv.label_39._bottom_3v {
 
 .container .list>li {
   list-style: disc;
+  margin: 10px 0;
 }
 
 .container .list a {
@@ -3379,6 +3380,7 @@ jdiv.label_39._bottom_3v {
 .container>h3 {
   width: 80%;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .container>h3>a {
@@ -3396,10 +3398,17 @@ jdiv.label_39._bottom_3v {
 }
 
 .container>img {
-  max-width: 80%;
+  max-width: 800px;
+  height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
+}
+
+@media (max-width: 960px){
+  .container>img {
+    width: 80%;
+  }
 }
 
 .container>p span {
