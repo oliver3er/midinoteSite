@@ -150,8 +150,7 @@
             <ul class="list" >
               <li><a href="#create_note" >How to create a note?</a></li>
               <li><a href="#input_tags">How to input tags</a></li>
-              <li><a href="#define_tag">How to define a tag</a></li>
-              <li><a href="#create_mindmap">How to develop my mind map structure in Midinote?</a></li>
+              <li><a href="#define_tag">How to define a tag and how to develop my mind map structure in Midinote?</a></li>
               <li><a href="#article" >What's the article?</a></li>
               <li><a href="#navigation" >How to navigate between articles/tags?</a></li>
               <li><a href="#mindmap" >What's mind map viewer and how to use it.</a></li>
@@ -173,11 +172,11 @@
               </a>
             </h3>
             <p>
-              To create a new note, move the mouse to the input field on the top which is marked as: " write down your note title and press 'Enter'".
+              To create a new note, move the mouse to the input field on the top marked as: " write down your note title and press 'Enter'".
             </p>
             <img src="../images/help/create_note.png" />
             <p>
-              Please think of the title of this note, like what's this note about? Or just the content of the note directly if it's short enough. Then stike key "Enter", Midinote will create a new note for you.
+              Please write down the title for this note, it should be something like what's this note about? Or just the content of the note directly if it's short enough. Then stike key "Enter", Midinote will create a new note for you.
             </p>
             <img src="../images/help/new_note.png" />
             <h3 id="input_tags">
@@ -193,18 +192,18 @@
             </p>
             <img src="../images/help/tag1.png" />
             <p>
-            Now keep typing the name of the tag, you can not include any <span>space</span> char in a tag's name, and press <span>space</span> to finish inputting tag.
+            Now keep typing the name of the tag, you can not include any <span>space</span> char in a tag name, and press <span>space</span> to finish inputting tag.
             </p>
             <img src="../images/help/tag2.png" />
             <p>
-              And when you are inputting tag name, Midinote would give you some suggestions if there is any.
+              When you are inputting tag name, Midinote will give you some suggestions if there is any.
             </p>
             <img src="../images/help/tag3.png" />
             <p>
               To select one of them, press up and down to change the option and press enter to pick the tag you want.
             </p>
             <p>
-              Another way to input tags is to use the tag recommender bar. On top of the app, there is a rectangle area called the tag recommender bar. As you typing content, Midinote will analyze it, and give you some possible tag in the bar.
+              Another way to input tags is to use the tag recommender bar. On top of the app, there is a rectangle area called the tag recommender bar. As you type content, Midinote will analyze it, and give you some possible tag suggestions in the bar.
             </p>
             <img src="../images/help/recommender_bar.png"/>
             <p>
@@ -219,20 +218,14 @@
             <img src="../images/help/toolbar_tag.png" />
             <h3 id="define_tag">
               <a href="#define_tag" >
-                How to define a tag?
-              </a>
-            </h3>
-            <p>&</p>
-            <h3 id="create_mindmap">
-              <a href="#create_mindmap" >
-                How to develop my mind map structure in Midinote?
+                How to define a tag? And how to develop my mind map structure in Midinote?
               </a>
             </h3>
             <p>
-              In Midinote, you can develop your own mind map structure by defining tags. Say you have a tag 'A' and 'B', if you use 'A' to define 'B', then you created a structure that B belongs to A, or you can say, B is a sub-tag of A. Presented in the mind map, the B would be a branch node connected to A.
+              In Midinote, you can develop your own mind map structure by defining tags. Say you have a tag 'A' and 'B', if you use 'A' to define 'B', then you created a structure that the tag B belongs to the tag A, or you can say, B is a sub-tag of A. Presented in the mind map, the B would be a branch node connected to A.
             </p>
             <p>
-              First, let's show you how to define a tag. To define a tag, move the mouse to the tag which you want to define. Stay for a while, a tooltip will appear.
+              First, let's show you how to define a tag. To define a tag, move the mouse to the tag that you want to define. Stay for a while, a tooltip will appear.
             </p>
             <img src="../images/help/tooltip.png" />
             <p>
@@ -240,11 +233,11 @@
             </p>
             <img src="../images/help/setting_dialog.png" />
             <p>
-Find the section: "definition".Input something about: What is this tag? Or, what is this tag about? And you can input tags in the definition just like you do in notes.
+Find the section: "definition". Input something describing: What is this tag? Or, what is this tag about? And you can also input tags in the definition, just like you do in notes.
             </p>
             <img src="../images/help/definition.png" />
             <p>
-              After defining a tag with other tags, you have defined the relationship between these tags, you will find the mind map would present the relationship.
+              After defining a tag with other tags, you have defined the relationship between these tags, you will find the mind map would present this relationship.
             </p>
             <img src="../images/help/mindmap.png" />
             <p>
@@ -257,7 +250,7 @@ Find the section: "definition".Input something about: What is this tag? Or, what
               </a>
             </h3>
             <p>
-              The title of the current article. Actually, an article title must be a tag name. In the world of Midinote, every tag is an article. You can click any tag to go into the article of this tag.
+			In Midinote, every tag is an article, so if you click a tag and entered into this tag, it means you opened the article of this tag. For Midinote, the home page of this app is all about an article, or you can say about a tag, it would be shown just after your login.
             </p>
             <p>
               As shown below, there are several elements in an article:
@@ -273,7 +266,7 @@ Find the section: "definition".Input something about: What is this tag? Or, what
             <strong>Article Navigator</strong>
             </p>
             <p>
-              The navigator indicates the position/path to the current article. Like what illuminated in the figure, the current article/tag is 'B', its parent is 'A', and A's parent is a special unique global tag: "Merry", it is the first tag that created when you begin to use Midinote, Midinote will force you to create it, all other tags in Midinote belong to it.
+              The navigator indicates the position/path to the current article. As illuminated in the figure, the current article/tag is 'B', its parent is 'A', and A's parent is a special unique global tag: "Merry", it is the first tag that created when you begin to use Midinote, Midinote will force you to create it, all other tags in Midinote belong to it. It's a global root tag.
             </p>
             <p>
             The navigator also records the history of your visit to articles/tags. Using <img class="icon" src="../images/help/back.png" /> or <img class="icon" src="../images/help/forward.png" /> to go back or forward in your visit history.
@@ -297,7 +290,7 @@ Find the section: "definition".Input something about: What is this tag? Or, what
             <strong>Article Graph</strong>
             </p>
             <p>
-              Show this article in the form of graphs. There are two different types of graph:
+              Show articles in the form of graphs. There are two different types of graph:
             </p>
             <p>
               Mind Map
@@ -332,7 +325,7 @@ Find the section: "definition".Input something about: What is this tag? Or, what
             </p>
             <img src="../images/help/history.png" />
             <p>
-              And there is another way to go to an article/tag. Click the search box on the top right corner of the app. Input the name of the article/tag that you want to go to. The search box will try to match the possible tags according to your input. Select the tag you want to go to the article/tag directly.
+              And there is another way to go to an article/tag. Click the search box on the top right corner of the app. Input the name of the article/tag that you want to go to. The search box will try to match the possible tags according to your input. Select the tag you want to go directly.
             </p>
             <img src="../images/help/searchbox.png" />
             <h3 id="mindmap" >
@@ -369,7 +362,7 @@ Find the section: "definition".Input something about: What is this tag? Or, what
               </a>
             </h3>
             <p>
-              You can not change the structure of the mind map on the viewer. For example, on the mind map, tag 'A' is the parents of tag 'B', you can not move the tag 'B' upward to make it become the sibling of the tag 'A'. The only way to change the structure of a mind map, is to 'define' the tag, as we discussed in the article: <a href="#define_tag" >How to define a tag?</a>
+              You can not change the structure of the mind map on the viewer. For example, on the mind map, tag 'A' is the parents of tag 'B', you can not move the tag 'B' upward to make it become the sibling of the tag 'A'. The only way to change the structure of a mind map, is to 'define' the tag, as we discussed in the article: <a href="#define_tag" style="text-decoration: underline;" >How to define a tag?</a>
             </p>
             <p>
               But you can change the order of those nodes which are siblings under the same tag.
@@ -440,7 +433,7 @@ Find the section: "definition".Input something about: What is this tag? Or, what
               </a>
             </h3>
             <p>
-            To input a picture at the current cursor, click the icon <img class="icon" src="../images/help/input_picture.png" /> on the toolbar, then select an image on your PC.
+            To input a picture at the current cursor, click the icon <img class="icon" src="../images/help/input_picture.png" /> on the toolbar, a picture-picking dialog will show up, then select a picture to add to the note.
             </p>
             <p>
               You can also input a picture just like inputting a tag, to do so, type '#pic' then press 'space' key, then the picture-picking dialog will show up to let you select a picture. 
@@ -472,10 +465,10 @@ Find the section: "definition".Input something about: What is this tag? Or, what
             <p>
               You can click the ToDo item to check or uncheck the ToDo item.
             </p>
+            <img src="../images/help/todo_note_checked.png" />
             <p>
               You can also input a ToDo item just like inputting a tag, to do so, type '#todo' then press 'space' key.
             </p>
-            <img src="../images/help/todo_note_checked.png" />
             <h3 id="input_link" >
               <a href="#input_link" >
                 How to input a link?
@@ -507,6 +500,9 @@ Find the section: "definition".Input something about: What is this tag? Or, what
             <p>
             Just input the code, and click icon <img class="icon" src="../images/help/input_quote_ok.png" /> to finish the input or <img class="icon" src="../images/help/input_quote_delete.png" /> to cancel it.
             </p>
+            <p>
+              You can also input a code block just like inputting a tag, to do so, type '#code' then press 'space' key.
+            </p>
             <h3 id="input_long_content" >
               <a href="#input_long_content" >
                 How to input long content?
@@ -519,6 +515,9 @@ Find the section: "definition".Input something about: What is this tag? Or, what
             To do so, click icon <img class="icon" src="../images/help/input_document.png" />, then a document editor will appear:
             </p>
             <img src="../images/help/input_document_demo.png" />
+            <p>
+              You can also input a document just like inputting a tag, to do so, type '#doc' then press 'space' key.
+            </p>
             <h3 id="tag_alias" >
               <a href="#tag_alias" >
                 How to use tag alias?
@@ -550,7 +549,7 @@ Find the section: "definition".Input something about: What is this tag? Or, what
             </p>
             <img src="../images/help/trigger.png" />
             <p>
-              Input the trigger name 'password'. Then turn to the note editor, and input some words including 'password'. Please note the tag recommender bar on the top right corner. A name 'account' appears on it. And if you click it, the tag 'account' would input into this note.
+              Input the trigger name 'password'. Then turn to the note editor, and input some words including 'password'. Please note the tag recommender bar on the top right corner. A name 'account' appears on it. And if you click it, the tag 'account' would be inserted into this note.
             </p>
             <img src="../images/help/trigger_demo.png" />
             <h3 id="tag_name_change" >
