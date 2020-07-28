@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Midinote: help | Midinote</title>
+	<meta name="language" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<meta name="description" content="Midinote is a special notebook app for people who have the habit of recording." />
+	<!-- OG meta -->
+	<meta property="og:type" content="website" >
+	<meta property="og:title" content="Midinote: help" >
+	<meta property="og:description" content="Midinote is a special notebook app for people who have the habit of recording." >
+	<meta property="og:image" content="https://www.midinote.me/images/big-logo.jpg" >
+	<meta property="og:image:width" content="600" >
+	<meta property="og:image:height" content="600" >
+	<meta property="og:url" content="http://www.midinote.me/en/help.shtml" >
+	<!-- twitter meta -->
+	<meta name="twitter:card" content="summary" >
+	<meta name="twitter:site" content="@midinote" >
+	<meta name="twitter:create" content"@midinote" >
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+    <script src="../js/jquery.min.js"></script>
+	<script src='../js/visit.js' ></script>
+    <script type="text/javascript">
+
+        $(window).resize(function() {
+            var width = $(this).width();
+            if(width> 980){
+                if( $(".menu-page").hasClass("__open")){
+                    $(".home-menu").show();
+                    $(".home-nav").hide();
+                    return;
+                }else {
+                    $(".home-menu").hide();
+                    $(".home-nav").show();
+                    $(".home-menu").removeClass("home-menu-open").removeClass("home-menu-close");
+                }
+            }else {
+                $(".home-menu").show();
+                $(".home-nav").hide();
+            }
+
+        });
+
+        $(function () {
+
+            $(document).bind('scroll', function (event) {
+                var v1 = document.body.scrollTop;
+                var v2 = document.documentElement.scrollTop;
+                var scrollTop = Math.max(v1, v2);
+
+                if (scrollTop > 50) {
+                    if ($(".home-header").hasClass("__site-is-below")) {
+
+                    } else {
+                        $(".home-header").addClass("__site-is-below");
+                    }
+                } else if (scrollTop < 50) {
+                    $(".home-header").removeClass("__site-is-below");
+                }
+            });
+
+            $(".home-menu").bind('click',function(){
+                var menu = $(".menu-page");
+
+                if($(this).hasClass("home-menu-open") ){
+                    $(this).removeClass("home-menu-open").addClass("home-menu-close");
+
+                    if(menu.hasClass("__open")) {
+                        menu.removeClass("__open");
+                    }else {
+                        menu.addClass("__open");
+                    }
+                } else {
+                    $(this).removeClass("home-menu-close").addClass("home-menu-open");
+                    if(menu.hasClass("__open")) {
+                        menu.removeClass("__open");
+                    }else {
+                        menu.addClass("__open");
+                    }
+                }
+
+
+            });
+
+            /*$(".link-sign-up").bind('click',function(){
+                window.location = 'http://app.midinote.me/login';
+            });
+            $(".link-sign-in").bind('click',function(){
+                window.location = 'http://app.midinote.me/register';
+            });*/
+
+            $(".language").bind("click",function(){
+                var selection = $(".lang-selection");
+                if(selection.hasClass("__open")) {
+                    selection.removeClass("__open");
+                }else {
+                    selection.addClass("__open");
+                }
+            });
+
+        });
+    </script>
+  <script src="../main.js" ></script>
+</head>
+<body class="home-body">
+<div class="home-page">
+    <div class="home-wrapper">
+        <header class="home-header sub-page-header">
+            <div class="home-header-wrapper">
+                <div class="home-logo link-home">
+                    <a href="index.shtml">
+                    <!--#include file='/images/logo.svg' -->
+                    <!--#include file='/images/logo-word.svg' -->
+                    <!--#include file='/images/logo-beta.svg' -->
+                    </a>
+                </div>
+                <nav class="home-nav">
+                    <ul>
+                        <li class="link-about __selected">Help</li>
+                        <!--<li class="link-contact">Contact</li>
+                        <li class="link-sign-up">Sign up</li>
+                        <li class="link-sign-in">Sign in</li>-->
+                    </ul>
+                    <div class="language position-relative">
+                        <!--#include file='/images/lang.svg' -->
+                        <span>English</span>
+                        <!--#include file='/images/down-arrow.svg' -->
+                        <div class="lang-selection">
+                            <div class="lang-selection-option __option_en">English(US)</div>
+                            <div class="lang-selection-option __option_cn"><a href="../cn/about.shtml">中文(简体)</a></div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="home-menu">
+                    <span class="home-menu-p1"></span>
+                    <span class="home-menu-p2"></span>
+                    <span class="home-menu-p3"></span>
+                </div>
+            </div>
+        </header>
+        <div class="sub-page-title">
+            <h1>Help Center</h1>
+            <h2></h2>
+        </div>
+        <div class="sub-page-content">
+          <div class="container">
+            <ul class="list" >
+              <li><a href="#create_note" >How to create a note?</a></li>
+              <li><a href="#input_tags">How to input tags</a></li>
+              <li><a href="#define_tag">How to define a tag</a></li>
+              <li><a href="#create_mindmap">How to develop my mind map structure in Midinote?</a></li>
+              <li><a href="#article" >What's the article?</a></li>
+              <li><a href="#navigation" >How to navigate between articles/tags?</a></li>
+              <li><a href="#mindmap" >What's mind map viewer and how to use it.</a></li>
+              <li><a href="#mindmap_change" >How to change the mind map?</a></li>
+              <li><a href="#search" >How to search?</a></li>
+              <li><a href="#input_picture" >How to input a picture?</a></li>
+              <li><a href="#input_quote" >How to input a quote block?</a></li>
+              <li><a href="#input_todo" >How to input a ToDo item?</a></li>
+              <li><a href="#input_link" >How to input a link?</a></li>
+              <li><a href="#input_code" >How to input a code block?</a></li>
+              <li><a href="#input_long_content" >How to input long content?</a></li>
+              <li><a href="#tag_alias" >How to use tag alias?</a></li>
+              <li><a href="#tag_trigger" >How to use tag trigger?</a></li>
+              <li><a href="#tag_name_change" >How to change a tag's name?</a></li>
+            </ul>
+            <h3 id="create_note" >
+              <a href="#create_note" >
+                How to create a note?
+              </a>
+            </h3>
+            <p>
+              To create a new note, move the mouse to the input field on the top which is marked as: " write down your note title and press 'Enter'".
+            </p>
+            <img src="../images/help/create_note.png" />
+            <p>
+              Please think of the title of this note, like what's this note about? Or just the content of the note directly if it's short enough. Then stike key "Enter", Midinote will create a new note for you.
+            </p>
+            <img src="../images/help/new_note.png" />
+            <h3 id="input_tags">
+              <a href="#input_tags" >
+                How to input tags
+              </a>
+            </h3>
+            <p>
+              There are several different ways to input tags.
+            </p>
+            <p>
+            First, when you are writing a note, press key <span>#</span> to begin to input a tag.
+            </p>
+            <img src="../images/help/tag1.png" />
+            <p>
+            Now keep typing the name of the tag, you can not include any <span>space</span> char in a tag's name, and press <span>space</span> to finish inputting tag.
+            </p>
+            <img src="../images/help/tag2.png" />
+            <p>
+              And when you are inputting tag name, Midinote would give you some suggestions if there is any.
+            </p>
+            <img src="../images/help/tag3.png" />
+            <p>
+              To select one of them, press up and down to change the option and press enter to pick the tag you want.
+            </p>
+            <p>
+              Another way to input tags is to use the tag recommender bar. On top of the app, there is a rectangle area called the tag recommender bar. As you typing content, Midinote will analyze it, and give you some possible tag in the bar.
+            </p>
+            <img src="../images/help/recommender_bar.png"/>
+            <p>
+              Just click the tag in the bar directly to input the tag into your notes.
+            </p>
+            <p>
+              And, you can also input tag in this way:
+            </p>
+            <p>
+              Select some text in a note. Then, click the <span>#</span> icon in the toolbar. Then the text selected would become a tag.
+            </p>
+            <img src="../images/help/toolbar_tag.png" />
+            <h3 id="define_tag">
+              <a href="#define_tag" >
+                How to define a tag?
+              </a>
+            </h3>
+            <p>&</p>
+            <h3 id="create_mindmap">
+              <a href="#create_mindmap" >
+                How to develop my mind map structure in Midinote?
+              </a>
+            </h3>
+            <p>
+              In Midinote, you can develop your own mind map structure by defining tags. Say you have a tag 'A' and 'B', if you use 'A' to define 'B', then you created a structure that B belongs to A, or you can say, B is a sub-tag of A. Presented in the mind map, the B would be a branch node connected to A.
+            </p>
+            <p>
+              First, let's show you how to define a tag. To define a tag, move the mouse to the tag which you want to define. Stay for a while, a tooltip will appear.
+            </p>
+            <img src="../images/help/tooltip.png" />
+            <p>
+              Click the 'gear' icon to open the tag setting dialog.
+            </p>
+            <img src="../images/help/setting_dialog.png" />
+            <p>
+Find the section: "definition".Input something about: What is this tag? Or, what is this tag about? And you can input tags in the definition just like you do in notes.
+            </p>
+            <img src="../images/help/definition.png" />
+            <p>
+              After defining a tag with other tags, you have defined the relationship between these tags, you will find the mind map would present the relationship.
+            </p>
+            <img src="../images/help/mindmap.png" />
+            <p>
+              And you will find, all those notes that belong to the children tags would belong to their parents too.
+            </p>
+            <img src="../images/help/notes.png" />
+            <h3 id="article" >
+              <a href="#article" >
+                What's the article?
+              </a>
+            </h3>
+            <p>
+              The title of the current article. Actually, an article title must be a tag name. In the world of Midinote, every tag is an article. You can click any tag to go into the article of this tag.
+            </p>
+            <p>
+              As shown below, there are several elements in an article:
+            </p>
+            <img src="../images/help/article.png" />
+            <p>
+            <strong>Article Title</strong>
+            </p>
+            <p>
+              The title of current article, actually, it must be a tag name. In the world of Midinote, every tag is an article. You can click any tag to go into the article of this tag.
+            </p>
+            <p>
+            <strong>Article Navigator</strong>
+            </p>
+            <p>
+              The navigator indicates the position/path to the current article. Like what illuminated in the figure, the current article/tag is 'B', its parent is 'A', and A's parent is a special unique global tag: "Merry", it is the first tag that created when you begin to use Midinote, Midinote will force you to create it, all other tags in Midinote belong to it.
+            </p>
+            <p>
+            The navigator also records the history of your visit to articles/tags. Using <img class="icon" src="../images/help/back.png" /> or <img class="icon" src="../images/help/forward.png" /> to go back or forward in your visit history.
+            </p>
+            <p>
+            <strong>Article Description</strong>
+            </p>
+            <p>
+              Actually, they are the definition of the current tag.
+            </p>
+            <p>
+            <strong>Article Content</strong>
+            </p>
+            <p>
+              All the notes that belong to this article/tag.
+            </p>
+            <p>
+              In Midinote, if you attach a tag to a note, then, this note belongs to the tag. It will appear in the article of this tag. Also, this note will appear in all the ancestors of this tag.
+            </p>
+            <p>
+            <strong>Article Graph</strong>
+            </p>
+            <p>
+              Show this article in the form of graphs. There are two different types of graph:
+            </p>
+            <p>
+              Mind Map
+            </p>
+            <img src="../images/help/mindmap2.png" />
+            <p>
+              Bubble
+            </p>
+            <img src="../images/help/bubble.png" />
+            <p>Click icon <img class="icon" src="../images/help/mindmap_icon.png" /> or <img class="icon" src="../images/help/bubble_icon.png" /> to switch between these two graphs.
+            
+            <h3 id="navigation" >
+              <a href="#navigation" >
+                How to navigate between articles/tags?
+              </a>
+            </h3>
+            <p>
+              There are many ways to navigate between articles/tags.
+            </p>
+            <p>
+              First, articles/tags are just like a web link, we can jump to any articles/tags by clicking it.
+            </p>
+            <p>
+              Then we can click the tags on the article navigator to jump to this tag's ancestor quickly.
+            </p>
+            <img src="../images/help/navigator.png" />
+            <p>
+              Also, the article navigator will record your recent visit history, so you can jump between your visitor history back and forth, just like what we do in the browser application, to do so, click the back or forward arrow on the left of the navigator.
+            </p>
+            <p>
+              And you can hover your mouse pointer over the arrow, a history list will be shown and just click the item you want to go to.
+            </p>
+            <img src="../images/help/history.png" />
+            <p>
+              And there is another way to go to an article/tag. Click the search box on the top right corner of the app. Input the name of the article/tag that you want to go to. The search box will try to match the possible tags according to your input. Select the tag you want to go to the article/tag directly.
+            </p>
+            <img src="../images/help/searchbox.png" />
+            <h3 id="mindmap" >
+              <a href="#mindmap" >
+                What's mind map viewer and how to use it?
+              </a>
+            </h3>
+            <p>
+              There are two kinds of mind map viewer, one is on the right of the article page, one is on the page by clicking the second item on the menu bar<img class="icon" src="../images/help/mindmap_button.png" />. Both of them have similar operations.
+            </p>
+            <img src="../images/help/mindmap_big.png" />
+            <p>
+              By clicking every node on the mind map, we can enter this node, the viewer changes to take the clicked node/tag as the center point of the current mind map.
+            </p>
+            <p>
+              By right-clicking the node, a menu panel will appear.
+            </p>
+            <img src="../images/help/context_menu.png" />
+            <p>
+              The menu items are:
+            </p>
+            <p>
+              <img class="icon" src="../images/help/context_menu_setting.png" /> Open the setting dialog for this tag.  
+            </p>
+            <p>
+              <img class="icon" src="../images/help/context_menu_dive_in.png" /> Open this tag's mind map.
+            </p>
+            <p>
+              <img class="icon" src="../images/help/context_menu_article.png" /> Open this tag's article.  
+            </p>
+            <h3 id="mindmap_change" >
+              <a href="#mindmap_change" >
+                How to change the mind map?
+              </a>
+            </h3>
+            <p>
+              You can not change the structure of the mind map on the viewer. For example, on the mind map, tag 'A' is the parents of tag 'B', you can not move the tag 'B' upward to make it become the sibling of the tag 'A'. The only way to change the structure of a mind map, is to 'define' the tag, as we discussed in the article: <a href="#define_tag" >How to define a tag?</a>
+            </p>
+            <p>
+              But you can change the order of those nodes which are siblings under the same tag.
+            </p>
+            <p>
+            To do so, drag the ring before the tag:
+            </p>
+            <img src="../images/help/ring.png" />
+            <p>
+              And drop the mouse when a 'dock' icon appears.
+            </p>
+            <img src="../images/help/dock.png" />
+            <h3 id="search" >
+              <a href="#search" >
+                How to search?
+              </a>
+            </h3>
+            <p>
+              To search in Midinote, click the third item on the menu bar <img class="icon" src="../images/help/search_button.png" />
+            </p>
+            <p>
+              And input the keyword:
+            </p>
+            <img src="../images/help/search.png" />
+            <p>
+              And you can also input tags to narrow down the search result.
+            </p>
+            <img src="../images/help/search_tags.png" />
+            <p>
+              To append additional tags as search criteria, you can also click the tag bubbles on the right.
+            </p>
+            <img src="../images/help/search_bubble.png" />
+            <p>
+              And in Midinote, there are some special search criteria to help you find you want. They are:
+            </p>
+            <img src="../images/help/search_special_tags.png" />
+            <p><strong>Created time</strong></p>
+            <p>
+              To search notes created within a specified time range.
+            </p>
+            <p><strong>ToDo</strong></p>
+            <p>
+              To search notes containing ToDo items.
+            </p>
+            <p><strong>Picture</strong></p>
+            <p>
+              To search notes containing pictures.
+            </p>
+            <p><strong>Link</strong></p>
+            <p>
+              To search notes containing web links.
+            </p>
+            <p><strong>Document</strong></p>
+            <p>
+              To search notes containing long content document.
+            </p>
+            <p><strong>Quote</strong></p>
+            <p>
+              To search notes containing quote block.
+            </p>
+            <p><strong>Code</strong></p>
+            <p>
+              To search notes containing code block.
+            </p>
+            <h3 id="input_picture" >
+              <a href="#input_picture" >
+                How to input a picture?
+              </a>
+            </h3>
+            <p>
+            To input a picture at the current cursor, click the icon <img class="icon" src="../images/help/input_picture.png" /> on the toolbar, then select an image on your PC.
+            </p>
+            <p>
+              You can also input a picture just like inputting a tag, to do so, type '#pic' then press 'space' key, then the picture-picking dialog will show up to let you select a picture. 
+            </p>
+            <h3 id="input_quote" >
+              <a href="#input_quote" >
+                How to input a quote block?
+              </a>
+            </h3>
+            <p>
+            To input a quote block at the current cursor, click the icon <img class="icon" src="../images/help/input_quote.png" /> on the toolbar, then an empty quote block will appear at the current cursor position:
+            </p>
+            <img src="../images/help/input_quote_block.png" />
+            <p>
+            Click icon <img class="icon" src="../images/help/input_quote_ok.png" /> on the top right corner of the quote block box to finish your input. Or click icon <img class="icon" src="../images/help/input_quote_delete.png" /> to cancel this input.
+            </p>
+            <p>
+              You can also input a quote block just like inputing a tag, to do so, type '#quote' then press 'space' key.
+            </p>
+            <h3 id="input_todo" >
+              <a href="#input_todo" >
+                How to input a ToDo item?
+              </a>
+            </h3>
+            <p>
+            To input a ToDo item at the current cursor, click the icon <img class="icon" src="../images/help/input_todo.png" /> on the toolbar, then an ToDo item will appear at the current cursor position:
+            </p>
+            <img src="../images/help/todo_note.png" />
+            <p>
+              You can click the ToDo item to check or uncheck the ToDo item.
+            </p>
+            <p>
+              You can also input a ToDo item just like inputting a tag, to do so, type '#todo' then press 'space' key.
+            </p>
+            <img src="../images/help/todo_note_checked.png" />
+            <h3 id="input_link" >
+              <a href="#input_link" >
+                How to input a link?
+              </a>
+            </h3>
+            <p>
+              To input a link at the current cursor, click the icon <img class="icon" src="../images/help/input_link.png" /> on the toolbar, then a dialog will appear:
+            </p>
+            <img src="../images/help/input_link_dialog.png" />
+            <p>
+              Input the link URL address in the URL field.
+            </p>
+            <p>
+              In the name field, input the text that you want to display in the note for this link.
+            </p>
+            <img src="../images/help/input_link_demo.png" />
+            <p>
+              You can also input a link just like inputting a tag, to do so, type '#link' then press 'space' key.
+            </p>
+            <h3 id="input_code" >
+              <a href="#input_code" >
+                How to input a code block?
+              </a>
+            </h3>
+            <p>
+              To input a code block at the current cursor, click the icon <img class="icon" src="../images/help/input_code.png" /> on the toolbar, then an empty code block will appear:
+            </p>
+            <img src="../images/help/input_code_block.png" />
+            <p>
+            Just input the code, and click icon <img class="icon" src="../images/help/input_quote_ok.png" /> to finish the input or <img class="icon" src="../images/help/input_quote_delete.png" /> to cancel it.
+            </p>
+            <h3 id="input_long_content" >
+              <a href="#input_long_content" >
+                How to input long content?
+              </a>
+            </h3>
+            <p>
+              Because Midinote limit the length of content for every note (2000 maximum characters), so to input content exceed the limitation, we can input a document tag into the note.
+            </p>
+            <p>
+            To do so, click icon <img class="icon" src="../images/help/input_document.png" />, then a document editor will appear:
+            </p>
+            <img src="../images/help/input_document_demo.png" />
+            <h3 id="tag_alias" >
+              <a href="#tag_alias" >
+                How to use tag alias?
+              </a>
+            </h3>
+            <p>
+              Sometimes, there are several possible different names for a tag, for example, Javascript and JS are the same. So we can use tag alias to let multiple different names represent the same tag.
+            </p>
+            <p>
+              To do so, for instance, we have had a tag named 'Javascript', now we want to add an alias 'JS' for this tag, first, open the tag setting dialog, and find the section 'alias':
+            </p>
+            <img src="../images/help/alias.png" />
+            <p>
+              Input the alias name. You can input multiple alias names for a tag.
+            </p>
+            <p>
+              After doing this, you can now try to input the tag 'JS' into your note, and actually, you are inputting tag 'Javascript' that is displayed with the alias name 'JS'.
+            </p>
+            <h3 id="tag_trigger" >
+              <a href="#tag_trigger" >
+                How to use tag trigger?
+              </a>
+            </h3>
+            <p>
+              Tag trigger is a function to help you recall a tag, for example, you have a tag called 'account', you use it to record your account and password on different platforms. So you might want to add a trigger called 'password' for you to remind you of the 'account' tag.
+            </p>
+            <p>
+              Say we already have a tag called 'account' in Midinote, to set a trigger, open the tag's setting dialog, find the trigger section:
+            </p>
+            <img src="../images/help/trigger.png" />
+            <p>
+              Input the trigger name 'password'. Then turn to the note editor, and input some words including 'password'. Please note the tag recommender bar on the top right corner. A name 'account' appears on it. And if you click it, the tag 'account' would input into this note.
+            </p>
+            <img src="../images/help/trigger_demo.png" />
+            <h3 id="tag_name_change" >
+              <a href="#tag_name_change" >
+                How to change a tag's name?
+              </a>
+            </h3>
+            <p>
+              To change a tag name, open the tag's setting dialog, click 'edit' on the top of the dialog, then input a new name for this tag, NOTE you can not input other tag names that already exist.
+                
+            </p>
+            <img src="../images/help/edit_name.png" />
+          </div>
+        </div>
+        <footer class="footer">
+            <div class="site-info">
+                <div class="site-info-wrapper position-relative">
+
+                    <div class="site-logo-link">
+                        <a href="/"><!--#include file='/images/logo.svg' --></a>
+                    </div>
+
+                    <div class="site-links">
+                        <a class="link-about __selected">About us</a>
+                        <!--<a class="link-help">Help center</a>-->
+                        <a class="link-service" href="/en/service.shtml">Terms of service</a>
+                        <a class="link-privacy" href="/en/privacy.shtml">Privacy</a>
+                    </div>
+
+                    <div class="contact">
+                        <div class="contact-info">
+                            <!--<span class="link-contact">Contact</span>-->
+                            <span class="link-mail"><a href="mailto:support@midinote.me">support@midinote.me</a></span>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://twitter.com/midinote" target="_blank"><!--#include file='/images/twitter-logo.svg' --></a>
+                            <a href="https://www.facebook.com/MidinoteHQ" target="_blank"><!--#include file='/images/fb-logo.svg' --></a>
+                            <a href="https://weibo.com/midinote" target="_blank"><!--#include file='/images/wb-logo.svg' --></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>
+            </div>
+            <!--<div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>-->
+        </footer>
+    </div>
+</div>
+
+<div class="menu-page">
+    <div class="menu-page-wrapper">
+        <aside class="menu-page-info-slogan">
+            <p>
+                Quickly record your memory, in a well-organized and brain-like way.
+            </p>
+        </aside>
+
+        <div class="menu-page-main position-relative">
+            <div class="language">
+                <!--#include file='/images/lang.svg' -->
+                <span>English</span>
+                <!--#include file='/images/down-arrow.svg' -->
+                <div class="lang-selection">
+                    <div class="lang-selection-option __option_en">English(US)</div>
+                    <div class="lang-selection-option __option_cn"><a href="../cn/about.shtml" target="_self">中文(简体)</a></div>
+                </div>
+            </div>
+            <ul>
+                <li class="link-home"><span><a href="index.shtml" target="_self">Home</a></span></li>
+                <li class="__selected"><span>About us</span></li>
+                <!--<li class="link-contact"><span>Contact</span></li>
+                <li class="link-sign-up"><span>Sign up</span></li>
+                <li class="link-sign-in"><span>Sign in</span></li>-->
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
