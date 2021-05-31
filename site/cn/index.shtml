@@ -5,11 +5,11 @@
 	<meta name="language" content="Chinese">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-	<meta name="description" content="记笔记只能用Evernote? 我们有所不同, 我们使用完全基于标签的方式组织你的笔记, 用一种组织化的, 类人脑的和可视化的方式来呈现你的记忆." />
+	<meta name="description" content="记笔记只能用Evernote? 我们有所不同, 我们使用完全基于标签的方式组织你的笔记, 用一种类人脑的和可视化的方式来呈现你的记忆." />
 	<!-- OG meta -->
 	<meta property="og:type" content="webpage" >
 	<meta property="og:title" content="Midinote, 记笔记新方法" >
-	<meta property="og:description" content="使用完全基于标签的方式组织你的笔记, 用一种组织化的, 类人脑的和可视化的方式来呈现你的记忆." >
+	<meta property="og:description" content="使用完全基于标签的方式组织你的笔记, 用一种类人脑的和可视化的方式来呈现你的记忆." >
 	<meta property="og:image" content="https://www.midinote.me/images/big-logo.jpg" >
 	<meta property="og:url" content="https://www.midinote.me/cn/index.shtml" >
 	<!-- twitter meta -->
@@ -302,7 +302,7 @@
                         </h1>
 
                         <h2 class="main-sub-title">
-							记笔记只能用Evernote? 我们有所不同, 我们使用完全基于标签的方式组织你的笔记, 用一种组织化的, 类人脑的和可视化的方式来呈现你的记忆.
+							记笔记只能用Evernote? 我们有所不同, 我们使用完全基于标签的方式组织你的笔记, 用一种类人脑的和可视化的方式来呈现你的记忆.
                         </h2>
 
                         <div class="main-decoration-tag position-relative">
@@ -340,7 +340,7 @@
                     <div class="explanation position-relative">
                         <h3>基于标签的笔记软件</h3>
                         <p>
-							传统应用通常使用类似文件夹和笔记本的方法组织笔记, 比如Evernote. 这种方式让用户总是陷入无尽的笔记内容整理工作中, 不然笔记就会日趋凌乱而难以使用. 然而, Midinote使用完全基于标签的方式组织内容, 可以让你记录笔记快速, 自由而又不失条理. 
+							传统应用通常使用类似文件夹和笔记本的方法组织笔记, 比如Evernote. 这种方式让用户总是陷入无尽的笔记内容整理工作中, 犹豫应该把笔记放到那个文件夹中, 不然笔记就会日趋凌乱而难以使用. 然而, Midinote使用完全基于标签的方式组织内容, 可以让你记录笔记快速, 自由而又不失条理. 
                         </p>
                         <div class="shape-decoration rectangle2"></div>
                     </div>
@@ -401,7 +401,7 @@
                     <div class="explanation position-relative">
                         <h3>个人知识库</h3>
                         <p>
-						在Midinote中, 每一个标签实际上是一篇文档, 或者如果你了解<a style='text-decoration : underline;' href='http://en.wikipedia.org' target='_blank' >维基百科</a>的话, 每个标签是百科全书中的一个词条, 你可以在标签之间浏览和前后跳转, 就像你在浏览器那样. 通过Midinote, 你可以构建自己的私人知识库.
+						在Midinote中, 每一个标签实际上是一篇文档, 或者如果你了解<a style='text-decoration : underline;' href='http://en.wikipedia.org' target='_blank' >维基百科</a>的话, 每个标签是百科全书中的一个词条, 你可以在标签之间浏览和前后跳转, 就像你在浏览器里那样. 通过Midinote, 你可以构建自己的私人知识库.
                         </p>
 						<!--
                         <div class="learn-more">
@@ -435,7 +435,7 @@
                     <div class="explanation  position-relative">
                         <h3>100%离线使用</h3>
                         <p>
-							你可以离线使用Midinote的所有功能. 实际上, 所有的数据都被从云端同步到了你自己的设备上, 而且, Midinote承诺永不分析和利用用户的个人数据.  
+							你可以离线使用Midinote的所有功能, 而且, Midinote承诺永不分析和利用用户的个人数据.  
                         </p>
                         <!--<div class="learn-more">
                             <div class="learn-more-button position-relative">
