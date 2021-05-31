@@ -172,11 +172,11 @@
               </a>
             </h3>
             <p>
-              To create a new note, move the mouse to the input field on the top marked as: " write down your note title and press 'Enter'".
+              To create a new note, move the mouse to the input field on the top with some hint: "write down your note title and press 'Enter'".
             </p>
             <img src="../images/help/create_note.png" />
             <p>
-              Please write down the title for this note, it should be something like what's this note about? Or just the content of the note directly if it's short enough. Then stike key "Enter", Midinote will create a new note for you.
+              Please write down the tile of this note, it should be something like: what's this note about? Or just the content of the note directly if it's short. Then strike "Enter", Midinote will create a new note for you.
             </p>
             <img src="../images/help/new_note.png" />
             <h3 id="input_tags">
@@ -200,40 +200,40 @@
             </p>
             <img src="../images/help/tag3.png" />
             <p>
-              To select one of them, press up and down to change the option and press enter to pick the tag you want.
+            To choose one of them, press <span>up</span> and <span>down</span> to change the option and press <span>Enter</span> to pick the tag.
             </p>
             <p>
-              Another way to input tags is to use the tag recommender bar. On top of the app, there is a rectangle area called the tag recommender bar. As you type content, Midinote will analyze it, and give you some possible tag suggestions in the bar.
+              Another way to input tags is by using the Tag Recommender Bar. On the top of the app, there is a rectangle area called Tag Recommender Bar. As you type content, Midinote will analyze it, and give you some possible tag suggestions in the bar.
             </p>
             <img src="../images/help/recommender_bar.png"/>
             <p>
-              Just click the tag in the bar directly to input the tag into your notes.
+              Just click the tag in the bar directly to add the tag into your notes.
             </p>
             <p>
               And, you can also input tag in this way:
             </p>
             <p>
-              Select some text in a note. Then, click the <span>#</span> icon in the toolbar. Then the text selected would become a tag.
+              Select some text in the note. Then, click the <span>#</span> icon in the toolbar. Then the text selected would become a tag.
             </p>
             <img src="../images/help/toolbar_tag.png" />
             <h3 id="define_tag">
               <a href="#define_tag" >
-                How to define a tag? And how to develop my mind map structure in Midinote?
+                How to define a tag? And how to duild my mind map structure in Midinote?
               </a>
             </h3>
             <p>
-              In Midinote, you can develop your own mind map structure by defining tags. Say you have a tag 'A' and 'B', if you use 'A' to define 'B', then you created a structure that the tag B belongs to the tag A, or you can say, B is a sub-tag of A. Presented in the mind map, the B would be a branch node connected to A.
+            In Midinote, you can build your own mind map structure by <strong>define</strong> tags. Say you have a tag 'A' and 'B', if you use 'A' to define 'B', then you created a structure that the tag B belongs to the tag A, or you can say, B is a sub-tag of A. Presented in the mind map, the B would be a branch node connected to A.
             </p>
             <p>
-              First, let's show you how to define a tag. To define a tag, move the mouse to the tag that you want to define. Stay for a while, a tooltip will appear.
+              To do so, first, let's show you how to define a tag. To define a tag, move the mouse to the tag that you want to define. Stay for a while, a tooltip box will appear.
             </p>
             <img src="../images/help/tooltip.png" />
             <p>
-              Click the 'gear' icon to open the tag setting dialog.
+              Click the 'gear' icon to open the Tag Setting Dialog.
             </p>
             <img src="../images/help/setting_dialog.png" />
             <p>
-Find the section: "definition". Input something describing: What is this tag? Or, what is this tag about? And you can also input tags in the definition, just like you do in notes.
+Find the section: "DEFINITION". Input something describing: What is this tag? Or, what is this tag about? And you can also input tags in the definition, just like you do in notes.
             </p>
             <img src="../images/help/definition.png" />
             <p>
@@ -250,7 +250,7 @@ Find the section: "definition". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-			In Midinote, every tag is an article, so if you click a tag and entered into this tag, it means you opened the article of this tag. For Midinote, the home page of this app is all about an article, or you can say about a tag, it would be shown just after your login.
+			In Midinote, every tag is an article, so if you click a tag and entered into this tag, it means you opened the article of this tag. 
             </p>
             <p>
               As shown below, there are several elements in an article:
@@ -260,22 +260,22 @@ Find the section: "definition". Input something describing: What is this tag? Or
             <strong>Article Title</strong>
             </p>
             <p>
-              The title of current article, actually, it must be a tag name. In the world of Midinote, every tag is an article. You can click any tag to go into the article of this tag.
+              The title of current article, actually, it must be a name of a tag. In the world of Midinote, every tag is an article. You can click any tag to go into the tag's article.
             </p>
             <p>
             <strong>Article Navigator</strong>
             </p>
             <p>
-              The navigator indicates the position/path to the current article. As illuminated in the figure, the current article/tag is 'B', its parent is 'A', and A's parent is a special unique global tag: "Merry", it is the first tag that created when you begin to use Midinote, Midinote will force you to create it, all other tags in Midinote belong to it. It's a global root tag.
+              The 'navigator' indicates the position/path to the current article. As illuminated in the figure, the current article/tag is 'B', its parent is 'A', and A's parent is a special unique global tag: "Merry", it is the first tag that created when you begin to use Midinote, Midinote will force you to create it, all other tags in Midinote belong to it. It's the first tag in your Midinote.
             </p>
             <p>
-            The navigator also records the history of your visit to articles/tags. Using <img class="icon" src="../images/help/back.png" /> or <img class="icon" src="../images/help/forward.png" /> to go back or forward in your visit history.
+            The navigator also records the history of your visiting between articles/tags. Using <img class="icon" src="../images/help/back.png" /> or <img class="icon" src="../images/help/forward.png" /> to go back or forward.
             </p>
             <p>
             <strong>Article Description</strong>
             </p>
             <p>
-              Actually, they are the definition of the current tag.
+              Actually, it's the definition of the current tag.
             </p>
             <p>
             <strong>Article Content</strong>
@@ -284,13 +284,13 @@ Find the section: "definition". Input something describing: What is this tag? Or
               All the notes that belong to this article/tag.
             </p>
             <p>
-              In Midinote, if you attach a tag to a note, then, this note belongs to the tag. It will appear in the article of this tag. Also, this note will appear in all the ancestors of this tag.
+              In Midinote, if you attach a tag to a note, then, this note belongs to the tag. It will appear in the article of this tag. Also, this note will appear in all the tag's ancestors.
             </p>
             <p>
             <strong>Article Graph</strong>
             </p>
             <p>
-              Show articles in the form of graphs. There are two different types of graph:
+              Show articles in the form of graphs. There are two different type of graph:
             </p>
             <p>
               Mind Map
@@ -311,7 +311,7 @@ Find the section: "definition". Input something describing: What is this tag? Or
               There are many ways to navigate between articles/tags.
             </p>
             <p>
-              First, articles/tags are just like a web link, we can jump to any articles/tags by clicking it.
+              First, articles/tags are just like a web link, we can simply jump to any articles/tags by clicking it.
             </p>
             <p>
               Then we can click the tags on the article navigator to jump to this tag's ancestor quickly.
@@ -321,11 +321,11 @@ Find the section: "definition". Input something describing: What is this tag? Or
               Also, the article navigator will record your recent visit history, so you can jump between your visitor history back and forth, just like what we do in the browser application, to do so, click the back or forward arrow on the left of the navigator.
             </p>
             <p>
-              And you can hover your mouse pointer over the arrow, a history list will be shown and just click the item you want to go to.
+              And you can hover your mouse over the arrow, a history list will show.
             </p>
             <img src="../images/help/history.png" />
             <p>
-              And there is another way to go to an article/tag. Click the search box on the top right corner of the app. Input the name of the article/tag that you want to go to. The search box will try to match the possible tags according to your input. Select the tag you want to go directly.
+              And there is another way to go to an article/tag. Click the search box on the top right corner of the app. Input the name of the article/tag that you want to go. 
             </p>
             <img src="../images/help/searchbox.png" />
             <h3 id="mindmap" >
@@ -334,7 +334,7 @@ Find the section: "definition". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-              There are two kinds of mind map viewer, one is on the right of the article page, one is on the page by clicking the second item on the menu bar<img class="icon" src="../images/help/mindmap_button.png" />. Both of them have similar operations.
+              There are two kinds of mind map viewer, one is on the right of the article page, one is on the page by clicking the second item in the menu bar<img class="icon" src="../images/help/mindmap_button.png" />. Both of them have similar operations.
             </p>
             <img src="../images/help/mindmap_big.png" />
             <p>
@@ -365,7 +365,7 @@ Find the section: "definition". Input something describing: What is this tag? Or
               You can not change the structure of the mind map on the viewer. For example, on the mind map, tag 'A' is the parents of tag 'B', you can not move the tag 'B' upward to make it become the sibling of the tag 'A'. The only way to change the structure of a mind map, is to 'define' the tag, as we discussed in the article: <a href="#define_tag" style="text-decoration: underline;" >How to define a tag?</a>
             </p>
             <p>
-              But you can change the order of those nodes which are siblings under the same tag.
+              But you can change the order of those nodes under the same tag.
             </p>
             <p>
             To do so, drag the ring before the tag:
@@ -381,14 +381,14 @@ Find the section: "definition". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-              To search in Midinote, click the third item on the menu bar <img class="icon" src="../images/help/search_button.png" />
+              To search in Midinote, click the third item in the menu bar <img class="icon" src="../images/help/search_button.png" />
             </p>
             <p>
-              And input the keyword:
+              Then input keywords:
             </p>
             <img src="../images/help/search.png" />
             <p>
-              And you can also input tags to narrow down the search result.
+              You can also input tags to narrow down the search result.
             </p>
             <img src="../images/help/search_tags.png" />
             <p>
@@ -396,7 +396,7 @@ Find the section: "definition". Input something describing: What is this tag? Or
             </p>
             <img src="../images/help/search_bubble.png" />
             <p>
-              And in Midinote, there are some special search criteria to help you find you want. They are:
+              And in Midinote, there are serveral special search criteria. They are:
             </p>
             <img src="../images/help/search_special_tags.png" />
             <p><strong>Created time</strong></p>
@@ -417,7 +417,7 @@ Find the section: "definition". Input something describing: What is this tag? Or
             </p>
             <p><strong>Document</strong></p>
             <p>
-              To search notes containing long content document.
+              To search notes containing long-content document.
             </p>
             <p><strong>Quote</strong></p>
             <p>
@@ -444,11 +444,11 @@ Find the section: "definition". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-            To input a quote block at the current cursor, click the icon <img class="icon" src="../images/help/input_quote.png" /> on the toolbar, then an empty quote block will appear at the current cursor position:
+            To input a quote block at current cursor location, click the icon <img class="icon" src="../images/help/input_quote.png" /> on the toolbar, an empty quote block will appear:
             </p>
             <img src="../images/help/input_quote_block.png" />
             <p>
-            Click icon <img class="icon" src="../images/help/input_quote_ok.png" /> on the top right corner of the quote block box to finish your input. Or click icon <img class="icon" src="../images/help/input_quote_delete.png" /> to cancel this input.
+            Click icon <img class="icon" src="../images/help/input_quote_ok.png" /> on the top right corner of the quote block box to finish and save your input. Or click icon <img class="icon" src="../images/help/input_quote_delete.png" /> to cancel this input.
             </p>
             <p>
               You can also input a quote block just like inputing a tag, to do so, type '#quote' then press 'space' key.
@@ -459,11 +459,11 @@ Find the section: "definition". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-            To input a ToDo item at the current cursor, click the icon <img class="icon" src="../images/help/input_todo.png" /> on the toolbar, then an ToDo item will appear at the current cursor position:
+            To input a ToDo item at the current cursor position, click the icon <img class="icon" src="../images/help/input_todo.png" /> on the toolbar, then an ToDo item will appear:
             </p>
             <img src="../images/help/todo_note.png" />
             <p>
-              You can click the ToDo item to check or uncheck the ToDo item.
+              You can click the ToDo item to check or un-check the ToDo item.
             </p>
             <img src="../images/help/todo_note_checked.png" />
             <p>
@@ -494,7 +494,7 @@ Find the section: "definition". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-              To input a code block at the current cursor, click the icon <img class="icon" src="../images/help/input_code.png" /> on the toolbar, then an empty code block will appear:
+              To input a code block at the current cursor position, click the icon <img class="icon" src="../images/help/input_code.png" /> on the toolbar, then an empty code block will appear:
             </p>
             <img src="../images/help/input_code_block.png" />
             <p>
@@ -509,7 +509,7 @@ Find the section: "definition". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-              Because Midinote limit the length of content for every note (2000 maximum characters), so to input content exceed the limitation, we can input a document tag into the note.
+              Because Midinote limit the length of content for a single note (2000 maximum characters), so to input content exceeding the limitation, we can add a document tag into the note.
             </p>
             <p>
             To do so, click icon <img class="icon" src="../images/help/input_document.png" />, then a document editor will appear:
@@ -524,17 +524,17 @@ Find the section: "definition". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-              Sometimes, there are several possible different names for a tag, for example, Javascript and JS are the same. So we can use tag alias to let multiple different names represent the same tag.
+            Sometimes, there are several different possible names for a tag, for example, Javascript and JS are the same. So we can use tag <strong>alias</strong> to make it possible.
             </p>
             <p>
-              To do so, for instance, we have had a tag named 'Javascript', now we want to add an alias 'JS' for this tag, first, open the tag setting dialog, and find the section 'alias':
+              To do so, for example, we have had a tag named 'Javascript', now we want to add an alias 'JS' for this tag, first, open the Tag Setting Dialog, then find the section 'ALIAS':
             </p>
             <img src="../images/help/alias.png" />
             <p>
               Input the alias name. You can input multiple alias names for a tag.
             </p>
             <p>
-              After doing this, you can now try to input the tag 'JS' into your note, and actually, you are inputting tag 'Javascript' that is displayed with the alias name 'JS'.
+              Now you can use this alias, input the tag 'JS' into your note, by doing so, actually, you are inputting tag 'Javascript' that is displayed with the alias name 'JS'.
             </p>
             <h3 id="tag_trigger" >
               <a href="#tag_trigger" >
@@ -542,14 +542,14 @@ Find the section: "definition". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-              Tag trigger is a function to help you recall a tag, for example, you have a tag called 'account', you use it to record your account and password on different platforms. So you might want to add a trigger called 'password' for you to remind you of the 'account' tag.
+              Tag trigger is a function to help you input a tag, for example, you have a tag called 'account', you use it to record your all kinds fo account and password. Then you might want to add a trigger called 'password' for you to remind you of the 'account' tag.
             </p>
             <p>
-              Say we already have a tag called 'account' in Midinote, to set a trigger, open the tag's setting dialog, find the trigger section:
+              Say we already have a tag called 'account' in Midinote, to set a trigger, open the tag's Setting Dialog, find the 'TRIGGER' section:
             </p>
             <img src="../images/help/trigger.png" />
             <p>
-              Input the trigger name 'password'. Then turn to the note editor, and input some words including 'password'. Please note the tag recommender bar on the top right corner. A name 'account' appears on it. And if you click it, the tag 'account' would be inserted into this note.
+              Input the trigger name 'password'. Then turn to the note editor, and input some words including 'password'. Please note the Tag Recommender Bar on the top right corner. A tag 'account' appears on it. And if you click it, the tag 'account' would be inserted into this note.
             </p>
             <img src="../images/help/trigger_demo.png" />
             <h3 id="tag_name_change" >
@@ -558,10 +558,13 @@ Find the section: "definition". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-              To change a tag name, open the tag's setting dialog, click 'edit' on the top of the dialog, then input a new name for this tag, NOTE you can not input other tag names that already exist.
+              To change a tag name, open the Tag Setting Dialog, click 'edit' on the top of the dialog, then input a new name for this tag, NOTE you can not input any tag name that already exists.
                 
             </p>
             <img src="../images/help/edit_name.png" />
+          </div>
+          <div class="end">
+            - END -
           </div>
         </div>
         <footer class="footer">

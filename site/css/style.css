@@ -2106,6 +2106,12 @@ th {
     width: 100%;
 }
 
+.end {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
 .common-link-in-content {
     color: #498cf3;
     text-decoration: none;
