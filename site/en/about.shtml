@@ -142,45 +142,33 @@
         </header>
         <div class="sub-page-title">
             <h1>About Us</h1>
-            <h2>Midinote is a special notebook app for people who have the habit of recording.
+            <h2>Midinote is a unique notebook app for taking notes quickly and methodically.
         </div>
 
         <div class="sub-page-content">
             <div class="sub-page-content-wrapper">
-                <p class="sub-page-content-p">
-                    Initially，Midinote was developed for ourselves to
-                    record things we thought was interesting or important.
-                </p>
                 <h4>Who We Are?</h4>
                 <p class="sub-page-content-p">
-                    We are two freelancers, love sports, cooking, reading, traveling, music ...
-                    and also we love knowledge and love to record.
-					Once, we were deep users of <a class="common-link-in-content" href='https://evernote.com/' target='_blank' >Evernote</a>, after years of use,
-                    with increasing number of notes,
-                    we found we need spend a lot of time to organize our notes, or everything will end up with a mess.
-                    Therefore, we started to develop a new notebook app and created Midinote.
+                We used to be deep users of <a class="common-link-in-content" href='https://evernote.com/' target='_blank' >Evernote</a>, but when the number of notes getting bigger and bigger, we found we need to spend a lot of time organizing the notes, or everything will end up with a mess.
+                    Therefore, we started to develop a new type of notebook app and created Midinote.
                 </p>
                 <h4>About the Name: Midinote</h4>
                 <p class="sub-page-content-p">
-                    The name comes from the philosopher Sartre's notebook.
+                    The name comes from the philosopher Sartre's story.
                     </br>In a biography of Sartre (<a class="common-link-in-content" href="https://www.amazon.com/Adieux-Farewell-Sartre-Simone-Beauvoir/dp/039472898X?keywords=Sartre+Beauvoir&qid=1540814263&s=Books&sr=1-2&ref=sr_1_2" target="_blank">Adieux: A Farewell to Sartre</a>),
-                    he mentioned that he accidentally found a notebook on a metro train,
-                    a blank notebook with alphabetical tabs.
-                    So he used it to record his thoughts of philosophy,
-                    if one note he wants to write down starts with A,
-                    then he writes it on A's pages. This is how he organizes his notes.
-                    So, in this ordinary notebook,
-                    Sartre wrote down his famous thoughts of Existentialism.
-                    Sartre said there are some weird words on the notebook's cover: "Midi Suppositories".
-                    We hope our Midinote is such a notebook
-                    and offer you good tool for note taking. Please give Midinote a try,
-					it is waiting you to write down your amazing thoughts!
+                    he told a story about his notebook, he says, one day, he accidentally found a notebook on a metro train, a blank notebook with alphabetical tabs.
+                    So he used it to record some of his thoughts on it,
+                    if one note that he wants to write down starts with letter 'A',
+                    then he wrote it on pages under the 'A' tab. This is how he organizes his notes.
+                    So, in this simple notebook,
+                    Sartre wrote down his famous thoughts of the Existentialism.
+                    Sartre mentioned that there are some weird words on the cover of the notebook: "Midi Suppositories".
+                    That's the story. 
+                    So we hope our Midinote is such a simple but useful thing. Please give Midinote a try, it is waiting you to write down your big thoughts!
                 </p>
                 <p class="sub-page-content-p">
                     If you have any questions or ideas,
-                    please feel free to contact us by email or social media,
-                    we will try to reply you within one business day.
-
+                    please feel free to contact us by email or social media.
                 </p>
                 <div class="sub-page-contact-p">
                     e-mail: <a class="common-link-in-content" href="mailto:support@midinote.me">support@midinote.me</a>
