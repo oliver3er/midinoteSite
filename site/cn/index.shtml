@@ -401,7 +401,7 @@
                     <div class="explanation position-relative">
                         <h3>个人知识库</h3>
                         <p>
-						在Midinote中, 每一个标签实际上是一篇文档, 或者如果你了解<a style='text-decoration : underline;' href='http://en.wikipedia.org' target='_blank' >维基百科</a>的话, 每个标签是百科全书中的一个词条, 你可以在标签之间浏览和前后跳转, 就像你在浏览器那样. 通过Midinote, 你可以构建自己的私人知识库.
+						在Midinote中, 每一个标签实际上是一篇文档, 或者如果你了解<a style='text-decoration : underline;' href='http://en.wikipedia.org' target='_blank' >维基百科</a>的话, 每个标签是百科全书中的一个词条, 你可以在标签之间浏览和前后跳转, 就像你在浏览器里那样. 通过Midinote, 你可以构建自己的私人知识库.
                         </p>
 						<!--
                         <div class="learn-more">

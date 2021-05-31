@@ -172,7 +172,7 @@
               </a>
             </h3>
             <p>
-              To create a new note, move the mouse to the input field on the top with some hint: "write down your note title and press 'Enter'".
+              To create a new note, move the mouse to the input field on the top:
             </p>
             <img src="../images/help/create_note.png" />
             <p>
@@ -203,7 +203,7 @@
             To choose one of them, press <span>up</span> and <span>down</span> to change the option and press <span>Enter</span> to pick the tag.
             </p>
             <p>
-              Another way to input tags is by using the Tag Recommender Bar. On the top of the app, there is a rectangle area called Tag Recommender Bar. As you type content, Midinote will analyze it, and give you some possible tag suggestions in the bar.
+              Another way to input tags is by using the Tag Recommender Bar. On the top of the app, there is a rectangle area called Tag Recommender Bar. When you typing , Midinote will analyze the content, and give you some possible tag suggestions in the bar.
             </p>
             <img src="../images/help/recommender_bar.png"/>
             <p>
@@ -246,7 +246,7 @@ Find the section: "DEFINITION". Input something describing: What is this tag? Or
             <img src="../images/help/notes.png" />
             <h3 id="article" >
               <a href="#article" >
-                What's the article?
+                What's an article?
               </a>
             </h3>
             <p>
@@ -266,10 +266,10 @@ Find the section: "DEFINITION". Input something describing: What is this tag? Or
             <strong>Article Navigator</strong>
             </p>
             <p>
-              The 'navigator' indicates the position/path to the current article. As illuminated in the figure, the current article/tag is 'B', its parent is 'A', and A's parent is a special unique global tag: "Merry", it is the first tag that created when you begin to use Midinote, Midinote will force you to create it, all other tags in Midinote belong to it. It's the first tag in your Midinote.
+              The 'navigator' indicates the position/path to the current article. As illuminated in the figure, the current article/tag is 'B', its parent is 'A', and A's parent is a special unique tag: "Merry", it is the first tag created when you begin to use Midinote, Midinote will force you to create it, all other tags in Midinote belong to it.
             </p>
             <p>
-            The navigator also records the history of your visiting between articles/tags. Using <img class="icon" src="../images/help/back.png" /> or <img class="icon" src="../images/help/forward.png" /> to go back or forward.
+            The navigator also records the history of your visiting between articles/tags. Using <img class="icon" src="../images/help/back.png" /> or <img class="icon" src="../images/help/forward.png" /> to go forward or backword.
             </p>
             <p>
             <strong>Article Description</strong>
@@ -321,7 +321,7 @@ Find the section: "DEFINITION". Input something describing: What is this tag? Or
               Also, the article navigator will record your recent visit history, so you can jump between your visitor history back and forth, just like what we do in the browser application, to do so, click the back or forward arrow on the left of the navigator.
             </p>
             <p>
-              And you can hover your mouse over the arrow, a history list will show.
+              And you can put your mouse over the arrow, a history list will show.
             </p>
             <img src="../images/help/history.png" />
             <p>
@@ -362,7 +362,7 @@ Find the section: "DEFINITION". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-              You can not change the structure of the mind map on the viewer. For example, on the mind map, tag 'A' is the parents of tag 'B', you can not move the tag 'B' upward to make it become the sibling of the tag 'A'. The only way to change the structure of a mind map, is to 'define' the tag, as we discussed in the article: <a href="#define_tag" style="text-decoration: underline;" >How to define a tag?</a>
+              You can not change the structure of the mind map on the viewer. For example, on the mind map, tag 'A' is the parent of tag 'B', you can not move the tag 'B' upward to make it become the sibling of the tag 'A'. The only way to change the structure of a mind map, is to 'define' the tag, as we discussed in the article: <a href="#define_tag" style="text-decoration: underline;" >How to define a tag?</a>
             </p>
             <p>
               But you can change the order of those nodes under the same tag.
@@ -433,7 +433,7 @@ Find the section: "DEFINITION". Input something describing: What is this tag? Or
               </a>
             </h3>
             <p>
-            To input a picture at the current cursor, click the icon <img class="icon" src="../images/help/input_picture.png" /> on the toolbar, a picture-picking dialog will show up, then select a picture to add to the note.
+            To input a picture at the current cursor position, click the icon <img class="icon" src="../images/help/input_picture.png" /> on the toolbar, a picture-picking dialog will show up, then select a picture to add to the note.
             </p>
             <p>
               You can also input a picture just like inputting a tag, to do so, type '#pic' then press 'space' key, then the picture-picking dialog will show up to let you select a picture. 
