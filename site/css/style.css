@@ -2943,9 +2943,10 @@ jdiv.label_39._bottom_3v {
   width: 42%;
 }
 .content-download-text>h3 {
-    font-size: 0.3rem;
+    font-size: 0.25rem;
     font-weight: 800;
-    line-height: 0.75rem;
+    line-height: 0.4rem;
+    padding-bottom: 10px;
 }
 .content-download-text>p {
   margin-top: .2rem;
@@ -2953,6 +2954,10 @@ jdiv.label_39._bottom_3v {
   font-size: 0.18rem;
   line-height: 0.27rem; 
   letter-spacing: .5px;
+}
+.content-download-text a{
+  display: block;
+  margin-top: 40px;
 }
 .content-download-text .content-download-btn {
   height: 40px;
