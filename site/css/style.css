@@ -2945,7 +2945,7 @@ jdiv.label_39._bottom_3v {
 .content-download-text>h3 {
     font-size: 0.3rem;
     font-weight: 800;
-    line-height: 0.75;
+    line-height: 0.75rem;
 }
 .content-download-text>p {
   margin-top: .2rem;
@@ -2956,8 +2956,8 @@ jdiv.label_39._bottom_3v {
 }
 .content-download-text .content-download-btn {
   height: 40px;
+  max-width: 260px;
   line-height: 40px;
-  width: 110px;
   background-color: #498cf3;
   color: #fff;
   text-align: center;
@@ -2971,15 +2971,10 @@ jdiv.label_39._bottom_3v {
 .content-download-text .content-download-btn:hover {
   transform: translateY(-1px);
   background-color: rgba(120,169,243,1);
-  box-shadow: 8px 8px 12px rgb(0 0 0
+  box-shadow: 8px 8px 12px rgb(0 0 0,.2);
 }
 
-
-
-/*    download page end    */
-
-
-@media screen and (min-width: 1179px) {
+@media screen and (min-width: 1180px) and (max-width: 1920px) {
     .home-header-wrapper {
         width: 1080px;
     }
@@ -2993,7 +2988,7 @@ jdiv.label_39._bottom_3v {
     }
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1180px) and (min-width:1081) {
     .home-header-wrapper {
         width: 940px;
     }
@@ -3216,8 +3211,23 @@ jdiv.label_39._bottom_3v {
       width: 100%;
     }
 
-    .content-d>div.content-download-text, .content-d>div.content-download-illustration {
-      width: 100%;
+    .content-d>div.content-download-text {
+      margin: 0 auto;
+      width: 90%;
+    }
+    .content-download-text>h3, .content-download-text>p {
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align:center;
+    }
+    
+    .content-download-text .content-download-btn {
+      margin: 0 auto 60px;
+    }
+    
+    .content-d>div.content-download-illustration {
+      margin: 0 auto;
+      width: 80%;
     }
 
 }
@@ -3232,10 +3242,15 @@ jdiv.label_39._bottom_3v {
     }
 
     .content-d>div {
-      width: 100%;
+      width: 95%;
     }
-    .content-d>div.content-download-text, .content-d>div.content-download-illustration {
-      width: 100%;
+    .content-d>div.content-download-text {
+      margin: 0 auto;
+      width: 95%;
+    }
+    .content-d>div.content-download-illustration {
+      margin: 0 auto;
+      width: 85%;
     }
 }
 
@@ -3297,7 +3312,6 @@ jdiv.label_39._bottom_3v {
         line-height: 26px;
     }
 
-    /*for temp*/
     .home-bottom-construction {
         width: 90%;
     }
@@ -3315,11 +3329,13 @@ jdiv.label_39._bottom_3v {
       width: 100%;
     }
 
-    .content-d>div {
-      width: 100%;
+    .content-d>div.content-download-text {
+      margin: 0 auto;
+      width: 95%;
     }
-    .content-d>div.content-download-text, .content-d>div.content-download-illustration {
-      width: 100%;
+    .content-d>div.content-download-illustration {
+      margin: 0 auto;
+      width: 85%;
     }
 
 }
@@ -3358,11 +3374,13 @@ jdiv.label_39._bottom_3v {
       width: 100%;
     }
 
-    .content-d>div {
-      width: 100%;
+    .content-d>div.content-download-text {
+      margin: 0 auto;
+      width: 95%;
     }
-    .content-d>div.content-download-text, .content-d>div.content-download-illustration {
-      width: 100%;
+    .content-d>div.content-download-illustration {
+      margin: 0 auto;
+      width: 85%;
     }
 
 }
@@ -3434,13 +3452,6 @@ jdiv.label_39._bottom_3v {
       width: 100%;
     }
 
-    .content-d>div {
-      width: 100%;
-    }
-    .content-d>div.content-download-text, .content-d>div.content-download-illustration {
-      width: 100%;
-    }
-
 }
 
 @media screen and (max-width: 375px) {
@@ -3472,13 +3483,6 @@ jdiv.label_39._bottom_3v {
     
     .content-d {
       flex-direction: column;
-      width: 100%;
-    }
-
-    .content-d>div {
-      width: 100%;
-    }
-    .content-d>div.content-download-text, .content-d>div.content-download-illustration {
       width: 100%;
     }
 }
@@ -3574,4 +3578,5 @@ jdiv.label_39._bottom_3v {
 .download a{
   text-decoration: underline;
 }
+
 
