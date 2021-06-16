@@ -146,7 +146,7 @@
             <h2>Currently, Midinote only supports MacOS</h2>
         </div>
         <div class="sub-page-content">
-          <div class="download" >
+          <div class="download">
             <div class="content-d">
                 <div class="content-download-text">
                   <h3>Install Midinote app</h3>
@@ -154,7 +154,7 @@
                   <p style="font-weight: 800;">All the data is on your computer</br>All the work is done on your computer</p>
                   <p>That's why we are able to commit to never analyzing customers' data.</p>
                   <a href="https://github.com/dadiorchen/midinote/releases/download/0.4.0/midinote-0.4.0.dmg" style="text-decoration:none;">
-                  <div class="content-download-btn"><span>Download</span></div>
+                  <div class="content-download-btn"><span>Download for MacOS</span></div>
                   </a>
                 </div>
 
