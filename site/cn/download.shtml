@@ -145,9 +145,22 @@
             <h2>当前Midinote只支持MacOS</h2>
         </div>
         <div class="sub-page-content">
-          <div class="download" >
-            点<a href="https://github.com/dadiorchen/midinote/releases/download/v0.2.3/midinote-0.2.3.dmg" >此处</a>下载Midinote.
-          </div>
+          <div class="download">
+            <div class="content-d">
+                <div class="content-download-text">
+                  <h3>在您的计算机上安装我们的应用程序，获得 100% 的离线使用 Midinote 的能力</h3>
+                  <p>您可以在不连接服务器的情况下执行任何操作，即使是搜索内容也是如此。</p>
+                  <p style="font-weight: 800;">所有数据都在您的计算机上</br>所有工作都在您的计算机上完成</p>
+                  <p>这就是我们能够承诺从不分析客户数据的原因！</p>
+                  <a href="https://github.com/dadiorchen/midinote/releases/download/0.4.0/midinote-0.4.0.dmg" style="text-decoration:none;">
+                  <div class="content-download-btn"><span>下载</span><span style="font-size: 0.14rem;">（MacOS）</span></div>
+                  </a>
+                </div>
+
+                <div class="content-download-illustration">
+                    <img src="../images/offline_download1.svg" alt="" ／="">
+                </div>
+            </div>
         </div>
 
         <footer class="footer">
