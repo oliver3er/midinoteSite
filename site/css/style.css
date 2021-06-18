@@ -2956,11 +2956,12 @@ jdiv.label_39._bottom_3v {
   letter-spacing: .5px;
 }
 .content-download-text a{
-  display: block;
+  display: inline-block;
   margin-top: 40px;
 }
 .content-download-text .content-download-btn {
   height: 40px;
+  width: 260px;
   max-width: 260px;
   line-height: 40px;
   background-color: #498cf3;
