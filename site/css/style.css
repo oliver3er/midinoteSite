@@ -3586,3 +3586,12 @@ jdiv.label_39._bottom_3v {
 }
 
 
+.blog-img {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.blog-img img{
+  width: 90%;
+}

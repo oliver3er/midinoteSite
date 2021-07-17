@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Midinote: the Story of Midinote | Midinote</title>
+	<meta name="language" content="English">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+	<meta name="description" content="Midinote is a special notebook app for people who have the habit of recording." />
+	<!-- OG meta -->
+	<meta property="og:type" content="website" >
+	<meta property="og:title" content="Midinote: help" >
+	<meta property="og:description" content="Midinote is a special notebook app for people who have the habit of recording." >
+	<meta property="og:image" content="https://www.midinote.me/images/big-logo.jpg" >
+	<meta property="og:image:width" content="600" >
+	<meta property="og:image:height" content="600" >
+	<meta property="og:url" content="http://www.midinote.me/en/help.shtml" >
+	<!-- twitter meta -->
+	<meta name="twitter:card" content="summary" >
+	<meta name="twitter:site" content="@midinote" >
+	<meta name="twitter:create" content"@midinote" >
+
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+    <script src="../js/jquery.min.js"></script>
+	<script src='../js/visit.js' ></script>
+    <script type="text/javascript">
+
+        $(window).resize(function() {
+            var width = $(this).width();
+            if(width> 980){
+                if( $(".menu-page").hasClass("__open")){
+                    $(".home-menu").show();
+                    $(".home-nav").hide();
+                    return;
+                }else {
+                    $(".home-menu").hide();
+                    $(".home-nav").show();
+                    $(".home-menu").removeClass("home-menu-open").removeClass("home-menu-close");
+                }
+            }else {
+                $(".home-menu").show();
+                $(".home-nav").hide();
+            }
+
+        });
+
+        $(function () {
+
+            $(document).bind('scroll', function (event) {
+                var v1 = document.body.scrollTop;
+                var v2 = document.documentElement.scrollTop;
+                var scrollTop = Math.max(v1, v2);
+
+                if (scrollTop > 50) {
+                    if ($(".home-header").hasClass("__site-is-below")) {
+
+                    } else {
+                        $(".home-header").addClass("__site-is-below");
+                    }
+                } else if (scrollTop < 50) {
+                    $(".home-header").removeClass("__site-is-below");
+                }
+            });
+
+            $(".home-menu").bind('click',function(){
+                var menu = $(".menu-page");
+
+                if($(this).hasClass("home-menu-open") ){
+                    $(this).removeClass("home-menu-open").addClass("home-menu-close");
+
+                    if(menu.hasClass("__open")) {
+                        menu.removeClass("__open");
+                    }else {
+                        menu.addClass("__open");
+                    }
+                } else {
+                    $(this).removeClass("home-menu-close").addClass("home-menu-open");
+                    if(menu.hasClass("__open")) {
+                        menu.removeClass("__open");
+                    }else {
+                        menu.addClass("__open");
+                    }
+                }
+
+
+            });
+
+            /*$(".link-sign-up").bind('click',function(){
+                window.location = 'http://app.midinote.me/login';
+            });
+            $(".link-sign-in").bind('click',function(){
+                window.location = 'http://app.midinote.me/register';
+            });*/
+
+            $(".language").bind("click",function(){
+                var selection = $(".lang-selection");
+                if(selection.hasClass("__open")) {
+                    selection.removeClass("__open");
+                }else {
+                    selection.addClass("__open");
+                }
+            });
+
+        });
+    </script>
+  <script src="../main.js" ></script>
+</head>
+<body class="home-body">
+<div class="home-page">
+    <div class="home-wrapper">
+        <header class="home-header sub-page-header">
+            <div class="home-header-wrapper">
+                <div class="home-logo link-home">
+                    <a href="index.shtml">
+                    <!--#include file='/images/logo.svg' -->
+                    <!--#include file='/images/logo-word.svg' -->
+                    <!--#include file='/images/logo-beta.svg' -->
+                    </a>
+                </div>
+                <nav class="home-nav">
+                    <ul>
+                      <!--<li class="link-about __selected">Download</li>-->
+                        <!--<li class="link-contact">Contact</li>
+                        <li class="link-sign-up">Sign up</li>
+                        <li class="link-sign-in">Sign in</li>-->
+                    </ul>
+                    <div class="language position-relative">
+                        <!--#include file='/images/lang.svg' -->
+                        <span>English</span>
+                        <!--#include file='/images/down-arrow.svg' -->
+                        <div class="lang-selection">
+                            <div class="lang-selection-option __option_en">English(US)</div>
+                            <div class="lang-selection-option __option_cn"><a href="../cn/about.shtml">中文(简体)</a></div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="home-menu">
+                    <span class="home-menu-p1"></span>
+                    <span class="home-menu-p2"></span>
+                    <span class="home-menu-p3"></span>
+                </div>
+            </div>
+        </header>
+        <div class="sub-page-title">
+            <h1>The Story of Midinote</h1>
+            <h2>Jul 17, 2021</h2>
+        </div>
+        <div class="sub-page-content">
+          <div class="download">
+            <div class="content-d" style="align-items: start;" >
+              <div class="content-download-text" style="width: inherit">
+                <p>The story of Midinote starts with the Evernote app. I had been a deep user of <a href="https://evernote.com/" target="_blank" >Evernote</a> for almost 10 years, more than 10 thousand of notes in it, I want to appreciate Evernote, Evernote is a powerful note-taking app, supporting all kinds of devices/platforms, with useful plugins for browser and other software to conveniently insert/copy content into my notebook. But, there are a number of problems with it.</p>
+                <h3>The problem of traditional note app</h3>
+                <p>Question 1: Where should I put the note?</p>
+                <p>The main problem for me is that when using Evernote, I was always struggling with this question: WHERE SHOULD I PUT THE NOTE THAT I AM GOING TO TYPE? Sometimes I am tried to try to find the correct folder/notebook for notes, sometimes it is just simply because that I don’t know where does it belong? This is a common scenario, for some notes, you don’t know its classification when you just begin to take it. </p>
+                <p>Question 2: How can I find the notes I wrote?</p>
+                <p>Another problem is that Evernote is sort of like a huge warehouse, you tend to put all you want or you found into it, then, with time you are overwhelmed by your own information, yes, you put a lot of useful things into Evernote, but YOU CAN’T FIND YOUR OWN STUFF. For me, the yeas of notes in Evernote seem to be a black hole in front of me. I don’t remember what’s in it, except for some most frequently used items.</p>
+                <p>Yes, you can argue that it might be because of your approach to organize notes, Evernote support functionality like ‘notebook’, by which you can put your notes in different folders, and the folder can be hierarchical, further, Evernote provides ‘tag’, you can classify your content in another dimension by using tags. Okay, this seems to be a good combination, hierarchical folder structure plus flat tag system. But to be honest, I hate the hybrid of folder and tag, you might be able to say this idea brings all the benefits of both, but I want to say: it brings all the downsides of both:</p>
+                <p>1. The hierarchical folder structure does not support multiple classifications. You can only put a note in just a single folder.</p>
+                <p>2. The tag system is too free, you can type arbitrary tag name without restriction, and all the tags are in a flat dimension, so it’s hard to manage tags and easy to make duplicated tags, like ‘noteApp’, ‘note-takingApp’.</p>
+                <p>3. Extra approach of classification (folder + tag) brings an extra question: should I create a notebook for this note or a tag?</p>
+                <p>So, I started to try to find the answer to all these problems in Evernote, finally, it turns to be the app: Midinote. </p>
+                <h3>How does Midinote work?</h3>
+                <p>In the simple world of Midinote, there just are two things, or you might be able to say, in Midinote, there is just one thing plus a variant. In midinote, you just do : type down the words in your mind, and, make some of them(the words) leading by a ‘#’ to indicate it is tag. It is kind of similar to a tweet with hashtags.</p>
+                <p>Now, I will give you an example of how does Midinote works.</p>
+                <p>Imagine, when you first time read things about 'Google', you might still have no idea what it is. You wrote down this in Midinote:</p>
+                <p>"People are talking about #Google, seems like it is a good tool online. I am going to try it later."</p>
+                <p>At this point, you don’t know what it is, where does this note belong, but you know Google is a THING, that’s for sure, so you tag it by ‘#’. </p>
+                <p>Then, with time, you tried Google:</p>
+                <p>"#Google is fantastic, I can use it to find things I want"</p>
+                <p>Now you know more about it, at this point, Midinote allows you to DEFINE ‘Google’:</p>
+                <p>"#Google is a #SearchEngine"</p>
+                <p>You can look at this as a note too, but it is a special note, a definition. By doing this, you sorted Google into the Search Engine. You can also define #SearchEngine in the future, when you know more about it.</p>
+                <p>So in this way, you classify your stuff after taking your notes, this is different from traditional note app, like Evernote, in which we choose the folder for the note before we write it. When you define #Google by #SearchEngine, at that point, you put all those notes concerning Google into the search engine classification, even for those notes which are created before you create the new classification: #SearchEngine. Now when you open the tag #SearchEngine, you will find all notes mentioned Google, it makes sense, right? All the content concerning Google, should also belong to the topic: search engine. </p>
+                <p>So the rule is, if you define a tag by another one, then the former belongs to the latter, and this relationship is transitive, by using the concept in set theory, if tag A belongs to B, and B belongs to C, then, A belongs to C, it means, any notes concerning tag A will show up in the note set of tag C. And the level of this hierarchy is infinite, the only restriction is that you can not build a definition loop, define A by B and then define B by A.</p>
+                <p>This is the basic concept of definition in Midinote, by defining things, you are accumulating your knowledge. Your notes and tags are growing in a natural and easy way, kind of like the brain of human being:</p>
+                <div class="blog-img" >
+                  <img src="../images/brain.jpeg" />
+                </div>
+                <p></p>
+                <p></p>
+                <h3>Go further</h3>
+                <p>Let’s continue the previous story, your knowledge keeps growing:</p>
+                <p>"I tried #Bing, I don't think Bing is as good as #Google"</p>
+                <p>Then, you define the Bing:</p>
+                <p>"#Bing is another #SearchEngine; And it belongs to #Microsoft"</p>
+                <p>Now, this definition reveals two features of the Midinote:<br/>
+                1. Multiple classification ability.<br/>
+                2. Mindmap<br/>
+                </p>
+                <h3>Multiple classifications</h3>
+                <p>Now the tag #Bing belongs to two classifications: #SearchEngine and #Microsoft. It means any note concerning Bing will belong to these two tags. You can define a tag by as many tags as you want. The hint for doing this is that try to define the tag by reasonable sentences rather than just simply a list of raw tags.</p>
+                <h3>Mindmap</h3>
+                <p>Another feature of Midinote is that it can visualize your tag hierarchy by providing a mindmap-like view. The mindmap is drawn based on the definitions you made. </p>
+                <p>In the example above, you will create a simple mindmap with a center node called ‘SearchEngine’, and two children nodes called ‘Google’ and ‘Being’ respectively.</p>
+                <div class="blog-img" >
+                  <img src="../images/blog-f1.png" />
+                </div>
+                <p></p>
+                <h3>One more thing: the bubble</h3>
+                <p>There is another feature brings in by Midinote, the bubble view:</p>
+                <div class="blog-img" >
+                  <img src="../images/blog-f2.png" />
+                </div>
+                <p>The bubble is a variant of <a href="https://en.wikipedia.org/wiki/Tag_cloud" target="_blank" >Tag Cloud</a>, it calculates the frequency of tags under another tag, the more frequently, the bigger bubble, in some view, it shows the relationships and their degree between tags.</p>
+                <h3>The answer</h3>
+                <p>Now to answer the questions given at the beginning of this article:</p>
+                <p>Q1: Where should I put the note that I am going to take?</p>
+                In Midinote, you don’t need to concern about it, you just do two things:</p>
+                <p>1. When taking notes, just put your content down, and tag them. </p>
+                <p>2. When a tag gets more and more familiar to you, define it. How to define a tag? Refer to No.1 above :)</p>
+                <p>A hint for choosing a tag is: the more concrete the tag is, the better. </p>
+                <p>Q2: How can I find my notes? </p>
+                <p>First, try to find the tag related to the content you want, check notes under it, if have no luck on this tag, you can go upward following the definition chain of this tag, the higher level of tags give you more content in this field/topic, and give you a wider vision related to the current tag. On the other hand, if the tag gives you too much content, then try to expand the tag’s mindmap to dive into the details, or you can say, narrow down the field.  </p>
+                <p>And also, the bubble view helps in terms of giving you some association between different tags.</p>
+                <p>The above approach gives you the way to find what you WANT to find, or you can say, actively search.</p>
+                <p>Actually, Midinote hopes that you can meet your memory by accident. When you mentioned a tag, or in the note, there are words that might be tags you used, then Midinote tries to present the related content to you, in form of tag, mindmap, bubble, or others. In my opinion, this might be a more important way in Midinote to let you find your notes again.</p>
+                <h3>Thank you</h3>
+                <p>Thank you for reading this article, this is the core idea of Midinote, we didn’t cover all aspects of Midinote like the tag reminder and trigger features yet, we will talk about it later.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+            <div class="site-info">
+                <div class="site-info-wrapper position-relative">
+
+                    <div class="site-logo-link">
+                        <a href="/"><!--#include file='/images/logo.svg' --></a>
+                    </div>
+
+                    <div class="site-links">
+                        <a class="link-about __selected">About us</a>
+                        <!--<a class="link-help">Help center</a>-->
+                        <a class="link-service" href="/en/service.shtml">Terms of service</a>
+                        <a class="link-privacy" href="/en/privacy.shtml">Privacy</a>
+                    </div>
+
+                    <div class="contact">
+                        <div class="contact-info">
+                            <!--<span class="link-contact">Contact</span>-->
+                            <span class="link-mail"><a href="mailto:support@midinote.me">support@midinote.me</a></span>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://twitter.com/midinote" target="_blank"><!--#include file='/images/twitter-logo.svg' --></a>
+                            <a href="https://www.facebook.com/MidinoteHQ" target="_blank"><!--#include file='/images/fb-logo.svg' --></a>
+                            <a href="https://weibo.com/midinote" target="_blank"><!--#include file='/images/wb-logo.svg' --></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>
+            </div>
+            <!--<div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>-->
+        </footer>
+    </div>
+</div>
+
+<div class="menu-page">
+    <div class="menu-page-wrapper">
+        <aside class="menu-page-info-slogan">
+            <p>
+                Quickly record your memory, in a well-organized and brain-like way.
+            </p>
+        </aside>
+
+        <div class="menu-page-main position-relative">
+            <div class="language">
+                <!--#include file='/images/lang.svg' -->
+                <span>English</span>
+                <!--#include file='/images/down-arrow.svg' -->
+                <div class="lang-selection">
+                    <div class="lang-selection-option __option_en">English(US)</div>
+                    <div class="lang-selection-option __option_cn"><a href="../cn/about.shtml" target="_self">中文(简体)</a></div>
+                </div>
+            </div>
+            <ul>
+                <li class="link-home"><span><a href="index.shtml" target="_self">Home</a></span></li>
+                <li class="__selected"><span>About us</span></li>
+                <!--<li class="link-contact"><span>Contact</span></li>
+                <li class="link-sign-up"><span>Sign up</span></li>
+                <li class="link-sign-in"><span>Sign in</span></li>-->
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

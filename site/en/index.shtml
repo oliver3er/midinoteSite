@@ -285,6 +285,7 @@
                         <li id='signUp' class="link-sign-up">Sign up</li>
                         <li class="link-sign-in"><a href="https://app.midinote.me" >Sign in</a></li>
                         <li class="link-about"><a href="/en/download.shtml" target="_self">Download</a></li>
+                        <li class="link-about"><a href="/en/the_story_of_midinote.shtml" target="_self">Blog</a></li>
                         <li class="link-about"><a href="/en/help.shtml" >Help</a></li>
                         <!--<li class="link-contact">Contact</li>
                         <li class="link-sign-up">Sign up</li>
