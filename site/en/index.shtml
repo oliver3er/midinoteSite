@@ -6,11 +6,11 @@
 	<meta name="language" content="English">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
-	<meta name="description" content="Only Evernote? We are different, we use totally tag-based system to organize your notes, to record your memory in a well-organized, brain-like and visual way." />
+	<meta name="description" content="Only Evernote? We are different, we use fully tag-based system to organize your notes, to record your memory in a well-organized, brain-like and visual way." />
 	<!-- OG meta -->
 	<meta property="og:type" content="website" >
 	<meta property="og:title" content="Midinote, Another Way to Take Notes" >
-	<meta property="og:description" content="We use totally tag-based system to organize your notes, to record your memory in a well-organized, brain-like and visual way." >
+	<meta property="og:description" content="We use fully tag-based system to organize your notes, to record your memory in a well-organized, brain-like and visual way." >
 	<meta property="og:image" content="https://www.midinote.me/images/big-logo.jpg" >
 	<meta property="og:image:width" content="600" >
 	<meta property="og:image:height" content="600" >
@@ -323,7 +323,7 @@
                             <span>ANOTHER WAY TO TAKE NOTES</span>
                         </h1>
                         <h2 class="main-sub-title">
-							Only Evernote? We are different, we use totally tag-based system to organize your notes, to record your memory in a well-organized, brain-like and visual way.
+							Only Evernote? We are different, we use fully tag-based system to organize your notes, to record your memory in a well-organized, brain-like and visual way.
                         </h2>
 
                         <div class="main-decoration-tag position-relative">
@@ -359,7 +359,7 @@
 
                 <div class="content-left">
                     <div class="explanation position-relative">
-                        <h3>Totally Tag-Based</h3>
+                        <h3>Fully Tag-Based</h3>
                         <p>
 							Traditional apps use folders to organize notes, like Evernote, this approach requires you to spend tons of time to organize your notes, thinking which folder to put your notes in, or everything will end up with a mess.  
                         </p>
