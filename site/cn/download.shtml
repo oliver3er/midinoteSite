@@ -127,7 +127,7 @@
                         <span>中文(简体)</span>
                         <!--#include file='/images/down-arrow.svg' -->
                         <div class="lang-selection">
-                            <div class="lang-selection-option __option_en"><a href="../en/about.shtml">English(US)</a></div>
+                            <div class="lang-selection-option __option_en"><a href="../en/download.shtml">English(US)</a></div>
                             <div class="lang-selection-option __option_cn">中文(简体)</div>
                         </div>
                     </div>
