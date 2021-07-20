@@ -21,6 +21,15 @@
 	<meta name="twitter:create" content"@midinote" >
 
     <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
+	<!-- lang detect -->
+    <script type="text/javascript">
+		try{
+			if(location.href.match(/^https?:\/\/(www\.)?midinote.me\/?$/) && (window.navigator.userLanguage || window.navigator.language).match(/^zh.*/)){location.href="https://midinote.me/cn/index.shtml"};
+		}catch(e){
+			console.warn("detect lan failed", window.navigator);
+		}
+	</script>
+
     <script src="../js/jquery.min.js"></script>
 	<script src='../js/visit.js' ></script>
     <script type="text/javascript">
