@@ -265,6 +265,7 @@
                         <li id="signUp" class="link-sign-up">注册</li>  
                         <li class="link-sign-in"><a href="https://app.midinote.me" >登录</a></li>
                         <li class="link-about"><a href="/cn/download.shtml">下载</a></li>  <!-- class="__selected"-->
+                        <li class="link-about"><a href="https://www.zhihu.com/column/c_1417533654168313856" target="_self">博客</a></li>
                         <!--<li class="link-contact">联系</li>
                         <li class="link-sign-up">注册</li>
                         <li class="link-sign-in">登录</li>-->
