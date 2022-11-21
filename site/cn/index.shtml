@@ -525,7 +525,30 @@
                         <div class="social-links">
                             <a href="https://twitter.com/midinote" target="_blank"><!--#include file='/images/twitter-logo.svg' --></a>
                             <a href="https://www.facebook.com/MidinoteHQ" target="_blank"><!--#include file='/images/fb-logo.svg' --></a>
-                            <a href="https://weibo.com/midinote" target="_blank"><!--#include file='/images/wb-logo.svg' --></a>
+                            <a href="javascript:" target="_blank">
+								<style>
+								div.wechat span {
+								display: none;
+								position: absolute;
+								bottom: 24px;
+								    right: 0px;
+								right: 0;
+								background: #333;
+								color: #fff;
+																}
+
+								div.wechat:hover span {
+								display: block;
+								}
+								</style>
+								<div
+									class="wechat"
+									style="transform: scale(1.4);margin-left: 2px;"
+								>
+								<span>
+									<img src="../images/wechat-qr.jpg" style="width:150px;" />
+								</span>
+								<!--#include file='/images/wechat.svg' --></div></a>
                         </div>
                     </div>
                 </div>
