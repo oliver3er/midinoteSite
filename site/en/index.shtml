@@ -32,6 +32,7 @@
 
     <script src="../js/jquery.min.js"></script>
 	<script src='../js/visit.js' ></script>
+	<script src='../js/utils.js' ></script>
     <script type="text/javascript">
 		//{{{
         $(window).resize(function() {
@@ -626,7 +627,7 @@
         USER_REGISTER_PASSWORD_FORMAT	: 'The password format is bad',
         USER_REGISTER_EMAIL_EXISTS	: 'The email already exists',
     }
-    $('.home-form-button').click(function(){
+    $('.home-form-button').click(async function(){
         $('.form-message').html('').removeClass("__show");
         const email		= $('.user-email').val();
         const password	= $('.user-psw').val();
@@ -654,6 +655,7 @@
             .always(function(data){
                 console.log('done',data)
                 if(data.code === 'OK'){
+                    await googleConversion();
                     console.log('register success!')
                     const user	= data.data.user
                     console.log('user:',user)

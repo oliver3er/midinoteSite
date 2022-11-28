@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../css/style.css" type="text/css" media="all" />
     <script src="../js/jquery.min.js"></script>
 	<script src='../js/visit.js' ></script>
+	<script src='../js/utils.js' ></script>
     <script type="text/javascript">
         $(window).resize(function() {
             var width = $(this).width();
@@ -465,7 +466,7 @@
         <div id="home-sign-in-part" class="home-bottom">
             <div class="home-bottom-wrapper position-relative">
                 <div class="home-sign-up-form">
-                    <h2 class="home-form-title">创建你的Midinote账号</h2>
+                    <h2 class="home-form-title">创建你的Midinote账号, 30秒开始体验Midinote</h2>
                     <div class="home-form-announce">
                        已经注册?请直接<a href="http://app.midinote.me" target="blank" >登录</a>
                     </div>
@@ -481,7 +482,7 @@
                                 <input class="user-psw" type="password" placeholder="密码" name="psw" />
                             </div>
                         </div>
-                        <div class="home-form-button"><span>创建账号</span></div>
+                        <div class="home-form-button"><span>创建账号并进入Midinote</span></div>
                     </div>
                     <div class="home-form-announce">
                         点击创建账户, 表示同意 <a target="_blank" href="../cn/service.shtml" >服务条款</a>和<a target="_blank" href="../cn/privacy.shtml" >隐私条款</a>.
@@ -612,7 +613,7 @@
         USER_REGISTER_PASSWORD_FORMAT	: '密码格式错误',
         USER_REGISTER_EMAIL_EXISTS	: '该邮件地址已经被注册',
     }
-    $('.home-form-button').click(function(){
+    $('.home-form-button').click(async function(){
         $('.form-message').html('').removeClass("__show");
         const email		= $('.user-email').val();
         const password	= $('.user-psw').val();
@@ -640,6 +641,7 @@
             .always(function(data){
                 console.log('done',data)
                 if(data.code === 'OK'){
+                    await googleConversion();
                     console.log('register success!')
                     const user	= data.data.user
                     console.log('user:',user)
