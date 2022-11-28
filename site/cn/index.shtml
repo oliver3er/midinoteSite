@@ -613,7 +613,7 @@
         USER_REGISTER_PASSWORD_FORMAT	: '密码格式错误',
         USER_REGISTER_EMAIL_EXISTS	: '该邮件地址已经被注册',
     }
-    $('.home-form-button').click(async function(){
+    $('.home-form-button').click(function(){
         $('.form-message').html('').removeClass("__show");
         const email		= $('.user-email').val();
         const password	= $('.user-psw').val();
@@ -638,7 +638,7 @@
                 const data	= JSON.parse(response)
                 console.log('response json:',data)
             })
-            .always(function(data){
+            .always(async function(data){
                 console.log('done',data)
                 if(data.code === 'OK'){
                     await googleConversion();

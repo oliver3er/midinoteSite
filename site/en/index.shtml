@@ -627,7 +627,7 @@
         USER_REGISTER_PASSWORD_FORMAT	: 'The password format is bad',
         USER_REGISTER_EMAIL_EXISTS	: 'The email already exists',
     }
-    $('.home-form-button').click(async function(){
+    $('.home-form-button').click(function(){
         $('.form-message').html('').removeClass("__show");
         const email		= $('.user-email').val();
         const password	= $('.user-psw').val();
@@ -652,7 +652,7 @@
                 const data	= JSON.parse(response)
                 console.log('response json:',data)
             })
-            .always(function(data){
+            .always(async function(data){
                 console.log('done',data)
                 if(data.code === 'OK'){
                     await googleConversion();
