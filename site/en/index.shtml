@@ -652,19 +652,22 @@
                 const data	= JSON.parse(response)
                 console.log('response json:',data)
             })
-            .always(async function(data){
+            .always(function(data){
                 console.log('done',data)
                 if(data.code === 'OK'){
-                    await googleConversion();
                     console.log('register success!')
                     const user	= data.data.user
                     console.log('user:',user)
                     const userCode	= data.data.userCode
                     console.log('userCode:',userCode)
                     //jump to app
-                    const url	= `${HOST_URL}/login?k=${userCode._id}`
-                    console.log('will jump to :',url)
-                    document.location = url
+                    googleConversion()
+                        .then(() => {
+                            console.log("google conversion done");
+                            const url	= `${HOST_URL}/login?k=${userCode._id}`
+                            console.log('will jump to :',url)
+                            document.location = url
+                        })
                 }else{
                     console.log('fail,code:%s',data.code)
                     const message	= MESSAGE[data.code]
