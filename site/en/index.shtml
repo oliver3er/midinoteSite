@@ -24,7 +24,7 @@
 	<!-- lang detect -->
     <script type="text/javascript">
 		try{
-			if(location.href.match(/^https?:\/\/(www\.)?midinote.me\/?$/) && (window.navigator.userLanguage || window.navigator.language).match(/^zh.*/)){location.href="https://midinote.me/cn/index.shtml"};
+			if(location.href.match(/^https?:\/\/(www\.)?midinote.me\/?(\?.*)?$/) && (window.navigator.userLanguage || window.navigator.language).match(/^zh.*/)){location.href="https://midinote.me/cn/index.shtml"};
 		}catch(e){
 			console.warn("detect lan failed", window.navigator);
 		}
