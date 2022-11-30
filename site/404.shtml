@@ -26,7 +26,7 @@
             <div class="site-logo-link-error">
                 <!--#include file='/images/logo.svg' -->
             </div>
-            <div class="site-register-error">© 2018 Midinote Inc. All rights reserved.</div>
+            <div class="site-register-error">© 2018-2022 Midinote Inc. All rights reserved.</div>
         </div>
     </footer>
 </div>

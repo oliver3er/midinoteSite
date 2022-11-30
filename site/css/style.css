@@ -3595,3 +3595,13 @@ jdiv.label_39._bottom_3v {
 .blog-img img{
   width: 90%;
 }
+
+
+.disabled {
+    background-color: gray;
+}
+
+.disabled:hover {
+    transform: none;
+    background-color: gray;
+}
