@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--#include file='/js/g.html' -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Midinote</title>
@@ -108,7 +109,7 @@
             <div class="site-logo-link-error">
                 <!--#include file='/images/logo.svg' -->
             </div>
-            <div class="site-register-error">© 2018 Midinote Inc. All rights reserved.</div>
+            <div class="site-register-error">© 2018-2022 Midinote Inc. All rights reserved.</div>
         </div>
     </footer>
 </div>

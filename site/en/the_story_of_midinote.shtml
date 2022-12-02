@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--#include file='/js/g.html' -->
     <title>Midinote: the Story of Midinote | Midinote</title>
 	<meta name="language" content="English">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
@@ -250,9 +251,9 @@
                     </div>
                 </div>
 
-                <div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>
+                <div class="site-register">© 2018-2022 Midinote Inc. All rights reserved.</div>
             </div>
-            <!--<div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>-->
+            <!--<div class="site-register">© 2018-2022 Midinote Inc. All rights reserved.</div>-->
         </footer>
     </div>
 </div>

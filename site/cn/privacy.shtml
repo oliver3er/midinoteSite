@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--#include file='/js/g.html' -->
     <title>隐私 | Midinote</title>
 	<meta name="language" content="Chinese">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
@@ -314,7 +315,7 @@
                     </div>
                 </div>
 
-                <div class="site-register">© 2018 Midinote Inc. 保留所有权利.</div>
+                <div class="site-register">© 2018-2022 Midinote Inc. 保留所有权利.</div>
             </div>
         </footer>
     </div>

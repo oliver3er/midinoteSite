@@ -595,9 +595,9 @@ Find the section: "DEFINITION". Input something describing: What is this tag? Or
                     </div>
                 </div>
 
-                <div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>
+                <div class="site-register">© 2018-2022 Midinote Inc. All rights reserved.</div>
             </div>
-            <!--<div class="site-register">© 2018 Midinote Inc. All rights reserved.</div>-->
+            <!--<div class="site-register">© 2018-2022 Midinote Inc. All rights reserved.</div>-->
         </footer>
     </div>
 </div>
